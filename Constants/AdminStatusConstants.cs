@@ -1,4 +1,4 @@
-﻿namespace eKirana;
+﻿namespace eKirana.Constants;
 public class AdminStatusConstants
 {
     public const string Active = "Active";

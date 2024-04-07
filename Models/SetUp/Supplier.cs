@@ -1,6 +1,6 @@
 ﻿using eKirana.Constants;
 
-namespace eKirana.Models;
+namespace eKirana.Models.SetUp;
 public class Supplier
 {
     public long Id { get; set; }
@@ -8,4 +8,5 @@ public class Supplier
     public string Address { get; set; }
     public long PhoneNumber { get; set; }
     public string SupplierStatus { get; set; } = SupplierStatusConstants.Active;
+    public DateTime? LastTransaction { get; set; }
 }

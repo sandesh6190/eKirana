@@ -1241,8 +1241,224 @@
       "PackagePath": "staticwebassets\\AdminPanel\\template.html"
     },
     {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootswatch\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Bootswatch\\bootstrap.min.css"
+    },
+    {
       "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Login\\Login.css",
       "PackagePath": "staticwebassets\\Login\\Login.css"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Login\\img\\storeLogo.png",
+      "PackagePath": "staticwebassets\\Login\\img\\storeLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\3825b3e2-4c60-46d9-8c5b-02533dc85264",
+      "PackagePath": "staticwebassets\\Uploads\\Photos"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\4a76dec8-3453-461e-bb66-5f2a7e749fd8..jpg",
+      "PackagePath": "staticwebassets\\Uploads\\Photos\\4a76dec8-3453-461e-bb66-5f2a7e749fd8..jpg"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\60afff6f-5f38-4883-8d49-dc9b85d13bc2..jpg",
+      "PackagePath": "staticwebassets\\Uploads\\Photos\\60afff6f-5f38-4883-8d49-dc9b85d13bc2..jpg"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\6276e7cc-aeb0-4d90-b7cf-eef7c16f5099",
+      "PackagePath": "staticwebassets\\Uploads\\Photos"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\7fcefc8f-0dbf-4257-beaf-ae7a7480a45a",
+      "PackagePath": "staticwebassets\\Uploads\\Photos"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\8d8dda4d-0565-4384-9f58-3bf3b55f0300..jpg",
+      "PackagePath": "staticwebassets\\Uploads\\Photos\\8d8dda4d-0565-4384-9f58-3bf3b55f0300..jpg"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\d2b9dc7a-7860-458a-a0c1-54be80672a44",
+      "PackagePath": "staticwebassets\\Uploads\\Photos"
+    },
+    {
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\e4c7563d-83f0-4870-a028-270474fe4e2c",
+      "PackagePath": "staticwebassets\\Uploads\\Photos"
     },
     {
       "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\css\\site.css",

@@ -13,7 +13,9 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
 
-
+@{
+    IgnoreBody();
+}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,6 +61,22 @@
     <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
     <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
 
+    @* bootstrap link *@
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
+
+    @* downloaded bootstrap connection *@
+    <link rel="stylesheet" href="/Bootstrap/css">
+
+    @* downloaded bootswatch connection *@
+    <link rel="stylesheet" href="/Bootswatch/css">
+
 
 </head>
 
@@ -98,7 +116,7 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="./dashboard.html">
+                    <a class="nav-link text-white " href="/Dashboard/Index">
 
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10">dashboard</i>
@@ -122,25 +140,25 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="./billing.html">
+                    <a class="nav-link text-white " href="/Purchase/Index">
 
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10">receipt_long</i>
                         </div>
 
-                        <span class="nav-link-text ms-1">Billing</span>
+                        <span class="nav-link-text ms-1">Purchase</span>
                     </a>
                 </li>
 
 
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="./virtual-reality.html">
+                    <a class="nav-link text-white " href="/Product/Index">
 
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10">view_in_ar</i>
                         </div>
 
-                        <span class="nav-link-text ms-1">Virtual Reality</span>
+                        <span class="nav-link-text ms-1">Product</span>
                     </a>
                 </li>
 
@@ -169,25 +187,49 @@
                 </li>
 
 
+
+
                 <li class="nav-item mt-3">
-                    <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Account pages
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Set Up
                     </h6>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="./profile.html">
+                    <a class="nav-link text-white " href="/Category/Index">
 
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10">person</i>
                         </div>
 
-                        <span class="nav-link-text ms-1">Profile</span>
+                        <span class="nav-link-text ms-1">Category</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="/Unit/Index">
+
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">person</i>
+                        </div>
+
+                        <span class="nav-link-text ms-1">Unit</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="/Supplier/Index">
+
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10">person</i>
+                        </div>
+
+                        <span class="nav-link-text ms-1">Supplier</span>
                     </a>
                 </li>
 
 
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="./sign-in.html">
+                    <a class="nav-link text-white " href="/Authentication/Register">
 
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10">login</i>
@@ -199,7 +241,7 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="./sign-up.html">
+                    <a class="nav-link text-white " href="/Authentication/Register">
 
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="material-icons opacity-10">assignment</i>
@@ -220,9 +262,9 @@
 
         <div class="sidenav-footer position-absolute w-100 bottom-0 ">
             <div class="mx-3">
-                <a class="btn btn-outline-primary mt-4 w-100"
-                    href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-dashboard?ref=sidebarfree"
-                    type="button">Documentation</a>
+                @* <a class="btn btn-outline-primary mt-4 w-100"
+                href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-dashboard?ref=sidebarfree"
+                type="button">Documentation</a> *@
                 <a class="btn bg-gradient-primary w-100"
                     href="https://www.creative-tim.com/product/material-dashboard-pro?ref=sidebarfree"
                     type="button">Upgrade to pro</a>
@@ -368,7 +410,7 @@
                             </ul>
                         </li>
                         <li class="nav-item d-flex align-items-center">
-                            <a href="./pages/sign-in.html" class="nav-link text-body font-weight-bold px-0">
+                            <a href="/Authentication/LogIn" class="nav-link text-body font-weight-bold px-0">
                                 <i class="fa fa-user me-sm-1"></i>
 
                                 <span class="d-sm-inline d-none">Sign In</span>
@@ -619,6 +661,9 @@
 
     <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="/AdminPanel/assets/js/material-dashboard.min.js?v=3.1.0"></script>
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    @await Component.InvokeAsync("Notyf");
 </body>
 
 </html>

@@ -1,0 +1,50 @@
+@model eKirana.ViewModels.ProductVms.ProductAddVm
+
+<form method="post" enctype="multipart/form-data">
+
+    <div class="container mt-4">
+        <div class="card shadow-lg">
+            <div class="card-header">
+                <h4 class="card-title text-center text-success text-uppercase">Adding Product</h4>
+            </div>
+            <div class="card-body">
+                <div style="border-top: 4px solid;" class="mb-2 border-success">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="Name" class="form-label">Name</label>
+                        <input type="text" class="form-control" asp-for="Name" placeholder="Name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="Photo" class="form-label">Photo</label>
+                        <input type="file" class="form-control" asp-for="Photo" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="Category" class="form-label">Category</label>
+                        <select asp-for="CategoryId" class="form-control" asp-items="@Model.CategorySelectList()">
+                            <option value="">-- SELECT A CATEGORY --</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="Product Type" class="form-label">Product Type</label>
+                        <select asp-for="ProductVATorNOT" class="form-control"
+                            asp-items="@Model.ProductVATorNOTSelectList()">
+                            <option value="">-- VAT or NOT --</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="card-footer">
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-success w-100">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

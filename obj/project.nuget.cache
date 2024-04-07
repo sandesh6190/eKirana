@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0UWl5uyI8q4fNw41jcA0UcWHzQDAPBuV88TiLT+Oca0TovsOccFbEC6d4obqzm/gz1NhqsVhfzESIZDoe6jaOg==",
+  "dgSpecHash": "+78iuvU/sPnYeV1O6B0wUOE0nIFpZGrCjLuHyTrEFMESazuF0Lla8pD80jyX+xQU3WiIUz5E3HZb0duaA6JrMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\eKirana.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\7.0.11\\microsoft.aspnetcore.mvc.razor.runtimecompilation.7.0.11.nupkg.sha512",
@@ -48,6 +50,7 @@
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",

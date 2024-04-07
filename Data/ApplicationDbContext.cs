@@ -13,15 +13,39 @@ public class ApplicationDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<PurchaseDetail>()
-            .HasOne(pd => pd.Units)
+            .HasOne(pd => pd.Unit)
             .WithMany()
             .HasForeignKey(pd => pd.UnitId)
             .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
 
+        modelBuilder.Entity<PurchaseDetail>()
+    .HasOne(pd => pd.Product)
+    .WithMany()
+    .HasForeignKey(pd => pd.ProductId)
+    .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
+
         modelBuilder.Entity<SaleDetail>()
-        .HasOne(sd => sd.Units)
+        .HasOne(sd => sd.Unit)
         .WithMany()
         .HasForeignKey(sd => sd.UnitId)
+        .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
+
+        modelBuilder.Entity<SaleDetail>()
+        .HasOne(sd => sd.Product)
+        .WithMany()
+        .HasForeignKey(sd => sd.ProductId)
+        .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
+
+        modelBuilder.Entity<Product>()
+        .HasOne(p => p.Unit)
+        .WithMany()
+        .HasForeignKey(p => p.UnitId)
+        .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
+
+        modelBuilder.Entity<Product>()
+        .HasOne(p => p.ProductPurchaseRate)
+        .WithMany()
+        .HasForeignKey(p => p.ProductPurchaseRateId)
         .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
     }
     public DbSet<Product> Products { get; set; }
@@ -34,7 +58,8 @@ public class ApplicationDbContext : DbContext
     public DbSet<Sale> Sales { get; set; }
     public DbSet<SaleDetail> SaleDetails { get; set; }
     public DbSet<Admin> Admins { get; set; }
-    public DbSet<SuperAdmin> SuperAdmins { get; set; }
+
+    public DbSet<Supplier> Suppliers { get; set; }
 
 
 }

@@ -1,4 +1,8 @@
+using AspNetCoreHero.ToastNotification;
 using eKirana.Data;
+using eKirana.Manager;
+using eKirana.Manager.Interfaces;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -8,7 +12,23 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(x => { x.LoginPath = "/Authentication/Login"; });
+
+builder.Services.AddNotyf(config => { config.DurationInSeconds = 10; config.IsDismissable = true; config.Position = NotyfPosition.BottomRight; });
+
+builder.Services.AddControllers();
+builder.Services.AddRazorPages()
+    .AddRazorRuntimeCompilation();
+
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddScoped<DbContext, ApplicationDbContext>();
+builder.Services.AddScoped<IAuthManager, AuthManager>();
+
 
 var app = builder.Build();
 

@@ -12,8 +12,8 @@ using eKirana.Data;
 namespace eKirana.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240303101713_Second_Migrations")]
-    partial class Second_Migrations
+    [Migration("20240407115116_LastTransactionAdd")]
+    partial class LastTransactionAdd
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,8 +37,9 @@ namespace eKirana.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("Created_on")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("AdminType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -47,6 +48,9 @@ namespace eKirana.Migrations
                     b.Property<string>("HashPassword")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Registered_On")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("UserName")
                         .IsRequired()
@@ -65,23 +69,26 @@ namespace eKirana.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<long>("CategoryId")
+                    b.Property<long?>("CategoryId")
                         .HasColumnType("bigint");
 
                     b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Photo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("ProductPurchaseRateId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("ProductVATorNOT")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("ProductPurchaseRateId")
+                    b.Property<long?>("Stock_Quantity")
                         .HasColumnType("bigint");
 
-                    b.Property<long>("ProductSaleRateId")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("Stock_Quantity")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("UnitId")
+                    b.Property<long?>("UnitId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
@@ -90,26 +97,26 @@ namespace eKirana.Migrations
 
                     b.HasIndex("ProductPurchaseRateId");
 
-                    b.HasIndex("ProductSaleRateId");
+                    b.HasIndex("UnitId");
 
                     b.ToTable("Products");
                 });
 
             modelBuilder.Entity("eKirana.Models.ProductPurchaseRate", b =>
                 {
-                    b.Property<long>("Id")
+                    b.Property<long?>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long?>("Id"));
 
-                    b.Property<decimal>("Amount")
+                    b.Property<decimal?>("Amount")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("DateModified")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("UnitId")
+                    b.Property<long?>("UnitId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
@@ -133,10 +140,15 @@ namespace eKirana.Migrations
                     b.Property<DateTime>("DateModified")
                         .HasColumnType("datetime2");
 
+                    b.Property<long>("ProductId")
+                        .HasColumnType("bigint");
+
                     b.Property<long>("UnitId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
 
                     b.HasIndex("UnitId");
 
@@ -151,13 +163,21 @@ namespace eKirana.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<long>("PurchaseById")
+                        .HasColumnType("bigint");
+
                     b.Property<DateTime>("PurchaseDate")
                         .HasColumnType("datetime2");
 
                     b.Property<long>("SupplierId")
                         .HasColumnType("bigint");
 
+                    b.Property<decimal>("TotalPaidAmount")
+                        .HasColumnType("decimal(18,2)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("PurchaseById");
 
                     b.HasIndex("SupplierId");
 
@@ -175,25 +195,19 @@ namespace eKirana.Migrations
                     b.Property<decimal>("Discount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal>("PaidAmount")
+                    b.Property<decimal>("NetAmount")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<long>("ProductId")
                         .HasColumnType("bigint");
 
-                    b.Property<long>("ProductPurchaseRateId")
+                    b.Property<long>("ProductPurchaseRate")
                         .HasColumnType("bigint");
 
-                    b.Property<long>("PurchasesId")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("PurhaseId")
+                    b.Property<long>("PurchaseId")
                         .HasColumnType("bigint");
 
                     b.Property<decimal>("SubTotal")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("TotalAmount")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<long>("UnitId")
@@ -206,9 +220,7 @@ namespace eKirana.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.HasIndex("ProductPurchaseRateId");
-
-                    b.HasIndex("PurchasesId");
+                    b.HasIndex("PurchaseId");
 
                     b.HasIndex("UnitId");
 
@@ -224,9 +236,6 @@ namespace eKirana.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<decimal>("Discount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("PaidAmount")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<long>("ProductId")
@@ -265,22 +274,52 @@ namespace eKirana.Migrations
 
             modelBuilder.Entity("eKirana.Models.SetUp.Category", b =>
                 {
+                    b.Property<long?>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long?>("Id"));
+
+                    b.Property<DateTime>("DateModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Item")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("eKirana.Models.SetUp.Supplier", b =>
+                {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<DateTime>("DateModified")
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("LastTransaction")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Item")
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("PhoneNumber")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("SupplierStatus")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Suppliers");
                 });
 
             modelBuilder.Entity("eKirana.Models.SetUp.Unit", b =>
@@ -303,62 +342,6 @@ namespace eKirana.Migrations
                     b.ToTable("Units");
                 });
 
-            modelBuilder.Entity("eKirana.Models.SuperAdmin", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<DateTime>("Created_on")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HashPassword")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("SuperAdmins");
-                });
-
-            modelBuilder.Entity("eKirana.Models.Supplier", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<long>("PhoneNumber")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("SupplierStatus")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Supplier");
-                });
-
             modelBuilder.Entity("eKirana.Sale", b =>
                 {
                     b.Property<long>("Id")
@@ -366,9 +349,6 @@ namespace eKirana.Migrations
                         .HasColumnType("bigint");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<long>("AdminsId")
-                        .HasColumnType("bigint");
 
                     b.Property<string>("CusromerAddress")
                         .IsRequired()
@@ -384,152 +364,157 @@ namespace eKirana.Migrations
                     b.Property<DateTime>("SaleDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<decimal>("TotalPaidAmount")
+                        .HasColumnType("decimal(18,2)");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("AdminsId");
+                    b.HasIndex("SaleById");
 
                     b.ToTable("Sales");
                 });
 
             modelBuilder.Entity("eKirana.Models.Product", b =>
                 {
-                    b.HasOne("eKirana.Models.SetUp.Category", "Categories")
+                    b.HasOne("eKirana.Models.SetUp.Category", "Category")
                         .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CategoryId");
 
-                    b.HasOne("eKirana.Models.ProductPurchaseRate", "ProductPurchaseRates")
+                    b.HasOne("eKirana.Models.ProductPurchaseRate", "ProductPurchaseRate")
                         .WithMany()
                         .HasForeignKey("ProductPurchaseRateId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("eKirana.Models.ProductSaleRate", "ProductSalesRateId")
+                    b.HasOne("eKirana.Models.SetUp.Unit", "Unit")
                         .WithMany()
-                        .HasForeignKey("ProductSaleRateId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UnitId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
-                    b.Navigation("Categories");
+                    b.Navigation("Category");
 
-                    b.Navigation("ProductPurchaseRates");
+                    b.Navigation("ProductPurchaseRate");
 
-                    b.Navigation("ProductSalesRateId");
+                    b.Navigation("Unit");
                 });
 
             modelBuilder.Entity("eKirana.Models.ProductPurchaseRate", b =>
                 {
-                    b.HasOne("eKirana.Models.SetUp.Unit", "Units")
+                    b.HasOne("eKirana.Models.SetUp.Unit", "Unit")
                         .WithMany()
-                        .HasForeignKey("UnitId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UnitId");
 
-                    b.Navigation("Units");
+                    b.Navigation("Unit");
                 });
 
             modelBuilder.Entity("eKirana.Models.ProductSaleRate", b =>
                 {
-                    b.HasOne("eKirana.Models.SetUp.Unit", "Units")
+                    b.HasOne("eKirana.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("eKirana.Models.SetUp.Unit", "Unit")
                         .WithMany()
                         .HasForeignKey("UnitId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Units");
+                    b.Navigation("Product");
+
+                    b.Navigation("Unit");
                 });
 
             modelBuilder.Entity("eKirana.Models.Purchase", b =>
                 {
-                    b.HasOne("eKirana.Models.Supplier", "Suppliers")
+                    b.HasOne("eKirana.Models.Admin", "Admin")
+                        .WithMany()
+                        .HasForeignKey("PurchaseById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("eKirana.Models.SetUp.Supplier", "Supplier")
                         .WithMany()
                         .HasForeignKey("SupplierId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Suppliers");
+                    b.Navigation("Admin");
+
+                    b.Navigation("Supplier");
                 });
 
             modelBuilder.Entity("eKirana.Models.PurchaseDetail", b =>
                 {
-                    b.HasOne("eKirana.Models.Product", "Products")
+                    b.HasOne("eKirana.Models.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("eKirana.Models.ProductPurchaseRate", "ProductPurchaseRates")
+                    b.HasOne("eKirana.Models.Purchase", "Purchase")
                         .WithMany()
-                        .HasForeignKey("ProductPurchaseRateId")
+                        .HasForeignKey("PurchaseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("eKirana.Models.Purchase", "Purchases")
-                        .WithMany()
-                        .HasForeignKey("PurchasesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("eKirana.Models.SetUp.Unit", "Units")
+                    b.HasOne("eKirana.Models.SetUp.Unit", "Unit")
                         .WithMany()
                         .HasForeignKey("UnitId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("ProductPurchaseRates");
+                    b.Navigation("Product");
 
-                    b.Navigation("Products");
+                    b.Navigation("Purchase");
 
-                    b.Navigation("Purchases");
-
-                    b.Navigation("Units");
+                    b.Navigation("Unit");
                 });
 
             modelBuilder.Entity("eKirana.Models.SaleDetail", b =>
                 {
-                    b.HasOne("eKirana.Models.Product", "Products")
+                    b.HasOne("eKirana.Models.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("eKirana.Models.ProductSaleRate", "ProductSaleRates")
+                    b.HasOne("eKirana.Models.ProductSaleRate", "ProductSaleRate")
                         .WithMany()
                         .HasForeignKey("ProductSaleRateId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("eKirana.Sale", "Sales")
+                    b.HasOne("eKirana.Sale", "Sale")
                         .WithMany()
                         .HasForeignKey("SaleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("eKirana.Models.SetUp.Unit", "Units")
+                    b.HasOne("eKirana.Models.SetUp.Unit", "Unit")
                         .WithMany()
                         .HasForeignKey("UnitId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("ProductSaleRates");
+                    b.Navigation("Product");
 
-                    b.Navigation("Products");
+                    b.Navigation("ProductSaleRate");
 
-                    b.Navigation("Sales");
+                    b.Navigation("Sale");
 
-                    b.Navigation("Units");
+                    b.Navigation("Unit");
                 });
 
             modelBuilder.Entity("eKirana.Sale", b =>
                 {
-                    b.HasOne("eKirana.Models.Admin", "Admins")
+                    b.HasOne("eKirana.Models.Admin", "Admin")
                         .WithMany()
-                        .HasForeignKey("AdminsId")
+                        .HasForeignKey("SaleById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Admins");
+                    b.Navigation("Admin");
                 });
 #pragma warning restore 612, 618
         }

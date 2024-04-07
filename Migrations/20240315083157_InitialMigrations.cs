@@ -6,23 +6,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace eKirana.Migrations
 {
     /// <inheritdoc />
-    public partial class Second_Migrations : Migration
+    public partial class InitialMigrations : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "ProductSalesRateId",
-                table: "Products",
-                newName: "ProductSaleRateId");
-
-            migrationBuilder.AddColumn<DateTime>(
-                name: "DateModified",
-                table: "Categories",
-                type: "datetime2",
-                nullable: false,
-                defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
-
             migrationBuilder.CreateTable(
                 name: "Admins",
                 columns: table => new
@@ -38,6 +26,20 @@ namespace eKirana.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Admins", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Categories",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Item = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DateModified = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Categories", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -95,15 +97,14 @@ namespace eKirana.Migrations
                     CustomerName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CusromerAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SaleDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    SaleById = table.Column<long>(type: "bigint", nullable: false),
-                    AdminsId = table.Column<long>(type: "bigint", nullable: false)
+                    SaleById = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Sales", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Sales_Admins_AdminsId",
-                        column: x => x.AdminsId,
+                        name: "FK_Sales_Admins_SaleById",
+                        column: x => x.SaleById,
                         principalTable: "Admins",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -177,9 +178,7 @@ namespace eKirana.Migrations
                 {
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    PurhaseId = table.Column<long>(type: "bigint", nullable: false),
-                    PurchasesId = table.Column<long>(type: "bigint", nullable: false),
-                    ProductId = table.Column<long>(type: "bigint", nullable: false),
+                    PurchaseId = table.Column<long>(type: "bigint", nullable: false),
                     ProductPurchaseRateId = table.Column<long>(type: "bigint", nullable: false),
                     UnitId = table.Column<long>(type: "bigint", nullable: false),
                     SubTotal = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
@@ -198,19 +197,55 @@ namespace eKirana.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_PurchaseDetails_Products_ProductId",
-                        column: x => x.ProductId,
-                        principalTable: "Products",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_PurchaseDetails_Purchases_PurchasesId",
-                        column: x => x.PurchasesId,
+                        name: "FK_PurchaseDetails_Purchases_PurchaseId",
+                        column: x => x.PurchaseId,
                         principalTable: "Purchases",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_PurchaseDetails_Units_UnitId",
+                        column: x => x.UnitId,
+                        principalTable: "Units",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Products",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Stock_Quantity = table.Column<long>(type: "bigint", nullable: false),
+                    UnitId = table.Column<long>(type: "bigint", nullable: false),
+                    CategoryId = table.Column<long>(type: "bigint", nullable: false),
+                    ProductPurchaseRateId = table.Column<long>(type: "bigint", nullable: false),
+                    ProductSaleRateId = table.Column<long>(type: "bigint", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Products", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Products_Categories_CategoryId",
+                        column: x => x.CategoryId,
+                        principalTable: "Categories",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Products_ProductPurchaseRates_ProductPurchaseRateId",
+                        column: x => x.ProductPurchaseRateId,
+                        principalTable: "ProductPurchaseRates",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Products_ProductSaleRates_ProductSaleRateId",
+                        column: x => x.ProductSaleRateId,
+                        principalTable: "ProductSaleRates",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Products_Units_UnitId",
                         column: x => x.UnitId,
                         principalTable: "Units",
                         principalColumn: "Id",
@@ -224,7 +259,6 @@ namespace eKirana.Migrations
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     SaleId = table.Column<long>(type: "bigint", nullable: false),
-                    ProductId = table.Column<long>(type: "bigint", nullable: false),
                     ProductSaleRateId = table.Column<long>(type: "bigint", nullable: false),
                     UnitId = table.Column<long>(type: "bigint", nullable: false),
                     SubTotal = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
@@ -243,12 +277,6 @@ namespace eKirana.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_SaleDetails_Products_ProductId",
-                        column: x => x.ProductId,
-                        principalTable: "Products",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_SaleDetails_Sales_SaleId",
                         column: x => x.SaleId,
                         principalTable: "Sales",
@@ -263,6 +291,16 @@ namespace eKirana.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_ProductPurchaseRates_UnitId",
+                table: "ProductPurchaseRates",
+                column: "UnitId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Products_CategoryId",
+                table: "Products",
+                column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Products_ProductPurchaseRateId",
                 table: "Products",
                 column: "ProductPurchaseRateId");
@@ -273,8 +311,8 @@ namespace eKirana.Migrations
                 column: "ProductSaleRateId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ProductPurchaseRates_UnitId",
-                table: "ProductPurchaseRates",
+                name: "IX_Products_UnitId",
+                table: "Products",
                 column: "UnitId");
 
             migrationBuilder.CreateIndex(
@@ -283,19 +321,14 @@ namespace eKirana.Migrations
                 column: "UnitId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PurchaseDetails_ProductId",
-                table: "PurchaseDetails",
-                column: "ProductId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_PurchaseDetails_ProductPurchaseRateId",
                 table: "PurchaseDetails",
                 column: "ProductPurchaseRateId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PurchaseDetails_PurchasesId",
+                name: "IX_PurchaseDetails_PurchaseId",
                 table: "PurchaseDetails",
-                column: "PurchasesId");
+                column: "PurchaseId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_PurchaseDetails_UnitId",
@@ -306,11 +339,6 @@ namespace eKirana.Migrations
                 name: "IX_Purchases_SupplierId",
                 table: "Purchases",
                 column: "SupplierId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_SaleDetails_ProductId",
-                table: "SaleDetails",
-                column: "ProductId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_SaleDetails_ProductSaleRateId",
@@ -328,37 +356,16 @@ namespace eKirana.Migrations
                 column: "UnitId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sales_AdminsId",
+                name: "IX_Sales_SaleById",
                 table: "Sales",
-                column: "AdminsId");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_Products_ProductPurchaseRates_ProductPurchaseRateId",
-                table: "Products",
-                column: "ProductPurchaseRateId",
-                principalTable: "ProductPurchaseRates",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_Products_ProductSaleRates_ProductSaleRateId",
-                table: "Products",
-                column: "ProductSaleRateId",
-                principalTable: "ProductSaleRates",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+                column: "SaleById");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_Products_ProductPurchaseRates_ProductPurchaseRateId",
-                table: "Products");
-
-            migrationBuilder.DropForeignKey(
-                name: "FK_Products_ProductSaleRates_ProductSaleRateId",
-                table: "Products");
+            migrationBuilder.DropTable(
+                name: "Products");
 
             migrationBuilder.DropTable(
                 name: "PurchaseDetails");
@@ -368,6 +375,9 @@ namespace eKirana.Migrations
 
             migrationBuilder.DropTable(
                 name: "SuperAdmins");
+
+            migrationBuilder.DropTable(
+                name: "Categories");
 
             migrationBuilder.DropTable(
                 name: "ProductPurchaseRates");
@@ -389,23 +399,6 @@ namespace eKirana.Migrations
 
             migrationBuilder.DropTable(
                 name: "Admins");
-
-            migrationBuilder.DropIndex(
-                name: "IX_Products_ProductPurchaseRateId",
-                table: "Products");
-
-            migrationBuilder.DropIndex(
-                name: "IX_Products_ProductSaleRateId",
-                table: "Products");
-
-            migrationBuilder.DropColumn(
-                name: "DateModified",
-                table: "Categories");
-
-            migrationBuilder.RenameColumn(
-                name: "ProductSaleRateId",
-                table: "Products",
-                newName: "ProductSalesRateId");
         }
     }
 }

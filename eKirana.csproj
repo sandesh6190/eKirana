@@ -7,6 +7,9 @@
   </PropertyGroup>
   
   <ItemGroup>
+    <PackageReference Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />
+    <!-- <PackageReference Include="BCrypt.Net" Version="0.1.0" /> -->
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11">
@@ -19,6 +22,15 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="ViewModels\SetUp\CategoryVms\" />
+    <Folder Include="ViewModels\SetUp\UnitVms\" />
+    <Folder Include="wwwroot\Bootstrap\" />
+    <Folder Include="wwwroot\Uploads\" />
+    <Folder Include="wwwroot\Uploads\Photos\" />
   </ItemGroup>
 
 </Project>

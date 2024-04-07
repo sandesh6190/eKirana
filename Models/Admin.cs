@@ -1,4 +1,6 @@
-﻿namespace eKirana.Models;
+﻿using eKirana.Constants;
+
+namespace eKirana.Models;
 public class Admin
 {
     public long Id { get; set; }
@@ -6,5 +8,6 @@ public class Admin
     public string Email { get; set; }
     public string HashPassword { get; set; }
     public string AdminStatus { get; set; } = AdminStatusConstants.Active;
-    public DateTime Created_on { get; set; }
+    public string AdminType { get; set; } = AdminTypeConstants.NormalAdmin;
+    public DateTime Registered_On { get; set; }
 }
