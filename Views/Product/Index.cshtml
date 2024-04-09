@@ -49,7 +49,7 @@
                         <tr class="table-light">
                             @{
                                 var sn = 1;
-                                foreach (var product in Model.Products)
+                                foreach (var product in Model.ProductWithPurchaseRateVms)
                                 {
                                 <tr class="table-light text-center">
                                     <th scope="row">
@@ -77,13 +77,13 @@
                                             @product.Category?.Item
                                     </td>
                                     <td>
-                                            @product.ProductPurchaseRate?.Amount
+                                            @product.PurchaseRateAmt
                                     </td>
                                     <td class="text-end">
-                                        <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-primary btn-md"><i
+                                        <a asp-action="Edit" asp-route-id="@product.ProductId" class="btn btn-primary btn-md"><i
                                                 class="bi bi-pencil-square"></i>
                                         </a>
-                                        <form asp-action="Delete" asp-route-id="@product.Id" class="d-inline">
+                                        <form asp-action="Delete" asp-route-id="@product.ProductId" class="d-inline">
                                             <button type="submit" class="btn btn-danger btn-md"
                                                 onclick="return confirm('Do you really want to delete?')"><i
                                                     class="bi bi-trash"></i></button>

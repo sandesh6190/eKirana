@@ -22,10 +22,38 @@ public class ProductController : Controller
 
     public async Task<IActionResult> Index(ProductIndexVm vm)
     {
-        vm.Products = await _context.Products.Where(x => (string.IsNullOrEmpty(vm.Search)) || x.Name.Contains(vm.Search)
+        //mapping with new list of vm
+        var productsWithRate = await _context.Products.Where(x => (string.IsNullOrEmpty(vm.Search)) || x.Name.Contains(vm.Search)
          && ((vm.Max_Stock_Quantity == null && vm.Min_Stock_Quantity == null) || (x.Stock_Quantity >= vm.Min_Stock_Quantity && x.Stock_Quantity <= vm.Max_Stock_Quantity))
          && (vm.UnitId == null || x.UnitId == vm.UnitId)
-         && (vm.ProductVATorNOT == null || vm.ProductVATorNOT == x.ProductVATorNOT)).Include(x => x.Category).Include(x => x.ProductPurchaseRate).ToListAsync();
+         && (vm.ProductVATorNOT == null || vm.ProductVATorNOT == x.ProductVATorNOT)).Include(x => x.Category).ToListAsync();
+
+        vm.ProductWithPurchaseRateVms = productsWithRate.Select(x => new ProductWithPurchaseRateVm()
+        {
+            ProductId = x.Id,
+            Name = x.Name,
+            Photo = x.Photo,
+            ProductVATorNOT = x.ProductVATorNOT,
+            Stock_Quantity = x.Stock_Quantity,
+            Unit = x.Unit,
+            Category = x.Category
+            // PurchaseRateAmt = vm.ProductPurchaseRates.Amount;
+
+        }).ToList();
+
+        vm.ProductPurchaseRates = await _context.ProductPurchaseRates.ToListAsync();
+
+        foreach (var product in vm.ProductWithPurchaseRateVms)
+        {
+            foreach (var productRate in vm.ProductPurchaseRates)
+            {
+                if (product.ProductId == productRate.ProductId)
+                {
+                    product.PurchaseRateAmt = productRate.Amount;
+                }
+            }
+        }
+
 
         vm.Units = await _context.Units.ToListAsync(); //for searching process
 

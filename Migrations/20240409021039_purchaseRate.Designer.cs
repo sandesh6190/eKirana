@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using eKirana.Data;
 
@@ -11,9 +12,11 @@ using eKirana.Data;
 namespace eKirana.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240409021039_purchaseRate")]
+    partial class purchaseRate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -79,8 +82,8 @@ namespace eKirana.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal?>("Stock_Quantity")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<long?>("Stock_Quantity")
+                        .HasColumnType("bigint");
 
                     b.Property<long?>("UnitId")
                         .HasColumnType("bigint");
@@ -108,7 +111,7 @@ namespace eKirana.Migrations
                     b.Property<DateTime>("DateModified")
                         .HasColumnType("datetime2");
 
-                    b.Property<long?>("ProductId")
+                    b.Property<long>("ProductId")
                         .HasColumnType("bigint");
 
                     b.Property<long?>("UnitId")
@@ -154,22 +157,22 @@ namespace eKirana.Migrations
 
             modelBuilder.Entity("eKirana.Models.Purchase", b =>
                 {
-                    b.Property<long?>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long?>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<long?>("PurchaseById")
+                    b.Property<long>("PurchaseById")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("PurchaseDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long?>("SupplierId")
+                    b.Property<long>("SupplierId")
                         .HasColumnType("bigint");
 
-                    b.Property<decimal?>("TotalPaidAmount")
+                    b.Property<decimal>("TotalPaidAmount")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
@@ -183,39 +186,34 @@ namespace eKirana.Migrations
 
             modelBuilder.Entity("eKirana.Models.PurchaseDetail", b =>
                 {
-                    b.Property<long?>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long?>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<decimal?>("Discount")
+                    b.Property<decimal>("Discount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal?>("NetAmount")
+                    b.Property<decimal>("NetAmount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<long?>("ProductId")
-                        .IsRequired()
+                    b.Property<long>("ProductId")
                         .HasColumnType("bigint");
 
-                    b.Property<long?>("PurchaseId")
+                    b.Property<long>("ProductPurchaseRate")
                         .HasColumnType("bigint");
 
-                    b.Property<decimal?>("Quantity")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal?>("Rate")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal?>("SubTotal")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<long?>("UnitId")
-                        .IsRequired()
+                    b.Property<long>("PurchaseId")
                         .HasColumnType("bigint");
 
-                    b.Property<decimal?>("VATAmount")
+                    b.Property<decimal>("SubTotal")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<long>("UnitId")
+                        .HasColumnType("bigint");
+
+                    b.Property<decimal>("VATAmount")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
@@ -396,7 +394,9 @@ namespace eKirana.Migrations
                 {
                     b.HasOne("eKirana.Models.Product", "Product")
                         .WithMany()
-                        .HasForeignKey("ProductId");
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("eKirana.Models.SetUp.Unit", "Unit")
                         .WithMany()
@@ -430,11 +430,15 @@ namespace eKirana.Migrations
                 {
                     b.HasOne("eKirana.Models.Admin", "Admin")
                         .WithMany()
-                        .HasForeignKey("PurchaseById");
+                        .HasForeignKey("PurchaseById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("eKirana.Models.SetUp.Supplier", "Supplier")
                         .WithMany()
-                        .HasForeignKey("SupplierId");
+                        .HasForeignKey("SupplierId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Admin");
 
@@ -451,7 +455,9 @@ namespace eKirana.Migrations
 
                     b.HasOne("eKirana.Models.Purchase", "Purchase")
                         .WithMany()
-                        .HasForeignKey("PurchaseId");
+                        .HasForeignKey("PurchaseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("eKirana.Models.SetUp.Unit", "Unit")
                         .WithMany()

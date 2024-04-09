@@ -2,6 +2,8 @@ using AspNetCoreHero.ToastNotification;
 using eKirana.Data;
 using eKirana.Manager;
 using eKirana.Manager.Interfaces;
+using eKirana.Provider;
+using eKirana.Provider.Interfaces;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -28,6 +30,7 @@ builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddScoped<DbContext, ApplicationDbContext>();
 builder.Services.AddScoped<IAuthManager, AuthManager>();
+builder.Services.AddScoped<ICurrentAdminProvider, CurrentAdminProvider>();
 
 
 var app = builder.Build();

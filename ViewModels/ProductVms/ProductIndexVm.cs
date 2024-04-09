@@ -32,7 +32,8 @@ public class ProductIndexVm
         );
     }
 
-    //for product list to display
-    public List<Product> Products;
-    //public List<ProductPurchaseRate> ProductPurchaseRate;
+    //to display product list with purchase rate
+    public List<ProductWithPurchaseRateVm> ProductWithPurchaseRateVms;
+    public List<ProductPurchaseRate> ProductPurchaseRates;
+    // public List<decimal?> PuchaseRateAmt;
 }

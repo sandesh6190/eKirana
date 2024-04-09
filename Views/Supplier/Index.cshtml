@@ -18,8 +18,9 @@
                 <form action="" class="d-flex align-items-center">
                     <input class="form-control me-sm-2" type="search" asp-for="SearchString" placeholder="Search"
                         autocomplete="off">
-                    <select asp-for="SupplierStatus" class="form-control" asp-items="@Model.SupplierStatusSelectList()">
-                        <option value="">-- SELECT A PRODUCT STATUS --</option>
+                    <select asp-for="SupplierStatus" class="form-control "
+                        asp-items="@Model.SupplierStatusSelectList()">
+                        <option value="">-- SELECT A SUPPLIER STATUS --</option>
                     </select>
                     <button class="btn btn-success"><i class="bi bi-search"></i></button>
                 </form>

@@ -42,11 +42,11 @@ public class ApplicationDbContext : DbContext
         .HasForeignKey(p => p.UnitId)
         .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
 
-        modelBuilder.Entity<Product>()
-        .HasOne(p => p.ProductPurchaseRate)
-        .WithMany()
-        .HasForeignKey(p => p.ProductPurchaseRateId)
-        .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
+        // modelBuilder.Entity<Product>()
+        // .HasOne(p => p.ProductPurchaseRate)
+        // .WithMany()
+        // .HasForeignKey(p => p.ProductPurchaseRateId)
+        // .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
     }
     public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categories { get; set; }

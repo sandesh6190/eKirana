@@ -87,6 +87,42 @@ public class SupplierController : Controller
     }
 
     [HttpPost]
+    public async Task<IActionResult> Edit(long Id, SupplierEditVm vm)
+    {
+        try
+        {
+            if (!ModelState.IsValid)
+            {
+                throw new Exception("Invalid data.");
+            }
+
+            var supplier = await _context.Suppliers.Where(x => x.Id == Id).FirstOrDefaultAsync();
+            if (supplier == null)
+            {
+                throw new Exception("No Supplier Found.");
+            }
+
+            using var tx = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
+            supplier.Name = vm.Name;
+            supplier.Address = vm.Address;
+            supplier.PhoneNumber = vm.PhoneNumber;
+            supplier.SupplierStatus = vm.SupplierStatus;
+
+            await _context.SaveChangesAsync();
+            tx.Complete();
+
+            _notification.Success("Supplier Edited.");
+            return RedirectToAction("Index");
+        }
+        catch (Exception e)
+        {
+            _notification.Error(e.Message);
+            return View(vm);
+        }
+    }
+
+
+    [HttpPost]
     public async Task<IActionResult> Delete(long id)
     {
         try

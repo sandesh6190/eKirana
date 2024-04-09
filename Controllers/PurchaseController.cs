@@ -1,6 +1,8 @@
-﻿using AspNetCoreHero.ToastNotification.Abstractions;
+﻿using System.Transactions;
+using AspNetCoreHero.ToastNotification.Abstractions;
 using eKirana.Data;
 using eKirana.Models;
+using eKirana.Provider.Interfaces;
 using eKirana.ViewModels.PurchaseVms;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,10 +12,12 @@ public class PurchaseController : Controller
 {
     private readonly INotyfService _notification;
     private readonly ApplicationDbContext _context;
-    public PurchaseController(INotyfService notyfService, ApplicationDbContext context)
+    private readonly ICurrentAdminProvider _currentAdminProvider;
+    public PurchaseController(INotyfService notyfService, ApplicationDbContext context, ICurrentAdminProvider currentAdminProvider)
     {
         _notification = notyfService;
         _context = context;
+        _currentAdminProvider = currentAdminProvider;
     }
 
     public async Task<IActionResult> Index(PurchaseIndexVm vm)
@@ -25,36 +29,114 @@ public class PurchaseController : Controller
         return View(vm);
     }
 
-    public async Task<IActionResult> Add(PurchaseFormAddVm vm)
+    public async Task<IActionResult> Add()
     {
+        var vm = new PurchaseFormAddVm();
         vm.Suppliers = await _context.Suppliers.ToListAsync();
         vm.Products = await _context.Products.ToListAsync();
         vm.Units = await _context.Units.ToListAsync();
 
         return View(vm);
     }
+
+    [HttpPost]
+    public async Task<IActionResult> Add([FromBody] PurchaseAddVm vm)
+    {
+        try
+        {
+            if (!ModelState.IsValid)
+            {
+                _notification.Warning("Invalid Input.");
+                return View(vm);
+            }
+
+            var currentAdmin = await _currentAdminProvider.GetCurrentAdmin();
+
+            using var tx = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
+
+            //changes on purchase model
+            var purchase = new Purchase();
+            purchase.SupplierId = vm.SupplierId;
+            purchase.PurchaseDate = vm.PurchaseDate;
+            purchase.PurchaseById = currentAdmin.Id;
+
+            //changes on supplier model
+            var supplier = await _context.Suppliers.Where(x => x.Id == vm.SupplierId).FirstOrDefaultAsync();
+            if (supplier == null)
+            {
+                throw new Exception("No Supplier Found.");
+            }
+            supplier.LastTransaction = DateTime.Now;
+
+            decimal? TotalAmount = 0.00m;
+
+            foreach (var purchaseDetailVm in vm.PurchaseItems)
+            {
+                var purchaseDetail = new PurchaseDetail();
+                purchaseDetail.PurchaseId = purchase.Id;
+                purchaseDetail.ProductId = purchaseDetailVm.ProductId;
+                purchaseDetail.Quantity = purchaseDetailVm.Quantity;
+                purchaseDetail.UnitId = purchaseDetailVm.UnitId;
+                purchaseDetail.Rate = purchaseDetailVm.Rate;
+                purchaseDetail.SubTotal = purchaseDetailVm.SubTotal;
+                purchaseDetail.VATAmount = purchaseDetailVm.VATAmount;
+                purchaseDetail.Discount = purchaseDetailVm.Discount;
+                purchaseDetail.NetAmount = purchaseDetailVm.NetAmount;
+
+                var product = await _context.Products.Where(x => x.Id == purchaseDetailVm.ProductId).FirstOrDefaultAsync();
+                product.Stock_Quantity = product.Stock_Quantity + purchaseDetailVm.Quantity;
+
+                //for purchaseRate
+                var purchaseRate = new ProductPurchaseRate();
+                purchaseRate.ProductId = purchaseDetailVm.ProductId;
+                purchaseRate.UnitId = purchaseDetailVm.UnitId;
+                purchaseRate.Amount = purchaseDetailVm.Rate;
+                purchaseRate.DateModified = DateTime.Now;
+
+                TotalAmount = TotalAmount + purchaseDetail.NetAmount;
+
+                _context.PurchaseDetails.Add(purchaseDetail);
+                // _context.Products.Update(product);
+                _context.ProductPurchaseRates.Add(purchaseRate);
+            }
+
+            purchase.TotalPaidAmount = TotalAmount;
+
+            _context.Purchases.Add(purchase);
+
+            await _context.SaveChangesAsync();
+
+            tx.Complete();
+            _notification.Success("Purchased Successfully.");
+            return Json(new
+            {
+                success = true
+            });
+        }
+        catch (Exception e)
+        {
+            _notification.Error(e.Message);
+            return Json(new
+            {
+                success = false,
+                error = e.Message
+
+            });
+        }
+    }
     public async Task<IActionResult> GetProductRate(long? productId, long? unitId)
     {
-        var product = await _context.Products.Where(x => x.Id == productId).FirstOrDefaultAsync();
-        var unit = await _context.Units.Where(x => x.Id == unitId).FirstOrDefaultAsync();
+        var PurchaseRate = await _context.ProductPurchaseRates.Where(x => x.Product.Id == productId && x.UnitId == unitId).FirstOrDefaultAsync();
 
-        if (product != null)
+
+        if (PurchaseRate != null)
         {
-            if (unit != null)
+            return Json(new
             {
-                return Json(new
-                {
-                    purchaseRate = product.ProductPurchaseRate.Amount //purchaseRate
-                });
-            }
-            else
-            {
-                return Json(new
-                {
-                    error = "No unit selected"
-                });
-            }
+                purchaseRate = PurchaseRate.Amount //purchaseRate
+            });
         }
+
         else
         {
             return Json(new
@@ -64,4 +146,6 @@ public class PurchaseController : Controller
         }
 
     }
+
+
 }
