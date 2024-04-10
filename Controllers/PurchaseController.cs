@@ -83,8 +83,23 @@ public class PurchaseController : Controller
                 purchaseDetail.Discount = purchaseDetailVm.Discount;
                 purchaseDetail.NetAmount = purchaseDetailVm.NetAmount;
 
-                var product = await _context.Products.Where(x => x.Id == purchaseDetailVm.ProductId).FirstOrDefaultAsync();
-                product.Stock_Quantity = product.Stock_Quantity + purchaseDetailVm.Quantity;
+                var products = await _context.Products.Where(x => x.Id == purchaseDetailVm.ProductId).ToListAsync();
+                foreach (var product in products)
+                {
+                    // if (product.UnitId == null)
+                    // {
+                    //     product.Stock_Quantity = product.Stock_Quantity + purchaseDetailVm.Quantity;
+                    //     product.UnitId = purchaseDetailVm.UnitId;
+                    // }
+                    // else if (product.UnitId == purchaseDetailVm.UnitId)
+                    // {
+                    //     product.Stock_Quantity = product.Stock_Quantity + purchaseDetailVm.Quantity;
+                    // }
+                    _context.Products.Update(product);
+
+                }
+
+
 
                 //for purchaseRate
                 var purchaseRate = new ProductPurchaseRate();
@@ -96,7 +111,7 @@ public class PurchaseController : Controller
                 TotalAmount = TotalAmount + purchaseDetail.NetAmount;
 
                 _context.PurchaseDetails.Add(purchaseDetail);
-                // _context.Products.Update(product);
+
                 _context.ProductPurchaseRates.Add(purchaseRate);
             }
 

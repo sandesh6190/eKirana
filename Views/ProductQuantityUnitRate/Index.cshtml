@@ -1,12 +1,12 @@
-@model eKirana.ViewModels.ProductVms.ProductIndexVm
+@model eKirana.ViewModels.ProductQuantityUnitRateVms.IndexProductQuantityUnitRateVm
 <div class="container-fluid mt-2">
     <div class="card shadow-lg">
         <div class="card-header">
             <div class="d-flex justify-content-between align-items-center">
-                <h4 class="card-title ">List of Product</h4>
+                <h4 class="card-title ">List of Product with Quantity, Unit and Rate</h4>
 
                 <a href="/Product/Add" class="btn btn-success "><span class="bi bi-file-plus"></span> Add
-                    Product</a>
+                    Unit</a>
             </div>
         </div>
 
@@ -16,19 +16,13 @@
             </div>
             <div class="row mb-2">
                 <form action="" class="d-flex align-items-center">
-                    <input class="form-control me-sm-2" type="search" asp-for="Search" placeholder="Search"
-                        autocomplete="off">
+                    @* <input class="form-control me-sm-2" type="search" asp-for="Search" placeholder="Search"
+                        autocomplete="off"> *@
                         @* <input class="form-control me-sm-2" type="number" asp-for="Min_Stock_Quantity" placeholder="Min-Quantity">
-                        <input class="form-control me-sm-2" type="number" asp-for="Max_Stock_Quantity" placeholder="Max-Quantity" name="" id="">
+                        <input class="form-control me-sm-2" type="number" asp-for="Max_Stock_Quantity" placeholder="Max-Quantity" name="" id=""> *@
 
                         <select asp-for="UnitId" class="form-control" asp-items="@Model.UnitSelectList()">
                         <option value="">-- SELECT A UNIT --</option>
-                    </select> *@
-                    <select asp-for="CategoryId" class="form-control" asp-items="@Model.CategorySelectList()">
-                        <option value="">-- SELECT A CATEGORY --</option>
-                    </select>
-                    <select asp-for="ProductVATorNOT" class="form-control" asp-items="@Model.ProductVATorNOTSelectList()">
-                        <option value="">-- VAT or NOT --</option>
                     </select>
                     <button class="btn btn-success"><i class="bi bi-search"></i></button>
                 </form>
@@ -39,12 +33,11 @@
                     <thead class="table-success">
                         <tr>
                             <th scope="col" width="80px">SN</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Type</th>
-                            @* <th scope="col">Stock Quantity</th>
-                            <th scope="col">Unit</th> *@
-                            <th scope="col">Category</th>
-                            @* <th scope="col">Purchase Rate</th> *@
+                            <th scope="col">Product</th>
+                            <th scope="col">Stock Quantity</th>
+                            <th scope="col">Unit</th> 
+                            <th scope="col">Purchase Rate</th> 
+                            <th scope="col">Sales Rate</th> 
                             <th scope="col" class="text-end"></th>
                         </tr>
                     </thead>
@@ -52,7 +45,7 @@
                         <tr class="table-light">
                             @{
                                 var sn = 1;
-                                foreach (var product in Model.ProductInfoVms)
+                                foreach (var prdQUR in Model.InfoProductQuantityUnitRateVms)
                                 {
                                 <tr class="table-light text-center">
                                     <th scope="row">
@@ -63,33 +56,29 @@
                                                                             align-items: center; flex-direction: column">
                                         <img style="height: 12vh;
                                                                                                       width: 2vw;"
-                                            class="w-50" alt="description" src="/Uploads/Photos/@product.Photo" />@product.Name
+                                            class="w-50" alt="description" src="/Uploads/Photos/@prdQUR.Product.Photo" />@prdQUR.Product.Name
 
                                     </td>
 
-                                        <td>
-                            @product.ProductVATorNOT
-                            </td>
-                                    @* <td>
-                                            @product.Stock_Quantity
+                                        
+                                    <td>
+                                            @prdQUR.Quanity
                                     </td>
                                     <td>
-                                            @product.Unit?.Name
-                                    </td> *@
-                                    <td>
-                                            @product.Category?.Item
+                                            @prdQUR.Unit?.Name
                                     </td>
-                                    @* <td>
-                                            @product.PurchaseRateAmt
-                                    </td> *@
+                                    
+                                    <td>
+                                            @prdQUR.PurchaseRate
+                                    </td>
+                                    <td>
+                                            @prdQUR.SaleRate
+                                    </td>
                                     <td class="text-end">
-                                        <a asp-controller="ProductQuantityUnitRate" asp-action="Index"  asp-route-id="@product.ProductId" class="btn btn-primary btn-md"><i
-                                                class="bi bi-pencil-square">View Quantity Rate</i>
-                                        </a>
-                                        <a asp-action="Edit" asp-route-id="@product.ProductId" class="btn btn-primary btn-md"><i
+                                        <a asp-action="Edit" asp-route-id="@prdQUR.Product.Id" class="btn btn-primary btn-md"><i
                                                 class="bi bi-pencil-square"></i>
                                         </a>
-                                        <form asp-action="Delete" asp-route-id="@product.ProductId" class="d-inline">
+                                        <form asp-action="Delete" asp-route-id="@prdQUR.Product.Id" class="d-inline">
                                             <button type="submit" class="btn btn-danger btn-md"
                                                 onclick="return confirm('Do you really want to delete?')"><i
                                                     class="bi bi-trash"></i></button>
@@ -108,12 +97,3 @@
     </div>
 
 </div>
-@* from multiple models
-<td>
-@foreach (var rate in Model.ProductPuchaseRates.Where(x => x.ProductId ==
-product.Id).ToList())
-{
-@rate.Amount
-}
-
-</td> *@

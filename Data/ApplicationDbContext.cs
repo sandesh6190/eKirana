@@ -36,11 +36,11 @@ public class ApplicationDbContext : DbContext
         .HasForeignKey(sd => sd.ProductId)
         .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
 
-        modelBuilder.Entity<Product>()
-        .HasOne(p => p.Unit)
-        .WithMany()
-        .HasForeignKey(p => p.UnitId)
-        .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
+        // modelBuilder.Entity<Product>()
+        // .HasOne(p => p.Unit)
+        // .WithMany()
+        // .HasForeignKey(p => p.UnitId)
+        // .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
 
         // modelBuilder.Entity<Product>()
         // .HasOne(p => p.ProductPurchaseRate)
@@ -58,7 +58,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<Sale> Sales { get; set; }
     public DbSet<SaleDetail> SaleDetails { get; set; }
     public DbSet<Admin> Admins { get; set; }
-
+    public DbSet<ProductQuantityUnitRate> ProductQuantityUnitRates { get; set; }
     public DbSet<Supplier> Suppliers { get; set; }
 
 

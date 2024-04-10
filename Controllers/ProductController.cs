@@ -23,39 +23,52 @@ public class ProductController : Controller
     public async Task<IActionResult> Index(ProductIndexVm vm)
     {
         //mapping with new list of vm
-        var productsWithRate = await _context.Products.Where(x => (string.IsNullOrEmpty(vm.Search)) || x.Name.Contains(vm.Search)
-         && ((vm.Max_Stock_Quantity == null && vm.Min_Stock_Quantity == null) || (x.Stock_Quantity >= vm.Min_Stock_Quantity && x.Stock_Quantity <= vm.Max_Stock_Quantity))
-         && (vm.UnitId == null || x.UnitId == vm.UnitId)
-         && (vm.ProductVATorNOT == null || vm.ProductVATorNOT == x.ProductVATorNOT)).Include(x => x.Category).ToListAsync();
 
-        vm.ProductWithPurchaseRateVms = productsWithRate.Select(x => new ProductWithPurchaseRateVm()
+        //this is the how we add data on customize vm 
+        // var productsWithRate = await _context.Products.Where(x => (string.IsNullOrEmpty(vm.Search)) || x.Name.Contains(vm.Search)
+        //  && (vm.ProductVATorNOT == null || vm.ProductVATorNOT == x.ProductVATorNOT)).Include(x => x.Category).ToListAsync();
+
+        // vm.ProductWithPurchaseRateVms = productsWithRate.Select(x => new ProductWithPurchaseRateVm()
+        // {
+        //     ProductId = x.Id,
+        //     Name = x.Name,
+        //     Photo = x.Photo,
+        //     ProductVATorNOT = x.ProductVATorNOT,
+        //     Category = x.Category
+        //     // PurchaseRateAmt = vm.ProductPurchaseRates.Amount;
+
+        // }).ToList();
+
+
+        // vm.ProductPurchaseRates = await _context.ProductPurchaseRates.ToListAsync();
+        //this is how we add extra property on list of vm
+        // foreach (var product in vm.ProductWithPurchaseRateVms)
+        // {
+        //     foreach (var productRate in vm.ProductPurchaseRates)
+        //     {
+        //         if (product.ProductId == productRate.ProductId)
+        //         {
+        //             product.PurchaseRateAmt = productRate.Amount;
+        //         }
+        //     }
+        // }
+        var products = await _context.Products.Where(x => (string.IsNullOrEmpty(vm.Search) || x.Name.Contains(vm.Search))
+        && (vm.CategoryId == null || vm.CategoryId == x.CategoryId)
+        && (vm.ProductVATorNOT == null || vm.ProductVATorNOT == x.ProductVATorNOT)).Include(x => x.Category).ToListAsync();
+
+        //this is how we store data on vm
+        vm.ProductInfoVms = products.Select(x => new ProductInfoVm()
         {
             ProductId = x.Id,
             Name = x.Name,
             Photo = x.Photo,
             ProductVATorNOT = x.ProductVATorNOT,
-            Stock_Quantity = x.Stock_Quantity,
-            Unit = x.Unit,
             Category = x.Category
-            // PurchaseRateAmt = vm.ProductPurchaseRates.Amount;
-
         }).ToList();
 
-        vm.ProductPurchaseRates = await _context.ProductPurchaseRates.ToListAsync();
+        //if we have extra property on vm we can add here using either foreach loop or others as above, also done on ProductQuantityUnitRateController
 
-        foreach (var product in vm.ProductWithPurchaseRateVms)
-        {
-            foreach (var productRate in vm.ProductPurchaseRates)
-            {
-                if (product.ProductId == productRate.ProductId)
-                {
-                    product.PurchaseRateAmt = productRate.Amount;
-                }
-            }
-        }
-
-
-        vm.Units = await _context.Units.ToListAsync(); //for searching process
+        vm.Categories = await _context.Categories.ToListAsync(); //for searching process
 
 
         return View(vm);

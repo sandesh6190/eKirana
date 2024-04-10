@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using eKirana.Data;
 
@@ -11,9 +12,11 @@ using eKirana.Data;
 namespace eKirana.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240409145721_ProductStockQuantityAdd")]
+    partial class ProductStockQuantityAdd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -115,38 +118,6 @@ namespace eKirana.Migrations
                     b.ToTable("ProductPurchaseRates");
                 });
 
-            modelBuilder.Entity("eKirana.Models.ProductQuantityUnitRate", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<bool>("IsBaseUnit")
-                        .HasColumnType("bit");
-
-                    b.Property<long>("ProductId")
-                        .HasColumnType("bigint");
-
-                    b.Property<decimal>("Ratio")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("Stock_Quantity")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<long>("UnitId")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("UnitId");
-
-                    b.ToTable("ProductQuantityUnitRates");
-                });
-
             modelBuilder.Entity("eKirana.Models.ProductSaleRate", b =>
                 {
                     b.Property<long>("Id")
@@ -174,6 +145,32 @@ namespace eKirana.Migrations
                     b.HasIndex("UnitId");
 
                     b.ToTable("ProductSaleRates");
+                });
+
+            modelBuilder.Entity("eKirana.Models.ProductStockQuantity", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("ProductId")
+                        .HasColumnType("bigint");
+
+                    b.Property<decimal>("Stock_Quantity")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<long>("UnitId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UnitId");
+
+                    b.ToTable("ProductStockQuantities");
                 });
 
             modelBuilder.Entity("eKirana.Models.Purchase", b =>
@@ -424,7 +421,7 @@ namespace eKirana.Migrations
                     b.Navigation("Unit");
                 });
 
-            modelBuilder.Entity("eKirana.Models.ProductQuantityUnitRate", b =>
+            modelBuilder.Entity("eKirana.Models.ProductSaleRate", b =>
                 {
                     b.HasOne("eKirana.Models.Product", "Product")
                         .WithMany()
@@ -443,7 +440,7 @@ namespace eKirana.Migrations
                     b.Navigation("Unit");
                 });
 
-            modelBuilder.Entity("eKirana.Models.ProductSaleRate", b =>
+            modelBuilder.Entity("eKirana.Models.ProductStockQuantity", b =>
                 {
                     b.HasOne("eKirana.Models.Product", "Product")
                         .WithMany()

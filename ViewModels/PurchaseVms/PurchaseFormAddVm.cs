@@ -17,7 +17,7 @@ public class PurchaseFormAddVm //for formma dekhauna ko lagi matrei banayeko vm 
         );
     }
 
-    public DateTime PurchaseDate { get; set; } //yo lakbak chaindeina
+    public DateTime PurchaseDate { get; set; } = DateTime.Now;//yo lakbak chaindeina
 
     public long? ProductId { get; set; }
     public List<Product>? Products;

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QpBrHw4RLQJa1EEDJDQJneKlYbQQfc/U48wRlZsQYwM=",
+  "Hash": "z7+uTQgkkw3GV8jDyQHF5C2pBQFYBFQN1hTOUFlIWJU=",
   "Source": "eKirana",
   "BasePath": "_content/eKirana",
   "Mode": "Default",
@@ -7191,6 +7191,23 @@
       "OriginalItemSpec": "wwwroot\\Login\\Login.css"
     },
     {
+      "Identity": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\228eef40-1892-493e-bbdb-189faedbe870..png",
+      "SourceId": "eKirana",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\",
+      "BasePath": "_content/eKirana",
+      "RelativePath": "Uploads/Photos/228eef40-1892-493e-bbdb-189faedbe870..png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Photos\\228eef40-1892-493e-bbdb-189faedbe870..png"
+    },
+    {
       "Identity": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\3825b3e2-4c60-46d9-8c5b-02533dc85264",
       "SourceId": "eKirana",
       "SourceType": "Discovered",
@@ -7325,6 +7342,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\Photos\\e4c7563d-83f0-4870-a028-270474fe4e2c"
+    },
+    {
+      "Identity": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\f3acabed-facd-49b6-a10a-b1c210697a81..png",
+      "SourceId": "eKirana",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\",
+      "BasePath": "_content/eKirana",
+      "RelativePath": "Uploads/Photos/f3acabed-facd-49b6-a10a-b1c210697a81..png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Photos\\f3acabed-facd-49b6-a10a-b1c210697a81..png"
     }
   ]
 }

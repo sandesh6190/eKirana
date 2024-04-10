@@ -157,7 +157,7 @@ nagareko *@
 <script>
     //marking or mapping section
     const addBtn = document.querySelector("#Add");
-    const templateRowElm = document.querySelector("item_row");
+    const templateRowElm = document.querySelector("#item_row");
     const itemListElm = document.querySelector("#item_list");
     const removeBtn = document.querySelector("#remove");
     const checkoutBtn = document.querySelector("#checkout");
@@ -166,31 +166,32 @@ nagareko *@
     const purchaseDateElm = document.querySelector("#PurchaseDate");
     //--adding row(inputed data) to the list
     const rowElms = {
-        product: document.querySelector("#ProductId");
-        quantity: document.querySelector("#f_quantity");
-        unit: document.querySelector("#UnitId");
-        rate: document.querySelector("#f_rate");
-        subTotal: document.querySelector("f_subTotal");
-        vatAmt: document.querySelector("f_VATAmount");
-        discount: document.querySelector("#f_discount");
-        netAmt: document.querySelector("f_netAmt");
-    }
+        product: document.querySelector("#ProductId"),
+        quantity: document.querySelector("#f_quantity"),
+        unit: document.querySelector("#UnitId"),
+        rate: document.querySelector("#f_rate"),
+        subTotal: document.querySelector("#f_subTotal"),
+        vatAmt: document.querySelector("#f_VATAmount")
+        discount: document.querySelector("#f_discount"),
+        netAmt: document.querySelector("#f_netAmt")
+    };
 
     rowElms.product.addEventListener('change', getRateAmt);
     rowElms.unit.addEventListener('change', getRateAmt);
 
     function getRateAmt() {
-        const productId: rowElms.product.value;
-        const unitId: rowElms.unit.value;
+        const productId = rowElms.product.value;
+        const unitId = rowElms.unit.value;
         if (!productId) {
-            rowElms.product.value = 0;
+            rowElms.rate.value = 0;
             return;
         }
 
-        fetch("Purchase/GetProductRate?ProductId=" + productId + "&UnitId=" + unitId).then(res => res.json())
+        fetch("/Purchase/GetProductRate?ProductId=" + productId + "&UnitId=" + unitId).then(res => res.json())
             .then(data => {
+                console.log(data);
                 rowElms.rate.value = data.purchaseRate;
-            })
+            });
     });
 
 
@@ -275,14 +276,14 @@ nagareko *@
         for (const elm of dataHubElms) {
             data.push({
                 ProductId: elm.dataset.productId,
-                Quantity: elm.dataset.quantity
+                Quantity: elm.dataset.quantity,
                 UnitId: elm.dataset.unitId,
                 Rate: elm.dataset.rate,
                 SubTotal: elm.dataset.subTotal,
                 VATAmt: elm.dataset.vatAmt,
                 DisAmt: elm.dataset.disAmt,
                 NetAmt: elm.dataset.netAmt
-            })
+            });
         }
 
         const requestData = {
@@ -302,7 +303,7 @@ nagareko *@
             if (!res.ok) {
                 throw new Error('Network response was not ok');
             }
-            return res.JSON();
+            return res.json();
         }).then(x => {
             console.log('Server response:', x);
             if (x.success) {
@@ -311,7 +312,7 @@ nagareko *@
             else {
                 alert("Error recording purchase");
             }
-        })
+        });
     });
 
 
