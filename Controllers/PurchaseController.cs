@@ -46,11 +46,7 @@ public class PurchaseController : Controller
         {
             if (!ModelState.IsValid)
             {
-                // vm.Suppliers = await _context.Suppliers.ToListAsync();
-                // vm.Products = await _context.Products.ToListAsync();
-                // vm.Units = await _context.Units.ToListAsync();
-                _notification.Warning("Invalid Input.");
-                return View(vm);
+                throw new Exception("Invalid Input.");
             }
 
             var currentAdmin = await _currentAdminProvider.GetCurrentAdmin();
@@ -86,19 +82,18 @@ public class PurchaseController : Controller
                 purchaseDetail.Discount = purchaseDetailVm.Discount;
                 purchaseDetail.NetAmount = purchaseDetailVm.NetAmount;
 
-                var products = await _context.Products.Where(x => x.Id == purchaseDetailVm.ProductId).ToListAsync();
-                foreach (var product in products)
+                var PrdQUR = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == purchaseDetailVm.ProductId).ToListAsync();
+                foreach (var prdQUR in PrdQUR)
                 {
-                    // if (product.UnitId == null)
-                    // {
-                    //     product.Stock_Quantity = product.Stock_Quantity + purchaseDetailVm.Quantity;
-                    //     product.UnitId = purchaseDetailVm.UnitId;
-                    // }
-                    // else if (product.UnitId == purchaseDetailVm.UnitId)
-                    // {
-                    //     product.Stock_Quantity = product.Stock_Quantity + purchaseDetailVm.Quantity;
-                    // }
-                    _context.Products.Update(product);
+                    if (prdQUR.UnitId == purchaseDetailVm.UnitId)
+                    {
+                        prdQUR.Stock_Quantity = prdQUR.Stock_Quantity + purchaseDetailVm.Quantity;
+                    }
+                    else
+                    {
+                        throw new Exception("Set and Add Valid Unit For Product.");
+                    }
+                    _context.ProductQuantityUnitRates.Update(prdQUR);
 
                 }
 
@@ -120,6 +115,7 @@ public class PurchaseController : Controller
 
             purchase.TotalPaidAmount = TotalAmount;
 
+            //_context.Suppliers.Update(supplier); not necessary
             _context.Purchases.Add(purchase);
 
             await _context.SaveChangesAsync();
@@ -144,7 +140,7 @@ public class PurchaseController : Controller
     }
     public async Task<IActionResult> GetProductRate(long? productId, long? unitId)
     {
-        var PurchaseRate = await _context.ProductPurchaseRates.Where(x => x.Product.Id == productId && x.UnitId == unitId).FirstOrDefaultAsync();
+        var PurchaseRate = await _context.ProductPurchaseRates.Where(x => x.ProductId == productId && x.UnitId == unitId).FirstOrDefaultAsync();
 
 
         if (PurchaseRate != null)

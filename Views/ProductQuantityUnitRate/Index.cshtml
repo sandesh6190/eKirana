@@ -21,6 +21,7 @@
                         @* <input class="form-control me-sm-2" type="number" asp-for="Min_Stock_Quantity" placeholder="Min-Quantity">
                         <input class="form-control me-sm-2" type="number" asp-for="Max_Stock_Quantity" placeholder="Max-Quantity" name="" id=""> *@
 
+                        <input type="hidden" asp-for="ProductId" value="@Model.ProductId">
                         <select asp-for="UnitId" class="form-control" asp-items="@Model.UnitSelectList()">
                         <option value="">-- SELECT A UNIT --</option>
                     </select>
@@ -82,13 +83,13 @@
                                             @prdQUR.Ratio
                                     </td>
                                     <td class="text-end">
-                                        
-                                        <a asp-action="Edit" asp-route-prdQURId="@prdQUR.PrdQURId" class="btn btn-primary btn-md"><i
+                                        <a asp-action="EditProductUnit" asp-route-prdQURId="@prdQUR.PrdQURId" asp-route-ProductId="@prdQUR.Product.Id" 
+                                        class="btn btn-primary btn-md"><i
                                                 class="bi bi-pencil-square"></i>
                                         </a>
                                         <form asp-action="Delete" asp-route-prdQURId="@prdQUR.PrdQURId" class="d-inline">
                                             @* for passing ProductId to controller *@
-                                            <input type="hidden" name="ProductId" value="@prdQUR.Product.Id"> 
+                                            <input type="hidden" asp-for="ProductId" value="@prdQUR.Product.Id"> 
                                             <button type="submit" class="btn btn-danger btn-md"
                                                 onclick="return confirm('Do you really want to delete?')"><i
                                                     class="bi bi-trash"></i></button>

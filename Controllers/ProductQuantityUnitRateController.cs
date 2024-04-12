@@ -80,10 +80,11 @@ public class ProductQuantityUnitRateController : Controller
         {
             if (!ModelState.IsValid)
             {
-                vm.ProductId = ProductId;
-                vm.Units = await _context.Units.ToListAsync();
-                _notification.Warning("Invalid Data.");
-                return View(vm);
+                throw new Exception("Invalid Data."); //better technique
+                // vm.ProductId = ProductId;
+                // vm.Units = await _context.Units.ToListAsync();
+                // _notification.Warning("Invalid Data.");
+                // return View(vm);
             }
 
             var prdUnit = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == ProductId && x.UnitId == vm.UnitId).FirstOrDefaultAsync();
@@ -121,6 +122,71 @@ public class ProductQuantityUnitRateController : Controller
         }
     }
 
+
+    public async Task<IActionResult> EditProductUnit(long ProductId, long PrdQURId) //ProductId bharei Indexko lagi matrei ho
+    {
+        try
+        {
+            var prdQUR = await _context.ProductQuantityUnitRates.Where(x => x.Id == PrdQURId).FirstOrDefaultAsync();
+
+            if (prdQUR == null)
+            {
+                throw new Exception("No Data Found.");
+            }
+            var vm = new EditProductQuantityUnitRateVm();
+            vm.ProductId = ProductId; //for index page
+            vm.UnitId = prdQUR.UnitId;
+            vm.IsBaseUnit = prdQUR.IsBaseUnit;
+            vm.Ratio = prdQUR.Ratio;
+
+            vm.Units = await _context.Units.ToListAsync();
+
+            return View(vm);
+        }
+
+        catch (Exception e)
+        {
+            _notification.Error(e.Message);
+            return RedirectToAction("Index", new { ProductId = ProductId });
+        }
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> EditProductUnit(long ProductId, long PrdQURId, EditProductQuantityUnitRateVm vm)
+    {
+        try
+        {
+            if (!ModelState.IsValid)
+            {
+                throw new Exception("Invalid Input.");
+            }
+
+            var prdQUR = await _context.ProductQuantityUnitRates.Where(x => x.Id == PrdQURId).FirstOrDefaultAsync();
+            if (prdQUR == null)
+            {
+                throw new Exception("No Data Found.");
+            }
+
+            using var tx = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
+            prdQUR.UnitId = vm.UnitId;
+            prdQUR.IsBaseUnit = vm.IsBaseUnit;
+            prdQUR.Ratio = vm.Ratio;
+
+            await _context.SaveChangesAsync();
+            tx.Complete();
+
+            _notification.Success("Record Edited.");
+            return RedirectToAction("Index", new { ProductId = ProductId });
+        }
+        catch (Exception e)
+        {
+            vm.Units = await _context.Units.ToListAsync();
+            _notification.Warning(e.Message);
+            return View(vm);
+        }
+    }
+
+    [HttpPost]
     public async Task<IActionResult> Delete(long ProductId, long prdQURId) //ProductId is for passing ProductId to index action and page
     {
         try

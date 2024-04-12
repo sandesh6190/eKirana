@@ -94,10 +94,7 @@ public class ProductController : Controller
         {
             if (!ModelState.IsValid)
             {
-                vm.Brands = await _context.Brands.ToListAsync();
-                vm.Categories = await _context.Categories.ToListAsync();
-                _notification.Warning("Invalid Input.");
-                return View(vm);
+                throw new Exception("Invalid Input.");
             }
 
             var prd = await _context.Products.Where(x => x.Name == vm.Name && x.Brand.Id == vm.BrandId).FirstOrDefaultAsync();
@@ -149,6 +146,8 @@ public class ProductController : Controller
         }
         catch (Exception e)
         {
+            vm.Brands = await _context.Brands.ToListAsync();
+            vm.Categories = await _context.Categories.ToListAsync();
             _notification.Error(e.Message);
             return View(vm);
         }
@@ -190,9 +189,10 @@ public class ProductController : Controller
         {
             if (!ModelState.IsValid)
             {
-                _notification.Warning("Invalid Input.");
-                vm.Categories = await _context.Categories.ToListAsync();
-                return View(vm);
+                // _notification.Warning("Invalid Input.");
+                // vm.Categories = await _context.Categories.ToListAsync();
+                // return View(vm);
+                throw new Exception("Invalid Input.");
             }
 
             var product = await _context.Products.Where(x => x.Id == Id).FirstOrDefaultAsync();
@@ -241,6 +241,7 @@ public class ProductController : Controller
         }
         catch (Exception e)
         {
+            vm.Categories = await _context.Categories.ToListAsync();
             _notification.Error(e.Message);
             return View(vm);
         }

@@ -16,8 +16,8 @@ public class PurchaseItemVm
     //         ProductId
     //     );
     // }
-    public decimal? Rate { get; set; }
-    public decimal? Quantity { get; set; }
+    public decimal Rate { get; set; }
+    public decimal Quantity { get; set; }
     public long? UnitId { get; set; }
     // public List<Unit> Units;
     // public SelectList UnitSelectList()
