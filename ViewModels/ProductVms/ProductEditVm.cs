@@ -19,6 +19,19 @@ public class ProductEditVm
             CategoryId
         );
     }
+    public long? BrandId { get; set; }
+    public List<Brand> Brands;
+    //select list of brand
+    public SelectList BrandSelectList()
+    {
+        return new SelectList(
+            Brands,
+            nameof(Brand.Id),
+            nameof(Brand.BrandName),
+            BrandId
+        );
+    }
+
     public string ProductVATorNOT { get; set; }
     public SelectList ProductVATorNOTSelectList()
     {

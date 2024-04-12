@@ -2,7 +2,7 @@
 using AspNetCoreHero.ToastNotification.Abstractions;
 using eKirana.Data;
 using eKirana.Models.SetUp;
-using eKirana.ViewModels.SetUp;
+using eKirana.ViewModels.SetUp.CategoryVms;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

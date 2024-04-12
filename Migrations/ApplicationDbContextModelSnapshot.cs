@@ -66,6 +66,9 @@ namespace eKirana.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<long?>("BrandId")
+                        .HasColumnType("bigint");
+
                     b.Property<long?>("CategoryId")
                         .HasColumnType("bigint");
 
@@ -80,6 +83,8 @@ namespace eKirana.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BrandId");
 
                     b.HasIndex("CategoryId");
 
@@ -298,6 +303,26 @@ namespace eKirana.Migrations
                     b.ToTable("SaleDetails");
                 });
 
+            modelBuilder.Entity("eKirana.Models.SetUp.Brand", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("BrandName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateModified")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Brands");
+                });
+
             modelBuilder.Entity("eKirana.Models.SetUp.Category", b =>
                 {
                     b.Property<long?>("Id")
@@ -402,9 +427,15 @@ namespace eKirana.Migrations
 
             modelBuilder.Entity("eKirana.Models.Product", b =>
                 {
+                    b.HasOne("eKirana.Models.SetUp.Brand", "Brand")
+                        .WithMany()
+                        .HasForeignKey("BrandId");
+
                     b.HasOne("eKirana.Models.SetUp.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId");
+
+                    b.Navigation("Brand");
 
                     b.Navigation("Category");
                 });

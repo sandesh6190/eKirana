@@ -6,9 +6,10 @@ public class IndexProductQuantityUnitRateVm
 {
     //this vm is especially for searching only
     //for searching through unit
+    public long ProductId { get; set; }
     public long? UnitId { get; set; }
-    public List<Unit> Units;
-    public SelectList UnitSelectList()
+    public List<Unit>? Units;
+    public SelectList? UnitSelectList()
     {
         return new SelectList(
             Units,
@@ -19,5 +20,5 @@ public class IndexProductQuantityUnitRateVm
     }
 
     //for listing producQuantityUnitRate
-    public List<InfoProductQuantityUnitRateVm> InfoProductQuantityUnitRateVms; //yaha list of model garda pan hunthyo but would be bad practise
+    public List<InfoProductQuantityUnitRateVm>? InfoProductQuantityUnitRateVms; //yaha list of model garda pan hunthyo but would be bad practise
 }

@@ -46,6 +46,9 @@ public class PurchaseController : Controller
         {
             if (!ModelState.IsValid)
             {
+                // vm.Suppliers = await _context.Suppliers.ToListAsync();
+                // vm.Products = await _context.Products.ToListAsync();
+                // vm.Units = await _context.Units.ToListAsync();
                 _notification.Warning("Invalid Input.");
                 return View(vm);
             }

@@ -52,9 +52,11 @@ public class ProductController : Controller
         //         }
         //     }
         // }
-        var products = await _context.Products.Where(x => (string.IsNullOrEmpty(vm.Search) || x.Name.Contains(vm.Search))
+        var products = await _context.Products.Where(x =>
+        (string.IsNullOrEmpty(vm.Search) || x.Name.Contains(vm.Search))
+        && (vm.BrandId == null || x.BrandId == vm.BrandId)
         && (vm.CategoryId == null || vm.CategoryId == x.CategoryId)
-        && (vm.ProductVATorNOT == null || vm.ProductVATorNOT == x.ProductVATorNOT)).Include(x => x.Category).ToListAsync();
+        && (vm.ProductVATorNOT == null || vm.ProductVATorNOT == x.ProductVATorNOT)).Include(x => x.Category).Include(x => x.Brand).ToListAsync();
 
         //this is how we store data on vm
         vm.ProductInfoVms = products.Select(x => new ProductInfoVm()
@@ -62,13 +64,16 @@ public class ProductController : Controller
             ProductId = x.Id,
             Name = x.Name,
             Photo = x.Photo,
+            BrandName = x.Brand.BrandName,
             ProductVATorNOT = x.ProductVATorNOT,
-            Category = x.Category
+            Category = x.Category //not optimized technique, still done to understand
         }).ToList();
 
         //if we have extra property on vm we can add here using either foreach loop or others as above, also done on ProductQuantityUnitRateController
 
-        vm.Categories = await _context.Categories.ToListAsync(); //for searching process
+        //for searching process
+        vm.Brands = await _context.Brands.ToListAsync();
+        vm.Categories = await _context.Categories.ToListAsync();
 
 
         return View(vm);
@@ -77,6 +82,7 @@ public class ProductController : Controller
     public async Task<IActionResult> Add()
     {
         var vm = new ProductAddVm();
+        vm.Brands = await _context.Brands.ToListAsync();
         vm.Categories = await _context.Categories.ToListAsync();
         return View(vm);
     }
@@ -86,17 +92,19 @@ public class ProductController : Controller
     {
         try
         {
-            // if (!ModelState.IsValid)
-            // {
-            //     _notification.Warning("Invalid Input.");
-            //     return View(vm);
-            // }
+            if (!ModelState.IsValid)
+            {
+                vm.Brands = await _context.Brands.ToListAsync();
+                vm.Categories = await _context.Categories.ToListAsync();
+                _notification.Warning("Invalid Input.");
+                return View(vm);
+            }
 
-            var prd = await _context.Products.Where(x => x.Name == vm.Name).FirstOrDefaultAsync();
+            var prd = await _context.Products.Where(x => x.Name == vm.Name && x.Brand.Id == vm.BrandId).FirstOrDefaultAsync();
 
             if (prd != null)
             {
-                _notification.Warning("Product Name Already Existed.");
+                _notification.Warning("Product With Given Brand Already Existed.");
                 return View(vm);
             }
 
@@ -125,6 +133,7 @@ public class ProductController : Controller
             var product = new Product();
             product.Name = vm.Name;
             product.Photo = fileName;
+            product.BrandId = vm.BrandId;
             product.CategoryId = vm.CategoryId;
             product.ProductVATorNOT = vm.ProductVATorNOT;
 
@@ -157,6 +166,7 @@ public class ProductController : Controller
             var vm = new ProductEditVm();
             vm.Name = prd.Name;
             // vm.Photo = prd.Photo;
+            vm.BrandId = prd.BrandId;
             vm.CategoryId = prd.CategoryId;
             vm.ProductVATorNOT = prd.ProductVATorNOT;
 
@@ -214,6 +224,7 @@ public class ProductController : Controller
             using var tx = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
 
             product.Name = vm.Name;
+            product.BrandId = vm.BrandId;
             product.CategoryId = vm.CategoryId;
             product.ProductVATorNOT = vm.ProductVATorNOT;
 

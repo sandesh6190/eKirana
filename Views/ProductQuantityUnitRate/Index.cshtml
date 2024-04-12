@@ -5,7 +5,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h4 class="card-title ">List of Product with Quantity, Unit and Rate</h4>
 
-                <a href="/Product/Add" class="btn btn-success "><span class="bi bi-file-plus"></span> Add
+                <a asp-controller="ProductQuantityUnitRate" asp-action="AddProductUnit" asp-route-ProductId="@Model.ProductId" class="btn btn-success "><span class="bi bi-file-plus"></span> Add Product
                     Unit</a>
             </div>
         </div>
@@ -38,6 +38,9 @@
                             <th scope="col">Unit</th> 
                             <th scope="col">Purchase Rate</th> 
                             <th scope="col">Sales Rate</th> 
+                            <th scope="col">Base Unit</th> 
+                            <th scope="col">Ratio</th> 
+
                             <th scope="col" class="text-end"></th>
                         </tr>
                     </thead>
@@ -58,11 +61,9 @@
                                                                                                       width: 2vw;"
                                             class="w-50" alt="description" src="/Uploads/Photos/@prdQUR.Product.Photo" />@prdQUR.Product.Name
 
-                                    </td>
-
-                                        
+                                    </td>                                        
                                     <td>
-                                            @prdQUR.Quanity
+                                            @prdQUR.Quantity
                                     </td>
                                     <td>
                                             @prdQUR.Unit?.Name
@@ -74,11 +75,20 @@
                                     <td>
                                             @prdQUR.SaleRate
                                     </td>
+                                    <td>
+                                            @prdQUR.IsBaseUnit
+                                    </td>
+                                    <td>
+                                            @prdQUR.Ratio
+                                    </td>
                                     <td class="text-end">
-                                        <a asp-action="Edit" asp-route-id="@prdQUR.Product.Id" class="btn btn-primary btn-md"><i
+                                        
+                                        <a asp-action="Edit" asp-route-prdQURId="@prdQUR.PrdQURId" class="btn btn-primary btn-md"><i
                                                 class="bi bi-pencil-square"></i>
                                         </a>
-                                        <form asp-action="Delete" asp-route-id="@prdQUR.Product.Id" class="d-inline">
+                                        <form asp-action="Delete" asp-route-prdQURId="@prdQUR.PrdQURId" class="d-inline">
+                                            @* for passing ProductId to controller *@
+                                            <input type="hidden" name="ProductId" value="@prdQUR.Product.Id"> 
                                             <button type="submit" class="btn btn-danger btn-md"
                                                 onclick="return confirm('Do you really want to delete?')"><i
                                                     class="bi bi-trash"></i></button>

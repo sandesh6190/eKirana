@@ -10,18 +10,18 @@ public class ProductIndexVm
     // public long? Min_Stock_Quantity { get; set; }
     // public long? Max_Stock_Quantity { get; set; }
     // //field to accept input
-    // public long? UnitId { get; set; }
-    // //displaying list of unit to proceed searching
-    // public List<Unit> Units;
-    // //select list of unit
-    // public SelectList UnitSelectList()
-    // {
-    //     return new SelectList(
-    //         Units,
-    //         nameof(Unit.Id),
-    //         nameof(Unit.Name)
-    //     );
-    // }
+    public long? BrandId { get; set; }
+    public List<Brand> Brands;
+    //select list of unit
+    public SelectList BrandSelectList()
+    {
+        return new SelectList(
+            Brands,
+            nameof(Brand.Id),
+            nameof(Brand.BrandName),
+            BrandId
+        );
+    }
     public long? CategoryId { get; set; }
     //displaying list of categories to proceed searching
     public List<Category> Categories;

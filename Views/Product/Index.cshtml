@@ -17,13 +17,10 @@
             <div class="row mb-2">
                 <form action="" class="d-flex align-items-center">
                     <input class="form-control me-sm-2" type="search" asp-for="Search" placeholder="Search"
-                        autocomplete="off">
-                        @* <input class="form-control me-sm-2" type="number" asp-for="Min_Stock_Quantity" placeholder="Min-Quantity">
-                        <input class="form-control me-sm-2" type="number" asp-for="Max_Stock_Quantity" placeholder="Max-Quantity" name="" id="">
-
-                        <select asp-for="UnitId" class="form-control" asp-items="@Model.UnitSelectList()">
-                        <option value="">-- SELECT A UNIT --</option>
-                    </select> *@
+                        autocomplete="off">        
+                        <select asp-for="BrandId" class="form-control" asp-items="@Model.BrandSelectList()">
+                            <option value="">-- SELECT A BRAND --</option>
+                        </select>
                     <select asp-for="CategoryId" class="form-control" asp-items="@Model.CategorySelectList()">
                         <option value="">-- SELECT A CATEGORY --</option>
                     </select>
@@ -40,6 +37,8 @@
                         <tr>
                             <th scope="col" width="80px">SN</th>
                             <th scope="col">Name</th>
+                            <th scope="col">Brand Name</th>
+
                             <th scope="col">Type</th>
                             @* <th scope="col">Stock Quantity</th>
                             <th scope="col">Unit</th> *@
@@ -66,7 +65,9 @@
                                             class="w-50" alt="description" src="/Uploads/Photos/@product.Photo" />@product.Name
 
                                     </td>
-
+<td>
+                            @product.BrandName
+                            </td>
                                         <td>
                             @product.ProductVATorNOT
                             </td>
@@ -83,7 +84,7 @@
                                             @product.PurchaseRateAmt
                                     </td> *@
                                     <td class="text-end">
-                                        <a asp-controller="ProductQuantityUnitRate" asp-action="Index"  asp-route-id="@product.ProductId" class="btn btn-primary btn-md"><i
+                                        <a asp-controller="ProductQuantityUnitRate" asp-action="Index"  asp-route-ProductId="@product.ProductId" class="btn btn-primary btn-md"><i
                                                 class="bi bi-pencil-square">View Quantity Rate</i>
                                         </a>
                                         <a asp-action="Edit" asp-route-id="@product.ProductId" class="btn btn-primary btn-md"><i

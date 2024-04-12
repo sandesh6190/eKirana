@@ -7,11 +7,8 @@ public class ProductInfoVm
     public long? ProductId { get; set; }
     public string? Name { get; set; }
     public string? Photo { get; set; }
+
     public string ProductVATorNOT { get; set; }
-    // public decimal? Stock_Quantity { get; set; }
-    // public long? UnitId { get; set; }
-    // public Unit? Unit { get; set; }
-    // public long? CategoryId { get; set; }
-    public Category? Category { get; set; }
-    // public decimal? PurchaseRateAmt { get; set; } //for only displaying on product index
+    public Category? Category { get; set; } //yesma category model ko dherai property access garna sakincha but alik optimized nahuna skcha bhane..brandName ko ma brandnName matra tanera vmma pathauda alik optimized huna jancha mero bicharma
+    public string? BrandName { get; set; }
 }

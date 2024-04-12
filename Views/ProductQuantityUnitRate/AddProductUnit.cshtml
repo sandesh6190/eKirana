@@ -1,0 +1,53 @@
+@model eKirana.ViewModels.ProductQuantityUnitRateVms.AddProductQuantityUnitRateVm
+
+<form method="post">
+
+    <div class="container mt-4">
+        <div class="card shadow-lg">
+            <div class="card-header">
+                <h4 class="card-title text-center text-success text-uppercase">Adding Product Unit</h4>
+            </div>
+            <div class="card-body">
+                <div style="border-top: 4px solid;" class="mb-2 border-success">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="Unit" class="form-label">Unit</label>
+                        <select asp-for="UnitId" class="form-control" asp-items="@Model.UnitSelectList()">
+                            <option value="">-- SELECT A UNIT --</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="Is Base Unit" class="form-label">Is Base Unit</label>
+                        <select asp-for="IsBaseUnit" class="form-control">
+                            <option value="">-- IS BASE UNIT --</option>
+                            <option value="true">YES</option>
+                            <option value="false">NO</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="Ratio" class="form-label">Ratio </label>
+                            <input type="number" class="form-control" asp-for="Ratio" placeholder="Ratio" required>
+                        </div>
+                        @* <div class="col-md-6 mb-3">
+                        <label for="Photo" class="form-label">Photo</label>
+                        <input type="file" class="form-control" asp-for="Photo" required>
+                        </div> *@
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="card-footer">
+                <div class="col-12 text-center">
+                    <input type="hidden" asp-for="ProductId" value="@Model.ProductId" />
+                    <button type="submit" class="btn btn-success w-100">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
