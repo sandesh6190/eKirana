@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using eKirana.Data;
 
@@ -11,9 +12,11 @@ using eKirana.Data;
 namespace eKirana.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240414122552_SaleModelUpdate")]
+    partial class SaleModelUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -134,11 +137,11 @@ namespace eKirana.Migrations
                     b.Property<long>("ProductId")
                         .HasColumnType("bigint");
 
-                    b.Property<long>("Ratio")
-                        .HasColumnType("bigint");
+                    b.Property<decimal>("Ratio")
+                        .HasColumnType("decimal(18,2)");
 
-                    b.Property<long>("Stock_Quantity")
-                        .HasColumnType("bigint");
+                    b.Property<decimal>("Stock_Quantity")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<long>("UnitId")
                         .HasColumnType("bigint");
@@ -231,8 +234,8 @@ namespace eKirana.Migrations
                     b.Property<long?>("PurchaseId")
                         .HasColumnType("bigint");
 
-                    b.Property<long>("Quantity")
-                        .HasColumnType("bigint");
+                    b.Property<decimal>("Quantity")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("Rate")
                         .HasColumnType("decimal(18,2)");

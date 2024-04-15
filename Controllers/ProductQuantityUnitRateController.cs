@@ -24,31 +24,38 @@ public class ProductQuantityUnitRateController : Controller
     {
         vm.ProductId = ProductId; //passing product btween different view pages of different controller
         vm.Units = await _context.Units.ToListAsync();
-        var prdQURs = await _context.ProductQuantityUnitRates.Where(x => (x.ProductId == ProductId) && (vm.UnitId == null || vm.UnitId == x.UnitId)).Include(x => x.Product).Include(x => x.Unit).ToListAsync();
+        var prdQURs = await _context.ProductQuantityUnitRates.Where(x => (x.ProductId == ProductId) && (vm.UnitId == null || vm.UnitId == x.UnitId)).Include(x => x.Product).Include(x => x.Unit).OrderByDescending(x => x.Ratio).ToListAsync();
+
+        var prdBaseStockQuantity = await _context.ProductQuantityUnitRates.Where(x => x.IsBaseUnit == true).FirstOrDefaultAsync();
 
         vm.InfoProductQuantityUnitRateVms = prdQURs.Select(x => new InfoProductQuantityUnitRateVm()
         {
             PrdQURId = x.Id,
             Product = x.Product,
-            Quantity = x.Stock_Quantity,
-            Unit = x.Unit,
+            UnitId = x.Unit.Id,
+            UnitName = x.Unit.Name,
             IsBaseUnit = x.IsBaseUnit,
             Ratio = x.Ratio,
         }).ToList();
 
-        //filling remaining properties of InfoProductQuantityUnitRateVm from different models
 
-        var purchaseRates = await _context.ProductPurchaseRates.Where(x => x.ProductId == ProductId).ToListAsync();
+
+        //filling remaining properties of InfoProductQuantityUnitRateVm from different models
 
         foreach (var prdQUR in vm.InfoProductQuantityUnitRateVms)
         {
-            foreach (var purchaseRate in purchaseRates)
+            if (prdBaseStockQuantity.Stock_Quantity != 0)
             {
-                if (prdQUR.Unit.Id == purchaseRate.UnitId)
-                {
-                    prdQUR.PurchaseRate = purchaseRate.Amount;
-                }
+                prdQUR.Quantity = prdBaseStockQuantity.Stock_Quantity / prdQUR.Ratio;
+                prdBaseStockQuantity.Stock_Quantity = prdBaseStockQuantity.Stock_Quantity % prdQUR.Ratio;
             }
+
+            var purchaseRates = await _context.ProductPurchaseRates.Where(x => x.ProductId == ProductId && x.UnitId == prdQUR.UnitId).FirstOrDefaultAsync();
+            if (purchaseRates != null)
+            {
+                prdQUR.PurchaseRate = purchaseRates.Amount;
+            }
+
         }
 
         var saleRates = await _context.ProductSaleRates.Where(x => x.ProductId == ProductId).ToListAsync();
@@ -57,7 +64,7 @@ public class ProductQuantityUnitRateController : Controller
         {
             foreach (var saleRate in saleRates)
             {
-                if (prdQUR.Unit.Id == saleRate.UnitId)
+                if (prdQUR.UnitId == saleRate.UnitId)
                 {
                     prdQUR.SaleRate = saleRate.Amount;
                 }

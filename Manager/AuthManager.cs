@@ -45,6 +45,10 @@ public class AuthManager : IAuthManager
         {
             claims.Add(new Claim(ClaimsIdentity.DefaultRoleClaimType, "SuperAdmin"));
         }
+        else if (admin.AdminType == AdminTypeConstants.NormalAdmin)
+        {
+            claims.Add(new Claim(ClaimsIdentity.DefaultRoleClaimType, "NormalAdmin"));
+        }
         var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
         await httpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
@@ -53,7 +57,7 @@ public class AuthManager : IAuthManager
 
     public async Task LogOut()
     {
-        _httpContextAccessor.HttpContext.SignOutAsync();
+        await _httpContextAccessor.HttpContext.SignOutAsync();
     }
 
     public async Task Register(string UserName, string Email, string PassWord)

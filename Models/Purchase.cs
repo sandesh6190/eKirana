@@ -11,5 +11,5 @@ public class Purchase
     public long? PurchaseById { get; set; }
     [ForeignKey("PurchaseById")]
     public virtual Admin Admin { get; set; }
-    public decimal? TotalPaidAmount { get; set; }
+    public decimal TotalPaidAmount { get; set; }
 }

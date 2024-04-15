@@ -5,7 +5,7 @@ namespace eKirana.ViewModels.ProductQuantityUnitRateVms;
 public class AddProductQuantityUnitRateVm
 {
     public long ProductId;
-    public decimal Ratio { get; set; }
+    public long Ratio { get; set; }
     public long UnitId { get; set; }
     public bool IsBaseUnit { get; set; }
     public List<Unit>? Units; //for selecting unit list

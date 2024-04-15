@@ -1,5 +1,6 @@
 ﻿using System.Transactions;
 using AspNetCoreHero.ToastNotification.Abstractions;
+using eKirana.Constants;
 using eKirana.Data;
 using eKirana.Models;
 using eKirana.Provider.Interfaces;
@@ -22,17 +23,17 @@ public class PurchaseController : Controller
 
     public async Task<IActionResult> Index(PurchaseIndexVm vm)
     {
-        vm.Purchases = await _context.Purchases.Where(x => (vm.SupplierId == null || vm.SupplierId == x.SupplierId) && (vm.PurchaseById == x.PurchaseById) && (vm.FromPurchaseDate == null || vm.FromPurchaseDate.Value.Date >= x.PurchaseDate.Date) && (vm.ToPurchaseDate == null || vm.ToPurchaseDate.Value.Date <= x.PurchaseDate.Date)).Include(x => x.Supplier).Include(x => x.Admin).ToListAsync();
+        vm.Purchases = await _context.Purchases.Where(x => (vm.SupplierId == null || vm.SupplierId == x.SupplierId) && (vm.PurchaseById == null || vm.PurchaseById == x.PurchaseById) && (vm.FromPurchaseDate == null || x.PurchaseDate.Date <= vm.FromPurchaseDate.Value.Date) && (vm.ToPurchaseDate == null || x.PurchaseDate.Date >= vm.ToPurchaseDate.Value.Date)).Include(x => x.Supplier).Include(x => x.Admin).ToListAsync();
 
-        vm.Admins = await _context.Admins.ToListAsync();
-        vm.Suppliers = await _context.Suppliers.ToListAsync();
+        vm.Admins = await _context.Admins.Where(x => x.AdminStatus == AdminStatusConstants.Active).ToListAsync();
+        vm.Suppliers = await _context.Suppliers.Where(x => x.SupplierStatus == SupplierStatusConstants.Active).ToListAsync();
         return View(vm);
     }
 
     public async Task<IActionResult> Add()
     {
         var vm = new PurchaseFormAddVm();
-        vm.Suppliers = await _context.Suppliers.ToListAsync();
+        vm.Suppliers = await _context.Suppliers.Where(x => x.SupplierStatus == SupplierStatusConstants.Active).ToListAsync();
         vm.Products = await _context.Products.ToListAsync();
         vm.Units = await _context.Units.ToListAsync();
 
@@ -59,6 +60,7 @@ public class PurchaseController : Controller
             purchase.PurchaseDate = vm.PurchaseDate;
             purchase.PurchaseById = currentAdmin.Id;
 
+
             //changes on supplier model
             var supplier = await _context.Suppliers.Where(x => x.Id == vm.SupplierId).FirstOrDefaultAsync();
             if (supplier == null)
@@ -67,9 +69,9 @@ public class PurchaseController : Controller
             }
             supplier.LastTransaction = DateTime.Now;
 
-            decimal? TotalAmount = 0.00m;
+            decimal TotalAmount = 0.00m;
 
-            foreach (var purchaseDetailVm in vm.PurchaseItems)
+            foreach (var purchaseDetailVm in vm.PurchaseItemVms)
             {
                 var purchaseDetail = new PurchaseDetail();
                 purchaseDetail.PurchaseId = purchase.Id;
@@ -82,35 +84,46 @@ public class PurchaseController : Controller
                 purchaseDetail.Discount = purchaseDetailVm.Discount;
                 purchaseDetail.NetAmount = purchaseDetailVm.NetAmount;
 
-                var PrdQUR = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == purchaseDetailVm.ProductId).ToListAsync();
-                foreach (var prdQUR in PrdQUR)
-                {
-                    if (prdQUR.UnitId == purchaseDetailVm.UnitId)
-                    {
-                        prdQUR.Stock_Quantity = prdQUR.Stock_Quantity + purchaseDetailVm.Quantity;
-                    }
-                    else
-                    {
-                        throw new Exception("Set and Add Valid Unit For Product.");
-                    }
-                    _context.ProductQuantityUnitRates.Update(prdQUR);
+                var prdQUR = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == purchaseDetailVm.ProductId && x.IsBaseUnit == true).FirstOrDefaultAsync();
 
+                var prdRatio = await _context.ProductQuantityUnitRates.Where(x => x.UnitId == purchaseDetailVm.UnitId).FirstOrDefaultAsync();
+
+                if (prdQUR.UnitId != purchaseDetailVm.UnitId)
+                {
+                    long baseStockQuantity = purchaseDetailVm.Quantity * prdRatio.Ratio;
+                    prdQUR.Stock_Quantity = prdQUR.Stock_Quantity + baseStockQuantity;
+                }
+                else
+                {
+                    prdQUR.Stock_Quantity = prdQUR.Stock_Quantity + purchaseDetailVm.Quantity;
+                }
+                _context.ProductQuantityUnitRates.Update(prdQUR);
+
+                //for purchaseRate
+                var purchaseRate = await _context.ProductPurchaseRates.Where(x => x.UnitId == purchaseDetailVm.UnitId).FirstOrDefaultAsync();
+
+                if (purchaseRate == null)
+                {
+                    var purRate = new ProductPurchaseRate();
+                    purRate.ProductId = purchaseDetailVm.ProductId;
+                    purRate.UnitId = purchaseDetailVm.UnitId;
+                    purRate.Amount = purchaseDetailVm.Rate;
+                    purRate.DateModified = DateTime.Now;
+                    _context.ProductPurchaseRates.Add(purRate);
+                }
+                else if (purchaseRate != null)
+                {
+                    purchaseRate.Amount = purchaseDetailVm.Rate;
+                    purchaseRate.DateModified = DateTime.Now;
+                    _context.ProductPurchaseRates.Update(purchaseRate);
                 }
 
 
-
-                //for purchaseRate
-                var purchaseRate = new ProductPurchaseRate();
-                purchaseRate.ProductId = purchaseDetailVm.ProductId;
-                purchaseRate.UnitId = purchaseDetailVm.UnitId;
-                purchaseRate.Amount = purchaseDetailVm.Rate;
-                purchaseRate.DateModified = DateTime.Now;
 
                 TotalAmount = TotalAmount + purchaseDetail.NetAmount;
 
                 _context.PurchaseDetails.Add(purchaseDetail);
 
-                _context.ProductPurchaseRates.Add(purchaseRate);
             }
 
             purchase.TotalPaidAmount = TotalAmount;
@@ -159,6 +172,27 @@ public class PurchaseController : Controller
             });
         }
 
+    }
+
+    public async Task<IActionResult> GetUnitSelectList(long ProductId)
+    {
+        var PrdQURs = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == ProductId).ToListAsync();
+
+        if (PrdQURs != null)
+        {
+            return Json(new
+            {
+                PrdQURs
+            }
+            );
+        }
+        else
+        {
+            return Json(new
+            {
+                error = "No Unit Found For Product So Set Unit For Product."
+            });
+        }
     }
 
 

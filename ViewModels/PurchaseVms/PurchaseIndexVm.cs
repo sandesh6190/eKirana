@@ -30,6 +30,6 @@ public class PurchaseIndexVm
         PurchaseById
         );
     }
-    public decimal TotalPaidAmount { get; set; }
-    public List<Purchase> Purchases;
+    //public decimal TotalPaidAmount { get; set; }
+    public List<Purchase> Purchases; //modelko sato vm banayera garda ramro, SaleIndexVm ma gareko chu
 }

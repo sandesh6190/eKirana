@@ -1,11 +1,11 @@
-@model eKirana.ViewModels.PurchaseVms.PurchaseIndexVm
+@model eKirana.ViewModels.SaleVms.SaleIndexVm
 <div class="container-fluid mt-2">
     <div class="card shadow-lg">
         <div class="card-header">
             <div class="d-flex justify-content-between align-items-center">
-                <h4 class="card-title ">List of Purchase</h4>
+                <h4 class="card-title ">List of Sales</h4>
 
-                <a href="/Purchase/Add" class="btn btn-success "><span class="bi bi-file-plus"></span>Purchase</a>
+                <a href="/Sale/Add" class="btn btn-success "><span class="bi bi-file-plus"></span>Sale</a>
             </div>
         </div>
 
@@ -15,14 +15,13 @@
             </div>
             <div class="row mb-2">
                 <form action="" class="d-flex align-items-center">
-                    <select asp-for="SupplierId" class="form-control" asp-items="@Model.SupplierSelectList()">
-                        <option value="">-- SELECT A SUPPLIER --</option>
-                    </select>
-                    <input class="form-control me-sm-2" type="Date" asp-for="FromPurchaseDate"
+                    <input class="form-control me-sm-2" type="search" asp-for="SearchCustomer" placeholder="Customer"
+                        autocomplete="off">
+                    <input class="form-control me-sm-2" type="Date" asp-for="FromSaleDate"
                         placeholder="From Purchase Date" autocomplete="off">
-                    <input class="form-control me-sm-2" type="Date" asp-for="ToPurchaseDate"
-                        placeholder="To Purchase Date" autocomplete="off">
-                    <select asp-for="PurchaseById" class="form-control" asp-items="@Model.AdminSelectList()">
+                    <input class="form-control me-sm-2" type="Date" asp-for="ToSaleDate" placeholder="To Purchase Date"
+                        autocomplete="off">
+                    <select asp-for="SaleById" class="form-control" asp-items="@Model.AdminSelectList()">
                         <option value="">-- SELECT AN ADMIN --</option>
                     </select>
                     <button class="btn btn-success"><i class="bi bi-search"></i></button>
@@ -34,14 +33,11 @@
                     <thead class="table-success">
                         <tr>
                             <th scope="col" width="80px">SN</th>
-                            <th scope="col">Supplier</th>
+                            <th scope="col">Customer</th>
+                            <th scope="col">Address</th>
                             <th scope="col">Total Amount</th>
-                            <th scope="col">Purchase By</th>
-                            <th scope="col">Purchase Date</th>
-
-
-                            @* <th scope="col">Category</th>
-                            <th scope="col">Purchase Rate</th> *@
+                            <th scope="col">Sale By</th>
+                            <th scope="col">Sale Date</th>
                             <th scope="col" class="text-end"></th>
                         </tr>
                     </thead>
@@ -49,7 +45,7 @@
                         <tr class="table-light">
                             @{
                                 var sn = 1;
-                                foreach (var purchase in Model.Purchases)
+                                foreach (var saleInfo in Model.SaleInfoVms)
                                 {
                                 <tr class="table-light text-center">
                                     <th scope="row">
@@ -57,24 +53,27 @@
                                     </th>
 
                                     <td>
-                                            @purchase.Supplier.Name
+                                            @saleInfo.CustomerName
                                     </td>
                                     <td>
-                                            <span>Rs.</span> @purchase.TotalPaidAmount
+                                            @saleInfo.CustomerAddress
                                     </td>
                                     <td>
-                                            @purchase.Admin?.UserName
+                                        <span>Rs.</span> @saleInfo.TotalAmount
+                                    </td>
+                                    <td>
+                                            @saleInfo.SaleBy
                                     </td>
 
 
                                     <td>
-                                            @purchase.PurchaseDate
+                                            @saleInfo.SaleDate
                                     </td>
                                     <td class="text-end">
-                                        <a asp-action="Edit" asp-route-id="@purchase.Id" class="btn btn-primary btn-md"><i
+                                        <a asp-action="Edit" asp-route-id="@saleInfo.SaleId" class="btn btn-primary btn-md"><i
                                                 class="bi bi-pencil-square"></i>
                                         </a>
-                                        <form asp-action="Delete" asp-route-id="@purchase.Id" class="d-inline">
+                                        <form asp-action="Delete" asp-route-id="@saleInfo.SaleId" class="d-inline">
                                             <button type="submit" class="btn btn-danger btn-md"
                                                 onclick="return confirm('Do you really want to delete?')"><i
                                                     class="bi bi-trash"></i></button>

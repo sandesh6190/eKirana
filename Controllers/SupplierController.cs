@@ -19,7 +19,7 @@ public class SupplierController : Controller
     }
     public async Task<IActionResult> Index(SupplierIndexVm vm)
     {
-        vm.Suppliers = await _context.Suppliers.Where(x => (vm.SearchString == null || vm.SearchString.Contains(x.Name) || vm.SearchString.Contains(x.Address) && vm.SupplierStatus == null || vm.SupplierStatus == x.SupplierStatus)).ToListAsync();
+        vm.Suppliers = await _context.Suppliers.Where(x => (string.IsNullOrEmpty(vm.SearchString) || x.Name.Contains(vm.SearchString) || x.Address.Contains(vm.SearchString)) && vm.SupplierStatus == null || x.SupplierStatus == vm.SupplierStatus).ToListAsync();
 
         return View(vm);
     }

@@ -1,0 +1,177 @@
+@* <form method="post" enctype="multipart/form-data"> *@
+@* form use garinam kina bhane list of saleDetails lai handle(index maintain) garna garho huncha so form use
+nagareko *@
+@* asp-for includes id, class.... *@
+
+@model eKirana.ViewModels.SaleVms.SaleFormAddVm
+<div class="container mt-4">
+    <div class="card shadow-lg">
+        <div class="card-header">
+            <h4 class="card-title text-center text-success text-uppercase">Making Sale</h4>
+        </div>
+        <div class="card-body">
+            <div style="border-top: 4px solid;" class="mb-2 border-success">
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="CustomerName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="CustomerName" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="CustomerAddress" class="form-label">
+                        Customer Address
+                    </label>
+                    <input type="text" class="form-control" id="CustomerAddress" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="SaleDate" class="form-label">Sale Date</label>
+                    <input type="date" class="form-control" asp-for="SaleDate" required>
+                </div>
+            </div>
+            <div style="border-top: 4px solid;" class="mb-2 border-success">
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <label for="Product" class="form-label">Product</label>
+                    <select class="form-control" asp-for="ProductId" asp-items="Model.ProductSelectList()">
+                        <option value="">-- SELECT A PRODUCT --</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="Quantity" class="form-label">Quantity</label>
+                    <input type="number" class="form-control" id="f_quantity" required>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <label for="Unit" class="form-label">Unit</label>
+                    <select class="form-control" asp-for="UnitId" asp-items="Model.UnitSelectList()">
+                        <option value="">-- SELECT A UNIT --</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="Rate" class="form-label">Rate</label>
+                    <input type="decimal" class="form-control" id="f_rate" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <label for="SubTotal" class="form-label">Sub Total</label>
+                    <input type="decimal" class="form-control" id="f_subTotal" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="VATAmount" class="form-label">VAT Amount</label>
+                    <input type="decimal" class="form-control" id="f_VATAmt" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="Discount" class="form-label">Discount</label>
+                    <input type="decimal" class="form-control" id="f_disAmt" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="NetAmount" class="form-label">Net Amount</label>
+                    <input type="decimal" class="form-control" id="f_netAmt" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <button class="btn btn-success" id="Add" type="button">Add Sale</button>
+                </div>
+            </div>
+            <div style="border-top: 4px solid;" class="mb-2 border-success">
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover table-sm border-1 table-striped">
+                    <thead class="table-success">
+                        <tr>
+                            <th scope="col" width="80px">SN</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Unit</th>
+                            <th scope="col">Rate</th>
+                            <th scope="col">Sub Total</th>
+                            <th scope="col">VAT</th>
+                            <th scope="col">Discount</th>
+                            <th scope="col">Net Amount</th>
+
+
+                            <th scope="col" class="text-end"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="item_list">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="">
+                <template id="item_row">
+                    <tr class="table-light text-center">
+                        <td>
+                            <span class="i_sn"></span>
+                        </td>
+                        <td>
+                            <span class="i_name"></span>
+                            <span class="i_data_hub" data-product-id="" data-quantity="" data-unit-id="" data-rate=""
+                                data-subTotal="" data-vat="" data-dis="" data-netAmt=""></span>
+                        </td>
+                        <td>
+                            <span class="i_quantity"></span>
+                        </td>
+                        <td>
+                            <span class="i_unit"></span>
+                        </td>
+                        <td>
+                            <span class="i_rate"></span>
+                        </td>
+                        <td>
+                            <span class="i_subTotal"></span>
+                        </td>
+                        <td>
+                            <span class="i_VAT"></span>
+                        </td>
+                        <td>
+                            <span class="i_dis"></span>
+                        </td>
+                        <td>
+                            <span class="i_netAmt"></span>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger i_remove">
+                                Remove
+                            </button>
+                        </td>
+
+                    </tr>
+
+                </template>
+
+            </div>
+        </div>
+
+
+        <div class="card-footer">
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-success w-100" id="checkout">Check Out</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    const checkoutElm = document.querySelector('#checkout');
+    const addBtn = document.querySelector('#Add');
+    const cusNameElm = document.querySelector('#CustomerName');
+    const cusAddressElm = document.querySelector('#CustomerAddress');
+    const saleDateElm = document.querySelector('#SaleDate');
+
+    const rowElms = {
+        product: document.querySelector('#ProductId');
+        quantity: document.querySelector('#f_quantity');
+        unit: document.querySelector('#UnitId');
+        rate: document.querySelector('#f_rate');
+        subTotal: document.querySelector('#f_subTotal');
+        vatAmt: document.querySelector('#f_VATAmt');
+        disAmt: document.querySelector('#f_disAmt');
+        netAmt: document.querySelector('#f_netAmt');
+    };
+</script>

@@ -38,6 +38,9 @@ nagareko *@
                     <label for="Quantity" class="form-label">Quantity</label>
                     <input type="number" class="form-control" id="f_quantity" required>
                 </div>
+                @* <div class="col-md-3 mb-3">
+                <input type="hidden" class="form-control" id="f_basequantity" required>
+                </div> yo tarika le frontendmai api call garera baseunit convert garna pani sakinthyo*@
 
                 <div class="col-md-3 mb-3">
                     <label for="Unit" class="form-label">Unit</label>
@@ -108,7 +111,7 @@ nagareko *@
                         <td>
                             <span class="i_name"></span>
                             <span class="i_data_hub" data-product-id="" data-quantity="" data-unit-id="" data-rate=""
-                                data-subTotal="" data-VAT="" data-dis="" data-netAmt=""></span>
+                                data-subTotal="" data-vat="" data-dis="" data-netAmt=""></span>
                         </td>
                         <td>
                             <span class="i_quantity"></span>
@@ -132,7 +135,7 @@ nagareko *@
                             <span class="i_netAmt"></span>
                         </td>
                         <td>
-                            <button class="btn btn-danger " id="remove">
+                            <button class="btn btn-danger i_remove">
                                 Remove
                             </button>
                         </td>
@@ -155,6 +158,7 @@ nagareko *@
 
 <script>
     var sn = 0;
+    var previousRateInput;
 
     //marking or mapping section
     const addBtn = document.querySelector('#Add');
@@ -177,35 +181,89 @@ nagareko *@
         netAmt: document.querySelector('#f_netAmt'),
     };
 
+    // Not needed
+    // rowElms.product.addEventListener('change', getRateAmt);
 
-    rowElms.product.addEventListener('change', getRateAmt);
+    rowElms.product.addEventListener('change', getUnitSelectList);
+    rowElms.quantity.addEventListener('input', updateRowElmAmt);
     rowElms.unit.addEventListener('change', getRateAmt);
+    rowElms.rate.addEventListener('input', updateRowElmAmt);
+
+    function getUnitSelectList() {
+        const productId = rowElms.product.value;
+
+        console.log(productId);
+        if (productId) {
+            supplierElm.disabled = true;
+            purchaseDateElm.disabled = true; //or readonly
+        }
+
+        /*fetch("/Purchase/GetUnitSelectList?ProductId=" + productId)
+            .then(res => res.json())
+            .then(data => {
+                // Clear previous select options
+                rowElms.unit.innerHTML = '';
+                // while(selectElm.HasChildren) => selectElm.children[0].remove();
+                forEach(var item in data)
+        {
+            const option = new Option(item.Unit.unitName, item.UnitId);
+            rowElms.unit.appendChild(option);
+        }*/
+
+    }
 
     function getRateAmt() {
         const productId = rowElms.product.value;
         const unitId = rowElms.unit.value;
-        if (!productId || !unitId) {
+
+        /*if (productId) {
+            fetch("/Purchase/GetUnitSelectList?ProductId=" + productId)
+                .then(res => res.json())
+                .then(data => {
+                    // Clear previous select options
+                    // while(selectElm.HasChildren) => selectElm.children[0].remove();
+                    // for-each item in data
+                        const option = new Option(item.label, item.value);
+                        selectElm.appendChild(option)
+
+                    data.forEach(prdQUR => {
+                        const optionElement = document.createElement('option');
+                        optionElement.value = prdQUR.UnitId;
+                        optionElement.textContent = prdQUR.Unit.Name;
+                        rowElms.unit.appendChild(optionElement);
+                        console.log(prdQUR.UnitId);
+                        console.log(prdQUR.Unit.Name);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });;
+        }*/
+
+        if (!unitId) {
             rowElms.rate.value = 0;
             return;
         }
 
         fetch("/Purchase/GetProductRate?ProductId=" + productId + "&UnitId=" + unitId).then(res => res.json())
             .then(data => {
-                console.log(data);
+                //console.log(data);
                 rowElms.rate.value = data.purchaseRate;
+                previousRateInput = +rowElms.rate.value;
+                rowElms.rate.dispatchEvent(new Event('input'));
+                previousRateInput.dispatchEvent(new Event('input'));
             });
+
     };
 
 
-    rowElms.quantity.addEventListener('input', updateRowElmAmt);
-    rowElms.rate.addEventListener('input', updateRowElmAmt);
-
     function updateRowElmAmt() {
-        rowElms.subTotal.value = +rowElms.quantity.value * +rowElms.rate.value;
+        const currentRateInput = +rowElms.rate.value.trim();
+
+        rowElms.subTotal.value = +rowElms.quantity.value * currentRateInput;
         rowElms.vatAmt.value = +rowElms.subTotal.value * 0.13;
         rowElms.discount.value = 0.1 * +rowElms.subTotal.value;
         rowElms.netAmt.value = +rowElms.subTotal.value + +rowElms.vatAmt.value - +rowElms.discount.value;
-
     }
 
 
@@ -247,17 +305,24 @@ nagareko *@
             dataHubElm.dataset.productId = productId;
             dataHubElm.dataset.quantity = quantity;
             dataHubElm.dataset.unitId = unitId;
+            dataHubElm.dataset.rate = rate;
             dataHubElm.dataset.subTotal = subTotal;
-            dataHubElm.dataset.vatAmt = vatAmt;
-            dataHubElm.dataset.disAmt = disAmt;
+            dataHubElm.dataset.vat = vatAmt;
+            dataHubElm.dataset.dis = disAmt;
             dataHubElm.dataset.netAmt = netAmt;
+
+            console.log(dataHubElm.dataset.productId);
+            console.log(dataHubElm.dataset.quantity);
+
+            console.log(dataHubElm.dataset.unitId);
+
 
             itemListElm.appendChild(cloned);
 
             rowElms.product.value = '';
-            rowElms.quantity.value = 0;
+            rowElms.quantity.value = '';
             rowElms.unit.value = '';
-            rowElms.rate.value = 0;
+            rowElms.rate.value = '';
             rowElms.subTotal.value = 0;
             rowElms.vatAmt.value = 0;
             rowElms.discount.value = 0;
@@ -285,20 +350,29 @@ nagareko *@
                 UnitId: elm.dataset.unitId,
                 Rate: elm.dataset.rate,
                 SubTotal: elm.dataset.subTotal,
-                VATAmount: elm.dataset.vatAmt,
-                Discount: elm.dataset.disAmt,
+                VATAmount: elm.dataset.vat,
+                Discount: elm.dataset.dis,
                 NetAmount: elm.dataset.netAmt
             });
+            console.log(data.ProductId);
+            console.log(data.Quantity);
+            console.log(data.UnitId);
+            console.log(data.Rate);
+            console.log(data.SubTotal);
+            console.log(data.VATAmount);
+            console.log(data.Discount);
+            console.log(data.NetAmount);
+
         }
 
         //reuestData ko structure action ko vm sanga milnu parcha mathyko vm sanga namilda ni huncha
         const requestData = {
             SupplierId: supplierElm.value,
             PurchaseDate: purchaseDateElm.value,
-            PurchaseItems: data
+            PurchaseItemVms: data
         };
-        //console.log(requestData.PurchaseDate);
-        //console.log(requestData.SupplierId);
+        console.log(requestData.PurchaseDate);
+        console.log(requestData.SupplierId);
 
 
         fetch('/Purchase/Add', {
@@ -323,5 +397,21 @@ nagareko *@
             }
         });
     });
+
+    document.body.addEventListener('click', e => {
+        let target = e.target;
+        if (!target.classList.contains('i_remove')) {
+            target = target.closest('.i_remove');
+        }
+        if (!target) return;
+
+        e.preventDefault();
+
+        const userAck = confirm("Are you sure you want to remove this row?");
+
+        if (!userAck) return;
+
+        target.closest('tr').remove();
+    })
 
 </script>
