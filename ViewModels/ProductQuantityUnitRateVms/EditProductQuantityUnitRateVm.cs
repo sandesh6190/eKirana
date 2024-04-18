@@ -5,6 +5,9 @@ namespace eKirana.ViewModels.ProductQuantityUnitRateVms;
 public class EditProductQuantityUnitRateVm
 {
     public long ProductId; //only getting from code not from user input
+    public long? Stock_Quantity { get; set; }
+    public decimal? PurchaseRate { get; set; }
+    public decimal? SaleRate { get; set; }
     public long Ratio { get; set; }
     public long UnitId { get; set; }
     public bool IsBaseUnit { get; set; }

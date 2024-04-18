@@ -130,7 +130,7 @@ public class ProductQuantityUnitRateController : Controller
     }
 
 
-    public async Task<IActionResult> EditProductUnit(long ProductId, long PrdQURId) //ProductId bharei Indexko lagi matrei ho
+    public async Task<IActionResult> Edit(long ProductId, long PrdQURId) //ProductId bharei Indexko lagi matrei ho
     {
         try
         {
@@ -140,11 +140,34 @@ public class ProductQuantityUnitRateController : Controller
             {
                 throw new Exception("No Data Found.");
             }
+
+            var prdPurchaseRate = await _context.ProductPurchaseRates.Where(x => x.ProductId == ProductId && x.UnitId == prdQUR.UnitId).FirstOrDefaultAsync();
+
+            var prdSaleRate = await _context.ProductSaleRates.Where(x => x.ProductId == ProductId && x.UnitId == prdQUR.UnitId).FirstOrDefaultAsync();
+
             var vm = new EditProductQuantityUnitRateVm();
             vm.ProductId = ProductId; //for index page
+            vm.Stock_Quantity = prdQUR.Stock_Quantity;
             vm.UnitId = prdQUR.UnitId;
             vm.IsBaseUnit = prdQUR.IsBaseUnit;
             vm.Ratio = prdQUR.Ratio;
+            if (prdPurchaseRate == null)
+            {
+                vm.PurchaseRate = null;
+            }
+            else
+            {
+                vm.PurchaseRate = prdPurchaseRate.Amount;
+            }
+
+            if (prdSaleRate == null)
+            {
+                vm.SaleRate = null;
+            }
+            else
+            {
+                vm.SaleRate = prdSaleRate.Amount;
+            }
 
             vm.Units = await _context.Units.ToListAsync();
 
@@ -159,7 +182,7 @@ public class ProductQuantityUnitRateController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> EditProductUnit(long ProductId, long PrdQURId, EditProductQuantityUnitRateVm vm)
+    public async Task<IActionResult> Edit(long ProductId, long PrdQURId, EditProductQuantityUnitRateVm vm)
     {
         try
         {
@@ -174,10 +197,46 @@ public class ProductQuantityUnitRateController : Controller
                 throw new Exception("No Data Found.");
             }
 
+            var prdPurchaseRate = await _context.ProductPurchaseRates.Where(x => x.ProductId == ProductId && x.UnitId == vm.UnitId).FirstOrDefaultAsync();
+
+            var prdSaleRate = await _context.ProductSaleRates.Where(x => x.ProductId == ProductId && x.UnitId == vm.UnitId).FirstOrDefaultAsync();
+
             using var tx = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
             prdQUR.UnitId = vm.UnitId;
             prdQUR.IsBaseUnit = vm.IsBaseUnit;
             prdQUR.Ratio = vm.Ratio;
+
+            if (prdPurchaseRate != null)
+            {
+                prdPurchaseRate.Amount = vm.PurchaseRate;
+                prdPurchaseRate.DateModified = DateTime.Now;
+                _context.ProductPurchaseRates.Update(prdPurchaseRate);
+            }
+            else
+            {
+                var productPurchaseRate = new ProductPurchaseRate();
+                productPurchaseRate.ProductId = ProductId;
+                productPurchaseRate.UnitId = vm.UnitId;
+                productPurchaseRate.Amount = vm.PurchaseRate;
+                productPurchaseRate.DateModified = DateTime.Now;
+                _context.ProductPurchaseRates.Add(productPurchaseRate);
+            }
+
+            if (prdSaleRate != null)
+            {
+                prdSaleRate.Amount = vm.SaleRate;
+                prdSaleRate.DateModified = DateTime.Now;
+                _context.ProductSaleRates.Update(prdSaleRate);
+            }
+            else
+            {
+                var productSaleRate = new ProductSaleRate();
+                productSaleRate.ProductId = ProductId;
+                productSaleRate.UnitId = vm.UnitId;
+                productSaleRate.Amount = vm.SaleRate;
+                productSaleRate.DateModified = DateTime.Now;
+                _context.ProductSaleRates.Add(productSaleRate);
+            }
 
             await _context.SaveChangesAsync();
             tx.Complete();
@@ -216,6 +275,27 @@ public class ProductQuantityUnitRateController : Controller
         {
             _notification.Warning(e.Message);
             return RedirectToAction("Index", new { ProductId = ProductId });
+        }
+    }
+
+    public async Task<IActionResult> GetUnitSelectList(long ProductId)
+    {
+        var prdQURs = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == ProductId).Include(x => x.Unit).OrderBy(x => x.Ratio).ToListAsync();
+
+        if (prdQURs != null)
+        {
+            return Json(new
+            {
+                prdQURs  //we can also send only those data which are needed.
+            }
+            );
+        }
+        else
+        {
+            return Json(new
+            {
+                error = "No Unit Found For Product So Set Unit For Product."
+            });
         }
     }
 }

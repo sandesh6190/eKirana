@@ -30,47 +30,49 @@ nagareko *@
             </div>
             <div style="border-top: 4px solid;" class="mb-2 border-success">
             </div>
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <label for="Product" class="form-label">Product</label>
-                    <select class="form-control" asp-for="ProductId" asp-items="Model.ProductSelectList()">
-                        <option value="">-- SELECT A PRODUCT --</option>
-                    </select>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="Quantity" class="form-label">Quantity</label>
-                    <input type="number" class="form-control" id="f_quantity" required>
-                </div>
+            <fieldset id="fieldSet" disabled>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="Product" class="form-label">Product</label>
+                        <select class="form-control" asp-for="ProductId" asp-items="Model.ProductSelectList()">
+                            <option value="">-- SELECT A PRODUCT --</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="Quantity" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="f_quantity" required>
+                    </div>
 
-                <div class="col-md-3 mb-3">
-                    <label for="Unit" class="form-label">Unit</label>
-                    <select class="form-control" asp-for="UnitId" asp-items="Model.UnitSelectList()">
-                        <option value="">-- SELECT A UNIT --</option>
-                    </select>
+                    <div class="col-md-3 mb-3">
+                        <label for="Unit" class="form-label">Unit</label>
+                        <select class="form-control" asp-for="UnitId" asp-items="Model.UnitSelectList()">
+                            <option value="">-- SELECT A UNIT --</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="Rate" class="form-label">Rate</label>
+                        <input type="decimal" class="form-control" id="f_rate" required>
+                    </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <label for="Rate" class="form-label">Rate</label>
-                    <input type="decimal" class="form-control" id="f_rate" required>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="SubTotal" class="form-label">Sub Total</label>
+                        <input type="decimal" class="form-control" id="f_subTotal" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="VATAmount" class="form-label">VAT Amount</label>
+                        <input type="decimal" class="form-control" id="f_vatAmt" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="Discount" class="form-label">Discount</label>
+                        <input type="decimal" class="form-control" id="f_disAmt" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="NetAmount" class="form-label">Net Amount</label>
+                        <input type="decimal" class="form-control" id="f_netAmt" required>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <label for="SubTotal" class="form-label">Sub Total</label>
-                    <input type="decimal" class="form-control" id="f_subTotal" required>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="VATAmount" class="form-label">VAT Amount</label>
-                    <input type="decimal" class="form-control" id="f_VATAmt" required>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="Discount" class="form-label">Discount</label>
-                    <input type="decimal" class="form-control" id="f_disAmt" required>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="NetAmount" class="form-label">Net Amount</label>
-                    <input type="decimal" class="form-control" id="f_netAmt" required>
-                </div>
-            </div>
+            </fieldset>
             <div class="row">
                 <div class="col-md-3 mb-3">
                     <button class="btn btn-success" id="Add" type="button">Add Sale</button>
@@ -109,7 +111,7 @@ nagareko *@
                             <span class="i_sn"></span>
                         </td>
                         <td>
-                            <span class="i_name"></span>
+                            <span class="i_product"></span>
                             <span class="i_data_hub" data-product-id="" data-quantity="" data-unit-id="" data-rate=""
                                 data-subTotal="" data-vat="" data-dis="" data-netAmt=""></span>
                         </td>
@@ -126,10 +128,10 @@ nagareko *@
                             <span class="i_subTotal"></span>
                         </td>
                         <td>
-                            <span class="i_VAT"></span>
+                            <span class="i_vatAmt"></span>
                         </td>
                         <td>
-                            <span class="i_dis"></span>
+                            <span class="i_disAmt"></span>
                         </td>
                         <td>
                             <span class="i_netAmt"></span>
@@ -158,20 +160,160 @@ nagareko *@
 
 
 <script>
+    var sn = 0;
     const checkoutElm = document.querySelector('#checkout');
     const addBtn = document.querySelector('#Add');
     const cusNameElm = document.querySelector('#CustomerName');
     const cusAddressElm = document.querySelector('#CustomerAddress');
     const saleDateElm = document.querySelector('#SaleDate');
+    const fieldSet = document.querySelector('#fieldSet');
+    const itemListElm = document.querySelector('#item_list');
+    const templateRowElm = document.querySelector('#item_row');
 
     const rowElms = {
-        product: document.querySelector('#ProductId');
-        quantity: document.querySelector('#f_quantity');
-        unit: document.querySelector('#UnitId');
-        rate: document.querySelector('#f_rate');
-        subTotal: document.querySelector('#f_subTotal');
-        vatAmt: document.querySelector('#f_VATAmt');
-        disAmt: document.querySelector('#f_disAmt');
-        netAmt: document.querySelector('#f_netAmt');
+        product: document.querySelector('#ProductId'),
+        quantity: document.querySelector('#f_quantity'),
+        unit: document.querySelector('#UnitId'),
+        rate: document.querySelector('#f_rate'),
+        subTotal: document.querySelector('#f_subTotal'),
+        vatAmt: document.querySelector('#f_vatAmt'),
+        disAmt: document.querySelector('#f_disAmt'),
+        netAmt: document.querySelector('#f_netAmt')
     };
+
+    //change event on select list
+    //input event on input type
+    //make separate function for each event as far as possible
+    cusNameElm.addEventListener('input', toggleFieldSet);
+    cusAddressElm.addEventListener('input', toggleFieldSet);
+    rowElms.product.addEventListener('change', getUnitSelectList);
+    rowElms.unit.addEventListener('change', getRateAmt);
+    rowElms.rate.addEventListener('input', updateRowElmAmt);
+    rowElms.quantity.addEventListener('input', updateRowElmAmt);
+
+    function toggleFieldSet() {
+        const cusName = cusNameElm.value;
+        const cusAddress = cusAddressElm.value;
+
+        if (cusName && cusAddress) {
+            fieldSet.disabled = false;
+        }
+        else {
+            fieldSet.disabled = true;
+        }
+    }
+
+    function getUnitSelectList() {
+        const productId = rowElms.product.value;
+        console.log(productId);
+
+        if (productId) {
+            cusNameElm.readOnly = true;
+            cusAddressElm.readOnly = true; //or readonly
+        }
+
+        fetch("/ProductQuantityUnitRate/GetUnitSelectList?ProductId=" + productId)
+            .then(res => res.json())
+            .then(data => {
+                //clear previous select list item
+                rowElms.unit.innerHTML = '';
+                // while(selectElm.HasChildren) => selectElm.children[0].remove();
+                for (var item of data.prdQURs) {
+                    const option = new Option(item.unit.name, item.unit.id);
+                    rowElms.unit.appendChild(option);
+                    rowElms.unit.dispatchEvent(new Event('change'));
+                }
+            });
+    }
+
+    function getRateAmt() {
+        const productId = rowElms.product.value;
+        const unitId = rowElms.unit.value;
+
+        if (!unitId) { //not neceessary for now
+            rowElms.rate.value = 0;
+            return;
+        }
+
+        //fetch("/Sale/GetProductSaleRate?ProductId=${productId}&UnitId=${unitId}")
+        fetch("/Sale/GetProductSaleRate?ProductId=" + productId + "&UnitId=" + unitId)
+            .then(res => res.json())
+            .then(data => {
+                rowElms.rate.value = data.saleRate;
+                rowElms.rate.dispatchEvent(new Event('input'));
+            });
+    }
+
+    function updateRowElmAmt() {
+        const currentRateInput = +rowElms.rate.value.trim();
+
+        rowElms.subTotal.value = +rowElms.quantity.value * currentRateInput;
+        rowElms.vatAmt.value = +rowElms.subTotal.value * 0.13;
+        rowElms.disAmt.value = +rowElms.subTotal.value * 0.10;
+        rowElms.netAmt.value = +rowElms.subTotal.value + +rowElms.vatAmt.value - +rowElms.disAmt.value;
+    }
+
+    addBtn.addEventListener('click', e => {
+        e.preventDefault();
+        try {
+            console.log(sn);
+
+            sn = sn + 1;
+            const productId = rowElms.product.value;
+            if (!productId) throw "No Product Selected.";
+            const quantity = +rowElms.quantity.value;
+            if (!quantity) throw "Input Quantity.";
+            const unitId = rowElms.unit.value;
+            if (!unitId) throw "No Unit Selected.";
+            const rate = +rowElms.rate.value;
+            const subTotal = +rowElms.subTotal.value;
+            const vatAmt = +rowElms.vatAmt.value;
+            const disAmt = +rowElms.disAmt.value;
+            const netAmt = +rowElms.netAmt.value;
+
+            //getting selected names
+            const productName = rowElms.product.options[rowElms.product.selectIndex].textContent;
+            const unitName = rowElms.unit.options[rowElms.unit.selectedIndex].textContent;
+            console.log(productName);
+
+            //cloning data 
+            const cloned = templateRowElm.content.cloneNode(true);
+            cloned.querySelector(".i_sn").textContent = sn;
+            cloned.querySelector(".i_product").textContent = productName;
+            cloned.querySelector(".i_quantity").textContent = quantity;
+            cloned.querySelector(".i_unit").textContent = unitName;
+            cloned.querySelector(".i_rate").textContent = rate;
+            cloned.querySelector(".i_subTotal").textContent = subTotal;
+            cloned.querySelector(".i_disAmt").textContent = disAmt;
+            cloned.querySelector(".i_vatAmt").textContent = vatAmt;
+            cloned.querySelector(".i_netAmt").textContent = netAmt;
+
+            //for marking i_data_hub and storing entire data of row in dataset
+            const dataHubElm = document.querySelector('.i_data_hub');
+            dataHubElm.dataset.productId = productId;
+            dataHubElm.dataset.quantity = quantity;
+            dataHubElm.dataset.unitId = unitId;
+            dataHubElm.dataset.rate = rate;
+            dataHubElm.dataset.subTotal = subTotal;
+            dataHubElm.dataset.vat = vatAmt;
+            dataHubElm.dataset.dis = disAmt;
+            dataHubElm.dataset.netAmt = netAmt;
+
+            //appending those cloned data on list
+            itemListElm.appendChild(cloned);
+
+            //resetting value
+            rowElms.product.value = '';
+            rowElms.quantity.value = 0;
+            rowElms.unit.value = '';
+            rowElms.rate.value = 0;
+            rowElms.subTotal.value = 0;
+            rowElms.vatAmt.value = 0;
+            rowElms.disAmt.value = 0;
+            rowElms.netAmt.value = 0;
+        }
+        catch (e) {
+            alert(e);
+        }
+    });
 </script>

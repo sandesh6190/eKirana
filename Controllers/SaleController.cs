@@ -45,4 +45,24 @@ public class SaleController : Controller
 
         return View(vm);
     }
+
+    public async Task<IActionResult> GetProductSaleRate(long ProductId, long UnitId)
+    {
+        var prdSaleRate = await _context.ProductSaleRates.Where(x => x.ProductId == ProductId && x.UnitId == UnitId).FirstOrDefaultAsync();
+
+        if (prdSaleRate != null)
+        {
+            return Json(new
+            {
+                saleRate = prdSaleRate.Amount
+            });
+        }
+        else
+        {
+            return Json(new
+            {
+                error = "No Sale Rate is assign to product"
+            });
+        }
+    }
 }

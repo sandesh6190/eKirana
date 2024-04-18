@@ -50,6 +50,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<ProductQuantityUnitRate> ProductQuantityUnitRates { get; set; }
     public DbSet<Supplier> Suppliers { get; set; }
     public DbSet<Brand> Brands { get; set; }
+    public DbSet<StockQuantityHistory> StockQuantityHistories { get; set; }
 
 
 

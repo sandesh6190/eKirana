@@ -88,15 +88,27 @@ public class PurchaseController : Controller
 
                 var prdRatio = await _context.ProductQuantityUnitRates.Where(x => x.UnitId == purchaseDetailVm.UnitId).FirstOrDefaultAsync();
 
+                var stockQuantityHistory = new StockQuantityHistory();
+
                 if (prdQUR.UnitId != purchaseDetailVm.UnitId)
                 {
                     long baseStockQuantity = purchaseDetailVm.Quantity * prdRatio.Ratio;
                     prdQUR.Stock_Quantity = prdQUR.Stock_Quantity + baseStockQuantity;
+
+
+                    stockQuantityHistory.QuantityMovement = baseStockQuantity;
                 }
                 else
                 {
                     prdQUR.Stock_Quantity = prdQUR.Stock_Quantity + purchaseDetailVm.Quantity;
+                    stockQuantityHistory.QuantityMovement = purchaseDetailVm.Quantity;
+
                 }
+
+                stockQuantityHistory.ProductQuantityUnitRateId = prdQUR.Id;
+                stockQuantityHistory.Remarks = StockQuantityRemarksConstants.Purchased;
+
+                _context.StockQuantityHistories.Add(stockQuantityHistory);
                 _context.ProductQuantityUnitRates.Update(prdQUR);
 
                 //for purchaseRate
@@ -151,7 +163,7 @@ public class PurchaseController : Controller
             });
         }
     }
-    public async Task<IActionResult> GetProductRate(long? productId, long? unitId)
+    public async Task<IActionResult> GetProductPurchaseRate(long? productId, long? unitId)
     {
         var PurchaseRate = await _context.ProductPurchaseRates.Where(x => x.ProductId == productId && x.UnitId == unitId).FirstOrDefaultAsync();
 
@@ -168,32 +180,10 @@ public class PurchaseController : Controller
         {
             return Json(new
             {
-                error = "Product not found"
+                error = "Product Purchase Rate not found"
             });
         }
 
     }
-
-    public async Task<IActionResult> GetUnitSelectList(long ProductId)
-    {
-        var PrdQURs = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == ProductId).ToListAsync();
-
-        if (PrdQURs != null)
-        {
-            return Json(new
-            {
-                PrdQURs
-            }
-            );
-        }
-        else
-        {
-            return Json(new
-            {
-                error = "No Unit Found For Product So Set Unit For Product."
-            });
-        }
-    }
-
 
 }

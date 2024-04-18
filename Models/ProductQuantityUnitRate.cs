@@ -4,7 +4,7 @@ namespace eKirana.Models;
 public class ProductQuantityUnitRate
 {
     public long Id { get; set; }
-    public long Stock_Quantity { get; set; }
+    public long? Stock_Quantity { get; set; }
     public long ProductId { get; set; }
     public virtual Product Product { get; set; }
     public long UnitId { get; set; }

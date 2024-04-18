@@ -13,6 +13,16 @@
 
                 <div class="row">
                     <div class="col-md-6 mb-3">
+                        <label for="Purchase Rate" class="form-label">Purchase Rate </label>
+                        <input type="number" class="form-control" asp-for="PurchaseRate" placeholder="Rate" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="Sale Rate" class="form-label">Sale Rate </label>
+                        <input type="number" class="form-control" asp-for="SaleRate" placeholder="Rate" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
                         <label for="Unit" class="form-label">Unit</label>
                         <select asp-for="UnitId" class="form-control" asp-items="@Model.UnitSelectList()">
                             <option value="">-- SELECT A UNIT --</option>
@@ -32,10 +42,7 @@
                             <label for="Ratio" class="form-label">Ratio </label>
                             <input type="number" class="form-control" asp-for="Ratio" placeholder="Ratio" required>
                         </div>
-                        @* <div class="col-md-6 mb-3">
-                        <label for="Photo" class="form-label">Photo</label>
-                        <input type="file" class="form-control" asp-for="Photo" required>
-                        </div> *@
+
                     </div>
 
                 </div>

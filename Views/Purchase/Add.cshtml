@@ -27,55 +27,57 @@ nagareko *@
             </div>
             <div style="border-top: 4px solid;" class="mb-2 border-success">
             </div>
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <label for="Product" class="form-label">Product</label>
-                    <select class="form-control" asp-for="ProductId" asp-items="Model.ProductSelectList()">
-                        <option value="">-- SELECT A PRODUCT --</option>
-                    </select>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="Quantity" class="form-label">Quantity</label>
-                    <input type="number" class="form-control" id="f_quantity" required>
-                </div>
-                @* <div class="col-md-3 mb-3">
-                <input type="hidden" class="form-control" id="f_basequantity" required>
-                </div> yo tarika le frontendmai api call garera baseunit convert garna pani sakinthyo*@
+            <fieldset id="fieldSet" disabled>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="Product" class="form-label">Product</label>
+                        <select class="form-control" asp-for="ProductId" asp-items="Model.ProductSelectList()">
+                            <option value="">-- SELECT A PRODUCT --</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="Quantity" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="f_quantity" required>
+                    </div>
+                    @* <div class="col-md-3 mb-3">
+                    <input type="hidden" class="form-control" id="f_basequantity" required>
+                    </div> yo tarika le frontendmai api call garera baseunit convert garna pani sakinthyo*@
 
-                <div class="col-md-3 mb-3">
-                    <label for="Unit" class="form-label">Unit</label>
-                    <select class="form-control" asp-for="UnitId" asp-items="Model.UnitSelectList()">
-                        <option value="">-- SELECT A UNIT --</option>
-                    </select>
+                    <div class="col-md-3 mb-3">
+                        <label for="Unit" class="form-label">Unit</label>
+                        <select class="form-control" asp-for="UnitId" asp-items="Model.UnitSelectList()">
+                            <option value="">-- SELECT A UNIT --</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="Rate" class="form-label">Rate</label>
+                        <input type="decimal" class="form-control" id="f_rate" required>
+                    </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <label for="Rate" class="form-label">Rate</label>
-                    <input type="decimal" class="form-control" id="f_rate" required>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="SubTotal" class="form-label">Sub Total</label>
+                        <input type="decimal" class="form-control" id="f_subTotal" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="VATAmount" class="form-label">VAT Amount</label>
+                        <input type="decimal" class="form-control" id="f_vatAmt" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="Discount" class="form-label">Discount</label>
+                        <input type="decimal" class="form-control" id="f_disAmt" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="NetAmount" class="form-label">Net Amount</label>
+                        <input type="decimal" class="form-control" id="f_netAmt" required>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <label for="SubTotal" class="form-label">Sub Total</label>
-                    <input type="decimal" class="form-control" id="f_subTotal" required>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <button class="btn btn-success" id="Add" type="button">Add Product</button>
+                    </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <label for="VATAmount" class="form-label">VAT Amount</label>
-                    <input type="decimal" class="form-control" id="f_VATAmt" required>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="Discount" class="form-label">Discount</label>
-                    <input type="decimal" class="form-control" id="f_discount" required>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="NetAmount" class="form-label">Net Amount</label>
-                    <input type="decimal" class="form-control" id="f_netAmt" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <button class="btn btn-success" id="Add" type="button">Add Product</button>
-                </div>
-            </div>
+            </fieldset>
             <div style="border-top: 4px solid;" class="mb-2 border-success">
             </div>
 
@@ -109,7 +111,7 @@ nagareko *@
                             <span class="i_sn"></span>
                         </td>
                         <td>
-                            <span class="i_name"></span>
+                            <span class="i_product"></span>
                             <span class="i_data_hub" data-product-id="" data-quantity="" data-unit-id="" data-rate=""
                                 data-subTotal="" data-vat="" data-dis="" data-netAmt=""></span>
                         </td>
@@ -126,10 +128,10 @@ nagareko *@
                             <span class="i_subTotal"></span>
                         </td>
                         <td>
-                            <span class="i_VAT"></span>
+                            <span class="i_vatAmt"></span>
                         </td>
                         <td>
-                            <span class="i_dis"></span>
+                            <span class="i_disAmt"></span>
                         </td>
                         <td>
                             <span class="i_netAmt"></span>
@@ -158,7 +160,6 @@ nagareko *@
 
 <script>
     var sn = 0;
-    var previousRateInput;
 
     //marking or mapping section
     const addBtn = document.querySelector('#Add');
@@ -169,6 +170,8 @@ nagareko *@
 
     const supplierElm = document.querySelector('#SupplierId');
     const purchaseDateElm = document.querySelector('#PurchaseDate');
+    const fieldSet = document.querySelector('#fieldSet');
+
     //--adding row(inputed data) to the list
     const rowElms = {
         product: document.querySelector('#ProductId'),
@@ -176,39 +179,58 @@ nagareko *@
         unit: document.querySelector('#UnitId'),
         rate: document.querySelector('#f_rate'),
         subTotal: document.querySelector('#f_subTotal'),
-        vatAmt: document.querySelector('#f_VATAmt'),
-        discount: document.querySelector('#f_discount'),
+        vatAmt: document.querySelector('#f_vatAmt'),
+        disAmt: document.querySelector('#f_disAmt'),
         netAmt: document.querySelector('#f_netAmt'),
     };
 
     // Not needed
     // rowElms.product.addEventListener('change', getRateAmt);
-
+    //change event on select list
+    //input event on input type
+    //make separate function for each event as far as possible
+    supplierElm.addEventListener('change', toggleFieldSet);
     rowElms.product.addEventListener('change', getUnitSelectList);
-    rowElms.quantity.addEventListener('input', updateRowElmAmt);
     rowElms.unit.addEventListener('change', getRateAmt);
     rowElms.rate.addEventListener('input', updateRowElmAmt);
+    rowElms.quantity.addEventListener('input', updateRowElmAmt);
+
+    function toggleFieldSet() {
+        const supplierId = supplierElm.value;
+        //console.log(supplierId);
+        if (!supplierId) {
+            //alert("Input the supplier.");
+            fieldSet.disabled = true;
+        }
+        else {
+            fieldSet.disabled = false;
+
+        }
+
+    }
 
     function getUnitSelectList() {
         const productId = rowElms.product.value;
 
-        console.log(productId);
+
         if (productId) {
             supplierElm.disabled = true;
             purchaseDateElm.disabled = true; //or readonly
         }
 
-        /*fetch("/Purchase/GetUnitSelectList?ProductId=" + productId)
+        fetch("/ProductQuantityUnitRate/GetUnitSelectList?ProductId=" + productId)
             .then(res => res.json())
             .then(data => {
                 // Clear previous select options
                 rowElms.unit.innerHTML = '';
+                //rowElms.unit.appendChild('--SELECT A UNIT--');
                 // while(selectElm.HasChildren) => selectElm.children[0].remove();
-                forEach(var item in data)
-        {
-            const option = new Option(item.Unit.unitName, item.UnitId);
-            rowElms.unit.appendChild(option);
-        }*/
+                for (var item of data.prdQURs) {
+                    const option = new Option(item.unit.name, item.unit.id);
+                    rowElms.unit.appendChild(option);
+                    rowElms.unit.dispatchEvent(new Event('change'));
+                }
+            });
 
     }
 
@@ -216,42 +238,18 @@ nagareko *@
         const productId = rowElms.product.value;
         const unitId = rowElms.unit.value;
 
-        /*if (productId) {
-            fetch("/Purchase/GetUnitSelectList?ProductId=" + productId)
-                .then(res => res.json())
-                .then(data => {
-                    // Clear previous select options
-                    // while(selectElm.HasChildren) => selectElm.children[0].remove();
-                    // for-each item in data
-                        const option = new Option(item.label, item.value);
-                        selectElm.appendChild(option)
-
-                    data.forEach(prdQUR => {
-                        const optionElement = document.createElement('option');
-                        optionElement.value = prdQUR.UnitId;
-                        optionElement.textContent = prdQUR.Unit.Name;
-                        rowElms.unit.appendChild(optionElement);
-                        console.log(prdQUR.UnitId);
-                        console.log(prdQUR.Unit.Name);
-                    });
-                })
-                .catch(error => {
-                    console.error('Error fetching data:', error);
-                });;
-        }*/
-
         if (!unitId) {
             rowElms.rate.value = 0;
             return;
         }
 
-        fetch("/Purchase/GetProductRate?ProductId=" + productId + "&UnitId=" + unitId).then(res => res.json())
+        // another syntax: fetch("/Purchase/GetProductPurchaseRate?ProductId=${productId}&UnitId=${unitId}").
+        fetch("/Purchase/GetProductPurchaseRate?ProductId=" + productId + "&UnitId=" + unitId).then(res => res.json())
             .then(data => {
-                //console.log(data);
                 rowElms.rate.value = data.purchaseRate;
                 previousRateInput = +rowElms.rate.value;
                 rowElms.rate.dispatchEvent(new Event('input'));
-                previousRateInput.dispatchEvent(new Event('input'));
+                //previousRateInput.dispatchEvent(new Event('input'));
             });
 
     };
@@ -261,9 +259,9 @@ nagareko *@
         const currentRateInput = +rowElms.rate.value.trim();
 
         rowElms.subTotal.value = +rowElms.quantity.value * currentRateInput;
-        rowElms.vatAmt.value = +rowElms.subTotal.value * 0.13;
-        rowElms.discount.value = 0.1 * +rowElms.subTotal.value;
-        rowElms.netAmt.value = +rowElms.subTotal.value + +rowElms.vatAmt.value - +rowElms.discount.value;
+        rowElms.vatAmt.value = +rowElms.subTotal.value * 0.13;  //vat% ra dis% ni fetch garne[new update]
+        rowElms.disAmt.value = 0.1 * +rowElms.subTotal.value;
+        rowElms.netAmt.value = +rowElms.subTotal.value + +rowElms.vatAmt.value - +rowElms.disAmt.value;
     }
 
 
@@ -281,7 +279,7 @@ nagareko *@
             const rate = +rowElms.rate.value;
             const subTotal = +rowElms.subTotal.value;
             const vatAmt = +rowElms.vatAmt.value;
-            const disAmt = +rowElms.discount.value;
+            const disAmt = +rowElms.disAmt.value;
             const netAmt = +rowElms.netAmt.value;
 
             //getting selected names
@@ -291,13 +289,13 @@ nagareko *@
             //for cloning row 
             const cloned = templateRowElm.content.cloneNode(true);
             cloned.querySelector(".i_sn").textContent = sn;
-            cloned.querySelector(".i_name").textContent = productName;
+            cloned.querySelector(".i_product").textContent = productName;
             cloned.querySelector(".i_quantity").textContent = quantity;
             cloned.querySelector(".i_unit").textContent = unitName;
             cloned.querySelector(".i_rate").textContent = rate;
             cloned.querySelector(".i_subTotal").textContent = subTotal;
-            cloned.querySelector(".i_dis").textContent = disAmt;
-            cloned.querySelector(".i_VAT").textContent = vatAmt;
+            cloned.querySelector(".i_disAmt").textContent = disAmt;
+            cloned.querySelector(".i_vatAmt").textContent = vatAmt;
             cloned.querySelector(".i_netAmt").textContent = netAmt;
 
             //for marking i_data_hub and storing entire data of row in dataset
@@ -311,21 +309,15 @@ nagareko *@
             dataHubElm.dataset.dis = disAmt;
             dataHubElm.dataset.netAmt = netAmt;
 
-            console.log(dataHubElm.dataset.productId);
-            console.log(dataHubElm.dataset.quantity);
-
-            console.log(dataHubElm.dataset.unitId);
-
-
             itemListElm.appendChild(cloned);
 
             rowElms.product.value = '';
-            rowElms.quantity.value = '';
+            rowElms.quantity.value = 0;
             rowElms.unit.value = '';
-            rowElms.rate.value = '';
+            rowElms.rate.value = 0;
             rowElms.subTotal.value = 0;
             rowElms.vatAmt.value = 0;
-            rowElms.discount.value = 0;
+            rowElms.disAmt.value = 0;
             rowElms.netAmt.value = 0;
         }
 
@@ -354,14 +346,6 @@ nagareko *@
                 Discount: elm.dataset.dis,
                 NetAmount: elm.dataset.netAmt
             });
-            console.log(data.ProductId);
-            console.log(data.Quantity);
-            console.log(data.UnitId);
-            console.log(data.Rate);
-            console.log(data.SubTotal);
-            console.log(data.VATAmount);
-            console.log(data.Discount);
-            console.log(data.NetAmount);
 
         }
 
@@ -371,8 +355,6 @@ nagareko *@
             PurchaseDate: purchaseDateElm.value,
             PurchaseItemVms: data
         };
-        console.log(requestData.PurchaseDate);
-        console.log(requestData.SupplierId);
 
 
         fetch('/Purchase/Add', {
