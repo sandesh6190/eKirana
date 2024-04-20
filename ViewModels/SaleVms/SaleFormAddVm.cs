@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace eKirana.ViewModels.SaleVms;
 public class SaleFormAddVm
 {
-    public DateTime SaleDate { get; set; } = DateTime.Now; //yo lakbak chaindeina datetime.now set garna lai matrei use gareko  tara js bata garda ni huncha
+    public DateTime SaleDate { get; set; } = DateTime.Now;
     public long ProductId { get; set; }
     public List<Product> Products;
     public SelectList ProductSelectList()

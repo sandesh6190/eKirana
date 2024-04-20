@@ -1,11 +1,12 @@
-@model eKirana.ViewModels.SaleVms.SaleIndexVm
+@model eKirana.ViewModels.SetUp.MemberShipVms.MemberShipIndexVm
 <div class="container-fluid mt-2">
     <div class="card shadow-lg">
         <div class="card-header">
             <div class="d-flex justify-content-between align-items-center">
-                <h4 class="card-title ">List of Sales</h4>
+                <h4 class="card-title ">List of MemberShip</h4>
 
-                <a href="/Sale/Add" class="btn btn-success "><span class="bi bi-file-plus"></span>Sale</a>
+                <a href="/MemberShip/Add" class="btn btn-success  "><span class="bi bi-file-plus"></span> Add
+                    MemberShip</a>
             </div>
         </div>
 
@@ -15,18 +16,13 @@
             </div>
             <div class="row mb-2">
                 <form action="" class="d-flex align-items-center">
-                    <input class="form-control me-sm-2" type="search" asp-for="SearchCustomer" placeholder="Customer"
+                    <input class="form-control me-sm-2" type="search" asp-for="SearchString" placeholder="Search"
                         autocomplete="off">
-                    <select class="form-control me-sm-2" asp-for="CustomerType"
-                        asp-items="@Model.CustomerTypeSelectList()">
-                        <option value="">-CUSTOMER TYPE-</option>
-                    </select>
-                    <input class="form-control me-sm-2" type="Date" asp-for="FromSaleDate"
-                        placeholder="From Purchase Date" autocomplete="off">
-                    <input class="form-control me-sm-2" type="Date" asp-for="ToSaleDate" placeholder="To Purchase Date"
-                        autocomplete="off">
-                    <select asp-for="SaleById" class="form-control" asp-items="@Model.AdminSelectList()">
-                        <option value="">-- SELECT ADMIN --</option>
+                    <input class="form-control me-sm-2" type="search" asp-for="SearchNumber"
+                        placeholder="Search By Phone" autocomplete="off">
+                    <select class="form-control me-sm-2" asp-for="SearchMemberShipStatus"
+                        asp-items="@Model.MemberShipStatusSelectList()">
+                        <option value="">---MEMBERSHIP STATUS---</option>
                     </select>
                     <button class="btn btn-success"><i class="bi bi-search"></i></button>
                 </form>
@@ -37,11 +33,13 @@
                     <thead class="table-success">
                         <tr>
                             <th scope="col" width="80px">SN</th>
-                            <th scope="col">Customer</th>
+                            <th scope="col">Member</th>
                             <th scope="col">Address</th>
-                            <th scope="col">Total Amount</th>
-                            <th scope="col">Sale By</th>
-                            <th scope="col">Sale Date</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Registered On</th>
+                            <th scope="col">Last Transaction</th>
                             <th scope="col" class="text-end"></th>
                         </tr>
                     </thead>
@@ -49,35 +47,40 @@
                         <tr class="table-light">
                             @{
                                 var sn = 1;
-                                foreach (var saleInfo in Model.SaleInfoVms)
+                                foreach (var memberShip in Model.MemberShipInfoVms)
                                 {
                                 <tr class="table-light text-center">
                                     <th scope="row">
                                             @(sn++)
                                     </th>
+                                    <td>
+                                            @memberShip.Name
+                                    </td>
+                                    <td>
+                                            @memberShip.Address
+                                    </td>
+                                    <td>
+                                            @memberShip.Phone
+                                    </td>
+                                    <td>
+                                            @memberShip.Email
+                                    </td>
+                                    <td>
+                                            @memberShip.MemberShipStatus
+                                    </td>
 
                                     <td>
-                                            @saleInfo.CustomerName
+                                            @memberShip.RegisteredOn.ToString("yyyy-MM-dd")
                                     </td>
                                     <td>
-                                            @saleInfo.CustomerAddress
-                                    </td>
-                                    <td>
-                                        <span>Rs.</span> @saleInfo.TotalAmount
-                                    </td>
-                                    <td>
-                                            @saleInfo.SaleBy
-                                    </td>
-
-
-                                    <td>
-                                            @saleInfo.SaleDate
+                                            @memberShip.LastTransaction
                                     </td>
                                     <td class="text-end">
-                                        <a asp-action="Edit" asp-route-id="@saleInfo.SaleId" class="btn btn-primary btn-md"><i
-                                                class="bi bi-pencil-square"></i>
+                                        <a asp-action="Edit" asp-route-MemberShipId="@memberShip.MemberShipId"
+                                            class="btn btn-primary btn-md"><i class="bi bi-pencil-square"></i>
                                         </a>
-                                        <form asp-action="Delete" asp-route-id="@saleInfo.SaleId" class="d-inline">
+                                        <form asp-action="Delete" asp-route-MemberShipId="@memberShip.MemberShipId"
+                                            class="d-inline">
                                             <button type="submit" class="btn btn-danger btn-md"
                                                 onclick="return confirm('Do you really want to delete?')"><i
                                                     class="bi bi-trash"></i></button>

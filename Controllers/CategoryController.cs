@@ -35,15 +35,13 @@ public class CategoryController : Controller
         {
             if (!ModelState.IsValid)
             {
-                _notification.Warning("Invalid Data Input.");
-                return View(vm);
+                throw new Exception("Invalid Data Input.");
             }
 
             var cat = await _context.Categories.Where(x => x.Item == vm.Item).FirstOrDefaultAsync();
             if (cat != null)
             {
-                _notification.Warning("Category Already Exist.");
-                return View(vm);
+                throw new Exception("Category Already Exist.");
             }
 
             using (var tx = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
@@ -61,12 +59,13 @@ public class CategoryController : Controller
                 //transaction complete
                 tx.Complete();
             }
-
+            _notification.Success("Category Added.");
             return RedirectToAction("Index");
         }
         catch (Exception e)
         {
-            return RedirectToAction("Index");
+            _notification.Error(e.Message);
+            return View(vm);
         }
     }
 
@@ -100,9 +99,19 @@ public class CategoryController : Controller
         {
             if (!ModelState.IsValid)
             {
-                return View(vm);
+                throw new Exception("Invalid Data.");
             }
+            var cat = await _context.Categories.Where(x => x.Item == vm.Item).FirstOrDefaultAsync();
+            if (cat != null)
+            {
+                throw new Exception("Category Already Exist.");
+            }
+
             var category = await _context.Categories.Where(x => x.Id == id).FirstOrDefaultAsync();
+            if (category == null)
+            {
+                throw new Exception("Category Name Existed.");
+            }
 
             using var tx = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
             category.Item = vm.Item;
@@ -111,12 +120,15 @@ public class CategoryController : Controller
             await _context.SaveChangesAsync();
             tx.Complete();
 
+            _notification.Success("Category Edited.");
             return RedirectToAction("Index");
         }
 
         catch (Exception e)
         {
-            return RedirectToAction("Index");
+            _notification.Error(e.Message);
+            return View(vm);
+
         }
     }
 

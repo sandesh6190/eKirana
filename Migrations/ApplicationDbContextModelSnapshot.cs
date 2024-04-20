@@ -342,6 +342,44 @@ namespace eKirana.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("eKirana.Models.SetUp.MemberShipHolder", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastTransaction")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MemberShipStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RegisteredOn")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MemberShipHolders");
+                });
+
             modelBuilder.Entity("eKirana.Models.SetUp.Supplier", b =>
                 {
                     b.Property<long>("Id")
@@ -361,8 +399,9 @@ namespace eKirana.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("PhoneNumber")
-                        .HasColumnType("bigint");
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SupplierStatus")
                         .IsRequired()
@@ -427,12 +466,17 @@ namespace eKirana.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
                     b.Property<string>("CustomerAddress")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CustomerName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerType")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("MemberShipId")
+                        .HasColumnType("bigint");
 
                     b.Property<long>("SaleById")
                         .HasColumnType("bigint");
@@ -444,6 +488,8 @@ namespace eKirana.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MemberShipId");
 
                     b.HasIndex("SaleById");
 
@@ -610,6 +656,10 @@ namespace eKirana.Migrations
 
             modelBuilder.Entity("eKirana.Sale", b =>
                 {
+                    b.HasOne("eKirana.Models.SetUp.MemberShipHolder", "MemberShipHolder")
+                        .WithMany()
+                        .HasForeignKey("MemberShipId");
+
                     b.HasOne("eKirana.Models.Admin", "Admin")
                         .WithMany()
                         .HasForeignKey("SaleById")
@@ -617,6 +667,8 @@ namespace eKirana.Migrations
                         .IsRequired();
 
                     b.Navigation("Admin");
+
+                    b.Navigation("MemberShipHolder");
                 });
 #pragma warning restore 612, 618
         }

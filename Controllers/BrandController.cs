@@ -37,15 +37,13 @@ public class BrandController : Controller
         {
             if (!ModelState.IsValid)
             {
-                _notification.Warning("Invalid Data Input.");
-                return View(vm);
+                throw new Exception("Invalid Data Input.");
             }
 
             var brd = await _context.Brands.Where(x => x.BrandName == vm.BrandName).FirstOrDefaultAsync();
             if (brd != null)
             {
-                _notification.Warning("Brand Already Exist.");
-                return View(vm);
+                throw new Exception("Brand Already Exist.");
             }
 
             using (var tx = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
@@ -63,12 +61,14 @@ public class BrandController : Controller
                 //transaction complete
                 tx.Complete();
             }
-
+            _notification.Success("Brand Added.");
             return RedirectToAction("Index");
         }
         catch (Exception e)
         {
-            return RedirectToAction("Index");
+            _notification.Error(e.Message);
+            return View(vm);
+
         }
     }
 
@@ -104,6 +104,12 @@ public class BrandController : Controller
             {
                 return View(vm);
             }
+            var brd = await _context.Brands.Where(x => x.BrandName == vm.BrandName).FirstOrDefaultAsync();
+            if (brd != null)
+            {
+                throw new Exception("Brand Already Exist.");
+            }
+
             var brand = await _context.Brands.Where(x => x.Id == id).FirstOrDefaultAsync();
 
             using var tx = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
@@ -113,12 +119,14 @@ public class BrandController : Controller
             await _context.SaveChangesAsync();
             tx.Complete();
 
+            _notification.Success("Brand Edited.");
             return RedirectToAction("Index");
         }
 
         catch (Exception e)
         {
-            return RedirectToAction("Index");
+            _notification.Error(e.Message);
+            return View(vm);
         }
     }
 

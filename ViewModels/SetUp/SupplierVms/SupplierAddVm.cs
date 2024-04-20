@@ -6,7 +6,7 @@ public class SupplierAddVm
 {
     public string Name { get; set; }
     public string Address { get; set; }
-    public long PhoneNumber { get; set; }
+    public string PhoneNumber { get; set; }
     // public string SupplierStatus { get; set; } // status: active for first time
     // public SelectList SupplierStatusSelectList()
     // {

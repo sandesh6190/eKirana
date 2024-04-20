@@ -161,8 +161,9 @@ nagareko *@
 
 <script>
     var sn = 0;
-    const checkoutElm = document.querySelector('#checkout');
+    const checkoutBtn = document.querySelector('#checkout');
     const addBtn = document.querySelector('#Add');
+    const removeBtn = document.querySelector('#remove');
     const cusNameElm = document.querySelector('#CustomerName');
     const cusAddressElm = document.querySelector('#CustomerAddress');
     const saleDateElm = document.querySelector('#SaleDate');
@@ -194,6 +195,7 @@ nagareko *@
     function toggleFieldSet() {
         const cusName = cusNameElm.value;
         const cusAddress = cusAddressElm.value;
+        console.log(cusName);
 
         if (cusName && cusAddress) {
             fieldSet.disabled = false;
@@ -235,7 +237,7 @@ nagareko *@
             return;
         }
 
-        //fetch("/Sale/GetProductSaleRate?ProductId=${productId}&UnitId=${unitId}")
+        //fetch(`/Sale/GetProductSaleRate?ProductId=${productId}&UnitId=${unitId}`)
         fetch("/Sale/GetProductSaleRate?ProductId=" + productId + "&UnitId=" + unitId)
             .then(res => res.json())
             .then(data => {
@@ -256,8 +258,6 @@ nagareko *@
     addBtn.addEventListener('click', e => {
         e.preventDefault();
         try {
-            console.log(sn);
-
             sn = sn + 1;
             const productId = rowElms.product.value;
             if (!productId) throw "No Product Selected.";
@@ -271,10 +271,13 @@ nagareko *@
             const disAmt = +rowElms.disAmt.value;
             const netAmt = +rowElms.netAmt.value;
 
+            console.log(sn);
             //getting selected names
-            const productName = rowElms.product.options[rowElms.product.selectIndex].textContent;
+            const productName = rowElms.product.options[rowElms.product.selectedIndex].textContent;
             const unitName = rowElms.unit.options[rowElms.unit.selectedIndex].textContent;
             console.log(productName);
+
+
 
             //cloning data 
             const cloned = templateRowElm.content.cloneNode(true);
@@ -289,7 +292,7 @@ nagareko *@
             cloned.querySelector(".i_netAmt").textContent = netAmt;
 
             //for marking i_data_hub and storing entire data of row in dataset
-            const dataHubElm = document.querySelector('.i_data_hub');
+            const dataHubElm = cloned.querySelector('.i_data_hub');
             dataHubElm.dataset.productId = productId;
             dataHubElm.dataset.quantity = quantity;
             dataHubElm.dataset.unitId = unitId;
@@ -316,4 +319,58 @@ nagareko *@
             alert(e);
         }
     });
+
+    checkoutBtn.addEventListener('click', e => {
+        const ack = confirm('Are you sure you want to submit?');
+        if (!ack) return;
+
+        const data = [];
+        const dataHubElms = document.querySelectorAll('.i_data_hub');
+
+        for (const elm of dataHubElms) {
+            data.push({
+                ProductId: elm.dataset.productId,
+                Quantity: elm.dataset.quantity,
+                UnitId: elm.dataset.unitId,
+                Rate: elm.dataset.rate,
+                SubTotal: elm.dataset.subTotal,
+                VATAmt: elm.dataset.vatAmt,
+                DisAmt: elm.dataset.disAmt,
+                NetAmt: elm.dataset.netAmt
+            });
+        }
+
+        const sendData = {
+            CustomerName: cusNameElm.value,
+            CustomerAddress: cusAddressElm.value,
+            SaleItemVms: data
+        }
+
+        fetch("/Sale/Add", {
+            method: 'POST',
+            body: JSON.stringify(sendData),
+            headers: {
+                'Content-Type': 'application/json'
+                //add other headers
+            }
+        })
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error("Network response was not ok.");
+                }
+                return res.json();
+            }).then(x => {
+                console.log('Server response', x);
+                if (x.success) {
+                    window.location.reload();
+                }
+                else {
+                    alert("Error recording sale.");
+                }
+            });
+    });
+
+
+
+
 </script>

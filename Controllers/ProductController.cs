@@ -170,6 +170,7 @@ public class ProductController : Controller
             vm.ProductVATorNOT = prd.ProductVATorNOT;
 
             vm.Categories = await _context.Categories.ToListAsync();
+            vm.Brands = await _context.Brands.ToListAsync();
 
             return View(vm);
 

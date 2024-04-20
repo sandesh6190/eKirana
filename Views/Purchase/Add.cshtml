@@ -350,7 +350,7 @@ nagareko *@
         }
 
         //reuestData ko structure action ko vm sanga milnu parcha mathyko vm sanga namilda ni huncha
-        const requestData = {
+        const sendData = {
             SupplierId: supplierElm.value,
             PurchaseDate: purchaseDateElm.value,
             PurchaseItemVms: data
@@ -359,7 +359,7 @@ nagareko *@
 
         fetch('/Purchase/Add', {
             method: 'POST',
-            body: JSON.stringify(requestData),
+            body: JSON.stringify(sendData),
             headers: {
                 'Content-Type': 'application/json'
                 //add other headers if needed

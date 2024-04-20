@@ -1,11 +1,11 @@
-@model eKirana.ViewModels.SetUp.SupplierVms.SupplierEditVm
+@model eKirana.ViewModels.SetUp.MemberShipVms.MemberShipEditVm
 
 <form method="post">
 
     <div class="container mt-4">
         <div class="card shadow-lg">
             <div class="card-header">
-                <h4 class="card-title text-center text-success text-uppercase">Editing Supplier</h4>
+                <h4 class="card-title text-center text-success text-uppercase">Editing MemberShip</h4>
             </div>
             <div class="card-body">
                 <div style="border-top: 4px solid;" class="mb-2 border-success">
@@ -16,27 +16,29 @@
                         <input type="text" class="form-control" asp-for="Name" placeholder="Name" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="Address" class="form-label">Address</label>
+                        <label for="Editress" class="form-label">Address</label>
                         <input type="text" class="form-control" asp-for="Address" placeholder="Address" required>
                     </div>
-
                 </div>
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="Phone" class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" asp-for="PhoneNumber" placeholder="Phone number"
-                            required>
+                        <label for="Phone" class="form-label">Phone</label>
+                        <input type="number" class="form-control" asp-for="Phone" placeholder="Phone number" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="Supplier" class="form-label">Supplier Status</label>
-                        <select asp-for="SupplierStatus" class="form-control"
-                            asp-items="@Model.SupplierStatusSelectList()">
-                            <option value="">-- SELECT A SUPPLIER STATUS --</option>
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="email" class="form-control" asp-for="Email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="MemberShipStatus" class="form-label">Member Status</label>
+                        <select asp-for="MemberShipStatus" class="form-control"
+                            asp-items="@Model.MemberShipStatusSelectList()">
+                            <option value="">-- SELECT A MEMBERSHIP STATUS --</option>
                         </select>
                     </div>
                 </div>
-
-
             </div>
             <div class="card-footer">
                 <div class="col-12 text-center">

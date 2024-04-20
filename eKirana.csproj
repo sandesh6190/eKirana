@@ -25,7 +25,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Migrations\" />
     <Folder Include="ViewModels\SetUp\CategoryVms\" />
     <Folder Include="ViewModels\SetUp\UnitVms\" />
     <Folder Include="wwwroot\Bootstrap\" />

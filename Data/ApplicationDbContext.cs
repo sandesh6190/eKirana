@@ -51,7 +51,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<Supplier> Suppliers { get; set; }
     public DbSet<Brand> Brands { get; set; }
     public DbSet<StockQuantityHistory> StockQuantityHistories { get; set; }
-
+    public DbSet<MemberShipHolder> MemberShipHolders { get; set; }
 
 
 

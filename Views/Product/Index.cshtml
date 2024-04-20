@@ -18,13 +18,13 @@
                 <form action="" class="d-flex align-items-center">
                     <input class="form-control me-sm-2" type="search" asp-for="Search" placeholder="Search"
                         autocomplete="off">        
-                        <select asp-for="BrandId" class="form-control" asp-items="@Model.BrandSelectList()">
+                        <select asp-for="BrandId" class="form-control me-sm-2" asp-items="@Model.BrandSelectList()">
                             <option value="">-- SELECT A BRAND --</option>
                         </select>
-                    <select asp-for="CategoryId" class="form-control" asp-items="@Model.CategorySelectList()">
+                    <select asp-for="CategoryId" class="form-control me-sm-2" asp-items="@Model.CategorySelectList()">
                         <option value="">-- SELECT A CATEGORY --</option>
                     </select>
-                    <select asp-for="ProductVATorNOT" class="form-control" asp-items="@Model.ProductVATorNOTSelectList()">
+                    <select asp-for="ProductVATorNOT" class="form-control me-sm-2" asp-items="@Model.ProductVATorNOTSelectList()">
                         <option value="">-- VAT or NOT --</option>
                     </select>
                     <button class="btn btn-success"><i class="bi bi-search"></i></button>

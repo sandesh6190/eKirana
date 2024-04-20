@@ -35,11 +35,10 @@ public class SupplierController : Controller
     {
         try
         {
-            // if (!ModelState.IsValid)
-            // {
-            //     _notification.Warning("Invalid Data.");
-            //     return View(vm);
-            // }
+            if (!ModelState.IsValid)
+            {
+                throw new Exception("Invalid Data.");
+            }
 
             var supplier = new Supplier();
             using var tx = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);

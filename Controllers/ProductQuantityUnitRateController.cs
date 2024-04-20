@@ -88,10 +88,6 @@ public class ProductQuantityUnitRateController : Controller
             if (!ModelState.IsValid)
             {
                 throw new Exception("Invalid Data."); //better technique
-                // vm.ProductId = ProductId;
-                // vm.Units = await _context.Units.ToListAsync();
-                // _notification.Warning("Invalid Data.");
-                // return View(vm);
             }
 
             var prdUnit = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == ProductId && x.UnitId == vm.UnitId).FirstOrDefaultAsync();

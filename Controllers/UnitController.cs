@@ -37,8 +37,13 @@ public class UnitController : Controller
         {
             if (!ModelState.IsValid)
             {
-                _notification.Error("Invalid Data.");
-                return View(vm);
+                throw new Exception("Invalid Data.");
+            }
+
+            var unt = await _context.Units.Where(x => x.Name == vm.Name).FirstOrDefaultAsync();
+            if (unt != null)
+            {
+                throw new Exception("Unit Already Exist.");
             }
 
             using var tx = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
@@ -51,7 +56,6 @@ public class UnitController : Controller
 
             tx.Complete();
             _notification.Success("Unit Added.");
-
             return RedirectToAction("Index");
 
         }
@@ -59,7 +63,7 @@ public class UnitController : Controller
         catch (Exception e)
         {
             _notification.Error(e.Message);
-            return RedirectToAction("Index");
+            return View(vm);
         }
     }
 
@@ -98,6 +102,12 @@ public class UnitController : Controller
                 return View(vm);
             }
 
+            var unt = await _context.Units.Where(x => x.Name == vm.Name).FirstOrDefaultAsync();
+            if (unt != null)
+            {
+                throw new Exception("Unit Already Exist.");
+            }
+
             var unit = await _context.Units.Where(x => x.Id == id).FirstOrDefaultAsync();
 
             if (unit == null)
@@ -113,7 +123,6 @@ public class UnitController : Controller
 
             tx.Complete();
             _notification.Success("Unit Edited.");
-
             return RedirectToAction("Index");
 
         }
@@ -121,7 +130,7 @@ public class UnitController : Controller
         catch (Exception e)
         {
             _notification.Error(e.Message);
-            return RedirectToAction("Index");
+            return View(vm);
         }
     }
 
