@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using eKirana.Data;
 
@@ -11,9 +12,11 @@ using eKirana.Data;
 namespace eKirana.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240423094925_stockQuantityHistoryUpdate")]
+    partial class stockQuantityHistoryUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -275,11 +278,11 @@ namespace eKirana.Migrations
                     b.Property<long>("ProductId")
                         .HasColumnType("bigint");
 
-                    b.Property<long>("Quantity")
+                    b.Property<long>("ProductSaleRateId")
                         .HasColumnType("bigint");
 
-                    b.Property<decimal>("Rate")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<long>("Quantity")
+                        .HasColumnType("bigint");
 
                     b.Property<long>("SaleId")
                         .HasColumnType("bigint");
@@ -296,6 +299,8 @@ namespace eKirana.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ProductId");
+
+                    b.HasIndex("ProductSaleRateId");
 
                     b.HasIndex("SaleId");
 
@@ -620,6 +625,12 @@ namespace eKirana.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("eKirana.Models.ProductSaleRate", "ProductSaleRate")
+                        .WithMany()
+                        .HasForeignKey("ProductSaleRateId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("eKirana.Sale", "Sale")
                         .WithMany()
                         .HasForeignKey("SaleId")
@@ -633,6 +644,8 @@ namespace eKirana.Migrations
                         .IsRequired();
 
                     b.Navigation("Product");
+
+                    b.Navigation("ProductSaleRate");
 
                     b.Navigation("Sale");
 

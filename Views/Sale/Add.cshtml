@@ -13,21 +13,66 @@ nagareko *@
             <div style="border-top: 4px solid;" class="mb-2 border-success">
             </div>
             <div class="row">
-                <div class="col-md-4 mb-3">
-                    <label for="CustomerName" class="form-label">Customer Name</label>
-                    <input type="text" class="form-control" id="CustomerName" required>
+                <div class="col-md-3 mb-3">
+                    <label for="CustomerType" class="form-label">
+                        Customer Type
+                    </label>
+                    <select class="form-control me-sm-2" asp-for="CustomerType"
+                        asp-items="@Model.CustomerTypeSelectList()">
+                        <option value="">-CUSTOMER TYPE-</option>
+                    </select>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-3 mb-3">
+                    <label for="CustomerName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="CustomerName" disabled>
+                </div>
+
+                <div class="col-md-3 mb-3">
                     <label for="CustomerAddress" class="form-label">
                         Customer Address
                     </label>
-                    <input type="text" class="form-control" id="CustomerAddress" required>
+                    <input type="text" class="form-control" id="CustomerAddress" disabled>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-3 mb-3">
                     <label for="SaleDate" class="form-label">Sale Date</label>
                     <input type="date" class="form-control" asp-for="SaleDate" required>
                 </div>
             </div>
+            <div style="border-top: 4px solid;" class="mb-2 border-success">
+            </div>
+            <fieldset id="memberFieldSet" disabled>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="MemberShipId" class="form-label">
+                            Member Name
+                        </label>
+                        <select class="form-control" asp-for="MemberShipId" asp-items="Model.MemberSelectList()">
+                            <option value="">--SELECT A MEMBER--</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label for="MemberAddress" class="form-label">
+                            Member Address
+                        </label>
+                        <input type="text" class="form-control" id="memberAddress" required>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label for="MemberPhone" class="form-label">
+                            Phone number
+                        </label>
+                        <input type="text" class="form-control" id="memberPhone" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="Last Transaction" class="form-label">
+                            Last Transaction
+                        </label>
+                        <input type="text" class="form-control" id="lastTransaction" required>
+                    </div>
+
+                </div>
+            </fieldset>
             <div style="border-top: 4px solid;" class="mb-2 border-success">
             </div>
             <fieldset id="fieldSet" disabled>
@@ -51,7 +96,7 @@ nagareko *@
                     </div>
                     <div class="col-md-3 mb-3">
                         <label for="Rate" class="form-label">Rate</label>
-                        <input type="decimal" class="form-control" id="f_rate" required>
+                        <input type="decimal" class="form-control" id="f_rate" readonly>
                     </div>
                 </div>
                 <div class="row">
@@ -161,11 +206,18 @@ nagareko *@
 
 <script>
     var sn = 0;
+    const cusTypeElm = document.querySelector('#CustomerType');
+    const cusNameElm = document.querySelector('#CustomerName');
+    const cusAddressElm = document.querySelector('#CustomerAddress');
+    const memberFieldSet = document.querySelector('#memberFieldSet');
+    const memberShipIdElm = document.querySelector('#MemberShipId');
+    const memberAddressElm = document.querySelector('#memberAddress');
+    const memberPhoneElm = document.querySelector('#memberPhone');
+    const memberLastTransactionElm = document.querySelector('#lastTransaction');
     const checkoutBtn = document.querySelector('#checkout');
     const addBtn = document.querySelector('#Add');
     const removeBtn = document.querySelector('#remove');
-    const cusNameElm = document.querySelector('#CustomerName');
-    const cusAddressElm = document.querySelector('#CustomerAddress');
+
     const saleDateElm = document.querySelector('#SaleDate');
     const fieldSet = document.querySelector('#fieldSet');
     const itemListElm = document.querySelector('#item_list');
@@ -185,23 +237,80 @@ nagareko *@
     //change event on select list
     //input event on input type
     //make separate function for each event as far as possible
+    cusTypeElm.addEventListener('change', toggleMemberFieldSet);
     cusNameElm.addEventListener('input', toggleFieldSet);
     cusAddressElm.addEventListener('input', toggleFieldSet);
+    memberShipIdElm.addEventListener('change', getMemberData);
+    memberAddressElm.addEventListener('input', toggleFieldSet);
     rowElms.product.addEventListener('change', getUnitSelectList);
     rowElms.unit.addEventListener('change', getRateAmt);
     rowElms.rate.addEventListener('input', updateRowElmAmt);
     rowElms.quantity.addEventListener('input', updateRowElmAmt);
 
+    function toggleMemberFieldSet() {
+        const customerType = cusTypeElm.value; //it's value is also string 
+
+
+        if (customerType == 'NormalCustomer') {
+            cusNameElm.disabled = false;
+            cusAddressElm.disabled = false;
+            memberShipIdElm.value = '';
+            memberAddressElm.value = null;
+            memberPhoneElm.value = null;
+            memberLastTransactionElm.value = null;
+            memberFieldSet.disabled = true;
+
+            cusNameElm.dispatchEvent(new Event('input'));
+            cusAddressElm.dispatchEvent(new Event('input'));
+
+        }
+
+        if (customerType == 'MemberShipCustomer') {
+
+            memberFieldSet.disabled = false;
+            cusNameElm.value = null;
+            cusAddressElm.value = null;
+            cusNameElm.disabled = true;
+            cusAddressElm.disabled = true;
+
+            memberShipIdElm.dispatchEvent(new Event('change'));
+            memberAddressElm.dispatchEvent(new Event('input'));
+
+        }
+
+    }
+
     function toggleFieldSet() {
         const cusName = cusNameElm.value;
         const cusAddress = cusAddressElm.value;
-        console.log(cusName);
+        const memberShipId = memberShipIdElm.value;
+        const memberAddress = memberAddressElm.value;
 
-        if (cusName && cusAddress) {
+        if ((cusName && cusAddress) || (memberShipId && memberAddress)) {
             fieldSet.disabled = false;
+
         }
         else {
             fieldSet.disabled = true;
+
+        }
+    }
+
+    function getMemberData() {
+        const memberShipId = memberShipIdElm.value;
+        console.log(memberShipId);
+
+        if (memberShipId != null) {
+            fetch('/MemberShip/GetMemberShipDetails?MemberShipId=' + memberShipId)
+                .then(res => res.json())
+                .then(data => {
+                    memberShipId.value = data.memberName;
+                    memberAddressElm.value = data.memberAddress;
+                    memberPhoneElm.value = data.memberPhone;
+                    memberLastTransactionElm.value = data.memberLastTransaction;
+
+                    memberAddressElm.dispatchEvent(new Event('input'));
+                });
         }
     }
 
@@ -212,6 +321,9 @@ nagareko *@
         if (productId) {
             cusNameElm.readOnly = true;
             cusAddressElm.readOnly = true; //or readonly
+            memberFieldSet.disabled = true;
+            cusTypeElm.disabled = true;
+            saleDateElm.disabled = true;
         }
 
         fetch("/ProductQuantityUnitRate/GetUnitSelectList?ProductId=" + productId)
@@ -334,43 +446,43 @@ nagareko *@
                 UnitId: elm.dataset.unitId,
                 Rate: elm.dataset.rate,
                 SubTotal: elm.dataset.subTotal,
-                VATAmt: elm.dataset.vatAmt,
-                DisAmt: elm.dataset.disAmt,
+                VATAmt: elm.dataset.vat,
+                DisAmt: elm.dataset.dis,
                 NetAmt: elm.dataset.netAmt
             });
         }
 
         const sendData = {
+            CustomerType: cusTypeElm.value,
             CustomerName: cusNameElm.value,
             CustomerAddress: cusAddressElm.value,
+            //MemberShipId: memberShipIdElm.value,
+            SaleDate: saleDateElm.value,
             SaleItemVms: data
-        }
+        };
 
-        fetch("/Sale/Add", {
+        fetch('/Sale/Add', {
             method: 'POST',
             body: JSON.stringify(sendData),
             headers: {
                 'Content-Type': 'application/json'
                 //add other headers
             }
-        })
-            .then(res => {
-                if (!res.ok) {
-                    throw new Error("Network response was not ok.");
-                }
-                return res.json();
-            }).then(x => {
-                console.log('Server response', x);
-                if (x.success) {
-                    window.location.reload();
-                }
-                else {
-                    alert("Error recording sale.");
-                }
-            });
+        }).then(res => {
+            if (!res.ok) {
+                throw new Error("Network response was not ok.");
+            }
+            return res.json();
+        }).then(x => {
+            console.log('Server response', x);
+            if (x.success) {
+                window.location.reload();
+            }
+            else {
+                alert("Error recording sale.");
+            }
+        });
     });
-
-
 
 
 </script>

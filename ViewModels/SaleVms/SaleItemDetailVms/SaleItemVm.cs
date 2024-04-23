@@ -2,7 +2,7 @@
 public class SaleItemVm
 {
     public long ProductId { get; set; }
-    public decimal Quantity { get; set; }
+    public long Quantity { get; set; }
     public long UnitId { get; set; }
     public decimal Rate { get; set; }
     public decimal SubTotal { get; set; }

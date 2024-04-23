@@ -8,4 +8,5 @@ public class StockQuantityHistory
     public virtual ProductQuantityUnitRate ProductQuantityUnitRate { get; set; }
     public long QuantityMovement { get; set; }
     public string Remarks { get; set; }
+    public DateTime On_Date { get; set; }
 }

@@ -166,4 +166,32 @@ public class MemberShipController : Controller
         }
     }
 
+
+    public async Task<IActionResult> GetMemberShipDetails(long MemberShipId)
+    {
+
+        var member = await _context.MemberShipHolders.Where(x => x.Id == MemberShipId).FirstOrDefaultAsync();
+
+        if (member != null)
+        {
+            return Json(new
+            {
+                memberName = member.Name,
+                memberAddress = member.Address,
+                memberPhone = member.Phone,
+                memberLastTransaction = member.LastTransaction?.ToString("yyyy-MM-dd")
+            }
+            );
+        }
+
+        else
+        {
+            return Json(new
+            {
+                error = "No member details found."
+            });
+        }
+    }
 }
+
+

@@ -15,7 +15,7 @@
             </div>
             <div class="row mb-2">
                 <form action="" class="d-flex align-items-center">
-                    <select asp-for="SupplierId" class="form-control" asp-items="@Model.SupplierSelectList()">
+                    <select asp-for="SupplierId" class="form-control me-sm-2" asp-items="@Model.SupplierSelectList()">
                         <option value="">-- SELECT A SUPPLIER --</option>
                     </select>
                     <input class="form-control me-sm-2" type="Date" asp-for="FromPurchaseDate"
@@ -60,7 +60,7 @@
                                             @purchase.Supplier.Name
                                     </td>
                                     <td>
-                                            <span>Rs.</span> @purchase.TotalPaidAmount
+                                        <span>Rs.</span> @purchase.TotalPaidAmount
                                     </td>
                                     <td>
                                             @purchase.Admin?.UserName

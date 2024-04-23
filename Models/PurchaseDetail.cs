@@ -11,8 +11,6 @@ public class PurchaseDetail
     public virtual Product Product { get; set; }
     public long Quantity { get; set; }
     public decimal Rate { get; set; }
-    // public long ProductPurchaseRateId { get; set; }
-    // public virtual ProductPurchaseRate ProductPurchaseRate { get; set; }
     public long? UnitId { get; set; }
     //[ForeignKey("UnitId")]
     public virtual Unit Unit { get; set; }

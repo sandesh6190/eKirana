@@ -86,8 +86,14 @@ public class PurchaseController : Controller
 
                 var prdQUR = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == purchaseDetailVm.ProductId && x.IsBaseUnit == true).FirstOrDefaultAsync();
 
-                var prdRatio = await _context.ProductQuantityUnitRates.Where(x => x.UnitId == purchaseDetailVm.UnitId).FirstOrDefaultAsync();
+                var prdRatio = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == purchaseDetailVm.ProductId && x.UnitId == purchaseDetailVm.UnitId).FirstOrDefaultAsync();
 
+                if (prdQUR == null || prdRatio == null)
+                {
+                    throw new Exception("Exception occured.");
+                }
+
+                //for StockQuantityHistory
                 var stockQuantityHistory = new StockQuantityHistory();
 
                 if (prdQUR.UnitId != purchaseDetailVm.UnitId)
@@ -107,12 +113,13 @@ public class PurchaseController : Controller
 
                 stockQuantityHistory.ProductQuantityUnitRateId = prdQUR.Id;
                 stockQuantityHistory.Remarks = StockQuantityRemarksConstants.Purchased;
+                stockQuantityHistory.On_Date = DateTime.Now;
 
                 _context.StockQuantityHistories.Add(stockQuantityHistory);
                 _context.ProductQuantityUnitRates.Update(prdQUR);
 
                 //for purchaseRate
-                var purchaseRate = await _context.ProductPurchaseRates.Where(x => x.UnitId == purchaseDetailVm.UnitId).FirstOrDefaultAsync();
+                var purchaseRate = await _context.ProductPurchaseRates.Where(x => x.UnitId == purchaseDetailVm.UnitId && x.ProductId == purchaseDetailVm.ProductId).FirstOrDefaultAsync();
 
                 if (purchaseRate == null)
                 {
@@ -129,8 +136,7 @@ public class PurchaseController : Controller
                     purchaseRate.DateModified = DateTime.Now;
                     _context.ProductPurchaseRates.Update(purchaseRate);
                 }
-
-
+                //end of productpuchaserate}
 
                 TotalAmount = TotalAmount + purchaseDetail.NetAmount;
 
