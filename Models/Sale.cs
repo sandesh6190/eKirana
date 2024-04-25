@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using eKirana.Models;
 using eKirana.Models.SetUp;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace eKirana;
 public class Sale

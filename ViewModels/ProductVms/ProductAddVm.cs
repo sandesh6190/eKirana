@@ -6,8 +6,8 @@ namespace eKirana.ViewModels.ProductVms;
 public class ProductAddVm
 {
     public long Id { get; set; }
-    public string? Name { get; set; }
-    public IFormFile? Photo { get; set; }
+    public string Name { get; set; }
+    public IFormFile Photo { get; set; }
     public long? BrandId { get; set; }
     public List<Brand> Brands;
     //select list of brand
@@ -20,7 +20,7 @@ public class ProductAddVm
             BrandId
         );
     }
-    public long? CategoryId { get; set; }
+    public long CategoryId { get; set; }
     public List<Category>? Categories;
     public SelectList CategorySelectList()
     {

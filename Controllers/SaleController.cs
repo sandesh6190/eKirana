@@ -27,14 +27,14 @@ public class SaleController : Controller
 
     public async Task<IActionResult> Index(SaleIndexVm vm)
     {
-        var Sales = await _context.Sales.Where(x => string.IsNullOrEmpty(vm.SearchCustomer) || x.CustomerName.Contains(vm.SearchCustomer) || x.CustomerName.Contains(vm.SearchCustomer)).Include(x => x.Admin).ToListAsync();
+        var Sales = await _context.Sales.Where(x => string.IsNullOrEmpty(vm.SearchCustomer) || x.CustomerName.Contains(vm.SearchCustomer) || x.CustomerAddress.Contains(vm.SearchCustomer)).Include(x => x.Admin).ToListAsync();
 
         vm.SaleInfoVms = Sales.Select(x => new SaleInfoVm()
         {
             SaleId = x.Id,
             CustomerName = x.CustomerName,
             CustomerAddress = x.CustomerAddress,
-            SaleDate = DateTime.Now,
+            SaleDate = x.SaleDate,
             SaleBy = x.Admin.UserName,
             TotalAmount = x.TotalAmount,
         }).ToList();
@@ -82,6 +82,7 @@ public class SaleController : Controller
             sale.SaleDate = vm.SaleDate;
             sale.SaleById = currentAdmin.Id;
 
+
             if (vm.CustomerType == CustomerTypeConstants.NormalCustomer)
             {
                 sale.CustomerType = vm.CustomerType;
@@ -101,6 +102,9 @@ public class SaleController : Controller
 
                 _context.MemberShipHolders.Update(member);
             }
+
+            _context.Sales.Add(sale);
+            await _context.SaveChangesAsync();
 
             decimal TotalAmount = 0;
 
@@ -152,13 +156,19 @@ public class SaleController : Controller
                 _context.ProductQuantityUnitRates.Update(prdQUR);
                 //end for Stock Quantity}
 
+
                 TotalAmount = TotalAmount + saleItemDetail.NetAmt;
                 _context.SaleDetails.Add(saleDetail);
                 //end of saleDetail}
             }
+            var saleFromDB = await _context.Sales.Where(x => x.Id == sale.Id).FirstOrDefaultAsync();
 
-            sale.TotalAmount = TotalAmount;
-            _context.Sales.Add(sale);
+            if (saleFromDB == null)
+            {
+                throw new Exception("No Sale Id Found.");
+            }
+            saleFromDB.TotalAmount = TotalAmount;
+            _context.Sales.Update(saleFromDB); //not mandatory
             //end of sale}
 
             await _context.SaveChangesAsync();

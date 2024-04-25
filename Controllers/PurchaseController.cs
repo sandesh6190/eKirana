@@ -60,6 +60,9 @@ public class PurchaseController : Controller
             purchase.PurchaseDate = vm.PurchaseDate;
             purchase.PurchaseById = currentAdmin.Id;
 
+            _context.Purchases.Add(purchase);
+            await _context.SaveChangesAsync();
+
 
             //changes on supplier model
             var supplier = await _context.Suppliers.Where(x => x.Id == vm.SupplierId).FirstOrDefaultAsync();
@@ -88,9 +91,13 @@ public class PurchaseController : Controller
 
                 var prdRatio = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == purchaseDetailVm.ProductId && x.UnitId == purchaseDetailVm.UnitId).FirstOrDefaultAsync();
 
-                if (prdQUR == null || prdRatio == null)
+                if (prdQUR == null)
                 {
-                    throw new Exception("Exception occured.");
+                    throw new Exception("Add Base Unit of Product.");
+                }
+                if (prdRatio == null)
+                {
+                    throw new Exception("Add Ratio Of Product.");
                 }
 
                 //for StockQuantityHistory
@@ -144,10 +151,11 @@ public class PurchaseController : Controller
 
             }
 
-            purchase.TotalPaidAmount = TotalAmount;
+            var purchaseFromDB = await _context.Purchases.FirstOrDefaultAsync(x=>x.Id == purchase.Id);
+            purchaseFromDB.TotalPaidAmount = TotalAmount;
 
             //_context.Suppliers.Update(supplier); not necessary
-            _context.Purchases.Add(purchase);
+            _context.Purchases.Update(purchaseFromDB);
 
             await _context.SaveChangesAsync();
 

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace eKirana.ViewModels.PurchaseVms;
 public class PurchaseFormAddVm //for formma dekhauna ko lagi matrei banayeko vm ho, arko PurchaseAddVmle actually kam garcha with the help of fetchapi
 {
-    public long? SupplierId { get; set; }
+    public long SupplierId { get; set; }
     public List<Supplier>? Suppliers;
     public SelectList SupplierSelectList()
     {
@@ -31,7 +31,7 @@ public class PurchaseFormAddVm //for formma dekhauna ko lagi matrei banayeko vm 
         );
     }
 
-    public long? UnitId { get; set; }
+    public long UnitId { get; set; }
     public List<Unit>? Units;
     public SelectList UnitSelectList()
     {

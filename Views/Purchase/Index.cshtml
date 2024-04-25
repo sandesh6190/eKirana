@@ -71,6 +71,10 @@
                                             @purchase.PurchaseDate
                                     </td>
                                     <td class="text-end">
+                                        <a asp-action="Index" asp-controller="PurchaseDetail"
+                                            asp-route-PurchaseId="@purchase.Id" class="btn btn-primary btn-md"><i
+                                                class="bi bi-pencil-square">Details</i>
+                                        </a>
                                         <a asp-action="Edit" asp-route-id="@purchase.Id" class="btn btn-primary btn-md"><i
                                                 class="bi bi-pencil-square"></i>
                                         </a>

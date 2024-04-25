@@ -6,9 +6,9 @@ namespace eKirana.ViewModels.ProductVms;
 public class ProductEditVm
 {
     // public long Id { get; set; }
-    public string? Name { get; set; }
-    public IFormFile? Photo { get; set; }
-    public long? CategoryId { get; set; }
+    public string Name { get; set; }
+    public IFormFile Photo { get; set; }
+    public long CategoryId { get; set; }
     public List<Category>? Categories;
     public SelectList CategorySelectList()
     {

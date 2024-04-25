@@ -44,11 +44,17 @@ public class ProductQuantityUnitRateController : Controller
 
         foreach (var prdQUR in vm.InfoProductQuantityUnitRateVms)
         {
-            if (prdBaseStockQuantity.Stock_Quantity != 0)
+            if (prdBaseStockQuantity == null)
+            {
+                prdQUR.Quantity = 0;
+            }
+            else if (prdBaseStockQuantity.Stock_Quantity >= 0)
             {
                 prdQUR.Quantity = prdBaseStockQuantity.Stock_Quantity / prdQUR.Ratio;
                 prdBaseStockQuantity.Stock_Quantity = prdBaseStockQuantity.Stock_Quantity % prdQUR.Ratio;
             }
+
+
 
             var purchaseRates = await _context.ProductPurchaseRates.Where(x => x.ProductId == ProductId && x.UnitId == prdQUR.UnitId).FirstOrDefaultAsync();
             if (purchaseRates != null)

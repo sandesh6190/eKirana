@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+yVAfNY2jJhu/Ez4KG3io3u+tdQObFw7ejd0HVSTBb0=",
+  "Hash": "3uOlYBSp7z7PKPtiGgWT/5+YfM2jOjlSnTw/qxkmSZk=",
   "Source": "eKirana",
   "BasePath": "_content/eKirana",
   "Mode": "Default",
@@ -7242,6 +7242,23 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\Photos\\3825b3e2-4c60-46d9-8c5b-02533dc85264"
     },
     {
+      "Identity": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\3c9f6584-7eef-440f-a3b7-03d6b52d9e6f..jpg",
+      "SourceId": "eKirana",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\",
+      "BasePath": "_content/eKirana",
+      "RelativePath": "Uploads/Photos/3c9f6584-7eef-440f-a3b7-03d6b52d9e6f..jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Photos\\3c9f6584-7eef-440f-a3b7-03d6b52d9e6f..jpg"
+    },
+    {
       "Identity": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\47a7dc1b-56e9-43ac-8080-663112a3414e..jpg",
       "SourceId": "eKirana",
       "SourceType": "Discovered",
@@ -7361,6 +7378,23 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\Photos\\6276e7cc-aeb0-4d90-b7cf-eef7c16f5099"
     },
     {
+      "Identity": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\6e5bf971-7e10-4559-b7d0-5a758786d3e7..jpg",
+      "SourceId": "eKirana",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\",
+      "BasePath": "_content/eKirana",
+      "RelativePath": "Uploads/Photos/6e5bf971-7e10-4559-b7d0-5a758786d3e7..jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Photos\\6e5bf971-7e10-4559-b7d0-5a758786d3e7..jpg"
+    },
+    {
       "Identity": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\7b89a80f-eb67-4031-8ade-62f547a8ca9f..jpg",
       "SourceId": "eKirana",
       "SourceType": "Discovered",
@@ -7395,6 +7429,23 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\Photos\\7fcefc8f-0dbf-4257-beaf-ae7a7480a45a"
     },
     {
+      "Identity": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\804fc198-3ae0-40e7-a662-af3592669a22..jpg",
+      "SourceId": "eKirana",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\",
+      "BasePath": "_content/eKirana",
+      "RelativePath": "Uploads/Photos/804fc198-3ae0-40e7-a662-af3592669a22..jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Photos\\804fc198-3ae0-40e7-a662-af3592669a22..jpg"
+    },
+    {
       "Identity": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\8d8dda4d-0565-4384-9f58-3bf3b55f0300..jpg",
       "SourceId": "eKirana",
       "SourceType": "Discovered",
@@ -7427,6 +7478,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\Photos\\91ed3376-9d6f-4526-859a-834df00d9de3..jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\a07894b2-2643-40bc-bde4-86e15b3d7bcc..jpg",
+      "SourceId": "eKirana",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\",
+      "BasePath": "_content/eKirana",
+      "RelativePath": "Uploads/Photos/a07894b2-2643-40bc-bde4-86e15b3d7bcc..jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Photos\\a07894b2-2643-40bc-bde4-86e15b3d7bcc..jpg"
     },
     {
       "Identity": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\d2b9dc7a-7860-458a-a0c1-54be80672a44",

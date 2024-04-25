@@ -4,14 +4,14 @@ using eKirana.Models.SetUp;
 namespace eKirana.Models;
 public class PurchaseDetail
 {
-    public long? Id { get; set; }
-    public long? PurchaseId { get; set; }
+    public long Id { get; set; }
+    public long PurchaseId { get; set; }
     public virtual Purchase Purchase { get; set; }
-    public long? ProductId { get; set; }
+    public long ProductId { get; set; }
     public virtual Product Product { get; set; }
     public long Quantity { get; set; }
     public decimal Rate { get; set; }
-    public long? UnitId { get; set; }
+    public long UnitId { get; set; }
     //[ForeignKey("UnitId")]
     public virtual Unit Unit { get; set; }
     public decimal SubTotal { get; set; }

@@ -1,0 +1,106 @@
+@model eKirana.ViewModels.PurchaseVms.PurchaseItemDetailVms.PurchaseDetailIndexVm
+<div class="container-fluid mt-2">
+    <div class="card shadow-lg">
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4 class="card-title ">List of Purchase</h4>
+
+                @* <a href="/Purchase/Add" class="btn btn-success "><span class="bi bi-file-plus"></span>Purchase</a> *@
+            </div>
+        </div>
+
+
+        <div class="card-body">
+            <div style="border-top: 4px solid;" class="mb-2 border-success">
+            </div>
+            <div class="row mb-2">
+                <form action="" class="d-flex align-items-center">
+                    <select asp-for="ProductId" class="form-control me-sm-2" asp-items="@Model.ProductSelectList()">
+                        <option value="">-- SEARCH BY PRODUCT --</option>
+                    </select>
+                    <input type="hidden" asp-for="PurchaseId">
+                    <button class="btn btn-success"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover table-sm border-1 table-striped">
+                    <thead class="table-success">
+                        <tr>
+                            <th scope="col" width="80px">SN</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Unit</th>
+                            <th scope="col">Rate</th>
+                            <th scope="col">Sub Total</th>
+                            <th scope="col">VAT</th>
+                            <th scope="col">Discount</th>
+                            <th scope="col">Net Amount</th>
+
+
+                            <th scope="col" class="text-end"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-light">
+                            @{
+                                var sn = 1;
+                                foreach (var purchaseDetail in Model.PurchaseDetailInfoVms)
+                                {
+                                <tr class="table-light text-center">
+                                    <th scope="row">
+                                            @(sn++)
+                                    </th>
+
+                                    <td>
+                                            @purchaseDetail.ProductName
+                                    </td>
+                                    <td>
+                                            @purchaseDetail.Quantity
+                                    </td>
+                                    <td>
+                                            @purchaseDetail.UnitName
+                                    </td>
+
+
+                                    <td>
+                                        <span>Rs.</span> @purchaseDetail.Rate
+                                    </td>
+                                    <td>
+                                            @purchaseDetail.SubTotal
+                                    </td>
+                                    <td>
+                                            @purchaseDetail.VATAmount
+                                    </td>
+                                    <td>
+                                            @purchaseDetail.Discount
+                                    </td>
+                                    <td>
+                                            @purchaseDetail.NetAmount
+                                    </td>
+                                        @* <td class="text-end">
+                            <a asp-action="Index" asp-controller="PurchaseDetail" asp-route-id="@purchase.Id"
+                            class="btn btn-primary btn-md"><i class="bi bi-pencil-square">Details</i>
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@purchase.Id" class="btn btn-primary btn-md"><i
+                            class="bi bi-pencil-square"></i>
+                            </a>
+                            <form asp-action="Delete" asp-route-id="@purchase.Id" class="d-inline">
+                            <button type="submit" class="btn btn-danger btn-md"
+                            onclick="return confirm('Do you really want to delete?')"><i
+                            class="bi bi-trash"></i></button>
+                            </form>
+
+                            </td> *@
+                                </tr>
+                                }
+                            }
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</div>
