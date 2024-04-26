@@ -14,7 +14,9 @@
         <div class="card-body">
             <div style="border-top: 4px solid;" class="mb-2 border-success">
             </div>
-            <div class="row mb-2">
+            
+            <div class="row mb-2 d-flex align-items-center">
+                <a asp-controller="ProductQuantityUnitRate" asp-action="AddProductUnit" asp-route-ProductId="@Model.ProductId" class="btn btn-success "><span class="bi bi-file-plus"></span> Reset Stock Quantity</a>
                 <form action="" class="d-flex align-items-center">
                     @* <input class="form-control me-sm-2" type="search" asp-for="Search" placeholder="Search"
                         autocomplete="off"> *@
@@ -22,8 +24,8 @@
                         <input class="form-control me-sm-2" type="number" asp-for="Max_Stock_Quantity" placeholder="Max-Quantity" name="" id=""> *@
 
                         <input type="hidden" asp-for="ProductId" value="@Model.ProductId">
-                        <select asp-for="UnitId" class="form-control" asp-items="@Model.UnitSelectList()">
-                        <option value="">-- SELECT A UNIT --</option>
+                        <select asp-for="UnitId" class="form-control me-sm-2">
+                        @* <option value="">-- SELECT A UNIT --</option> *@
                     </select>
                     <button class="btn btn-success"><i class="bi bi-search"></i></button>
                 </form>
@@ -31,7 +33,7 @@
 
             <div class="table-responsive">
                 <table class="table table-hover table-sm border-1 table-striped">
-                    <thead class="table-success">
+                    <thead class="table-success text-center">
                         <tr>
                             <th scope="col" width="80px">SN</th>
                             <th scope="col">Product</th>
@@ -108,3 +110,32 @@
     </div>
 
 </div>
+
+
+<script>
+    const productIdElm = document.querySelector('#ProductId');
+    const unitIdElm = document.querySelector('#UnitId');
+
+    window.onload = getUnitSelectList();
+
+    function getUnitSelectList() {
+        const productId = productIdElm.value;
+
+        fetch("/ProductQuantityUnitRate/GetUnitSelectList?ProductId=" + productId)
+            .then(res => res.json())
+            .then(data => {
+                // Clear previous select options
+                unitIdElm.innerHTML = '';
+                // while(selectElm.HasChildren) => selectElm.children[0].remove();
+                const emptyOption = document.createElement("option");
+                emptyOption.value = ""; // Set the value of the empty option
+                emptyOption.text = "- SELECT A UNIT -"; // Text to display for the empty option
+                unitIdElm.appendChild(emptyOption);
+                for (var item of data.prdQURs) {
+                    const option = new Option(item.unit.name, item.unit.id);
+                    unitIdElm.appendChild(option);
+                }
+            });
+
+    }
+</script>

@@ -45,8 +45,8 @@ nagareko *@
 
                     <div class="col-md-3 mb-3">
                         <label for="Unit" class="form-label">Unit</label>
-                        <select class="form-control" asp-for="UnitId" asp-items="Model.UnitSelectList()">
-                            <option value="">-- SELECT A UNIT --</option>
+                        <select class="form-control" asp-for="UnitId">
+                            @* <option value="">-- SELECT A UNIT --</option> *@
                         </select>
                     </div>
                     <div class="col-md-3 mb-3">
@@ -83,7 +83,7 @@ nagareko *@
 
             <div class="table-responsive">
                 <table class="table table-hover table-sm border-1 table-striped">
-                    <thead class="table-success">
+                    <thead class="table-success text-center">
                         <tr>
                             <th scope="col" width="80px">SN</th>
                             <th scope="col">Product</th>
@@ -184,6 +184,7 @@ nagareko *@
         netAmt: document.querySelector('#f_netAmt'),
     };
 
+
     // Not needed
     // rowElms.product.addEventListener('change', getRateAmt);
     //change event on select list
@@ -223,8 +224,12 @@ nagareko *@
             .then(data => {
                 // Clear previous select options
                 rowElms.unit.innerHTML = '';
-                //rowElms.unit.appendChild('--SELECT A UNIT--');
                 // while(selectElm.HasChildren) => selectElm.children[0].remove();
+                const emptyOption = document.createElement("option");
+                emptyOption.value = ""; // Set the value of the empty option
+                emptyOption.text = "- SELECT A UNIT -"; // Text to display for the empty option
+                rowElms.unit.appendChild(emptyOption);
+
                 for (var item of data.prdQURs) {
                     const option = new Option(item.unit.name, item.unit.id);
                     rowElms.unit.appendChild(option);

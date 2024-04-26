@@ -40,14 +40,15 @@ public class SaleFormAddVm
         );
     }
     public long UnitId { get; set; }
-    public List<Unit> Units;
-    public SelectList UnitSelectList()
-    {
-        return new SelectList(
-            Units,
-            nameof(Unit.Id),
-            nameof(Unit.Name),
-            UnitId
-        );
-    }
+    //unit is fetched through api
+    // public List<Unit> Units;
+    // public SelectList UnitSelectList()
+    // {
+    //     return new SelectList(
+    //         Units,
+    //         nameof(Unit.Id),
+    //         nameof(Unit.Name),
+    //         UnitId
+    //     );
+    // }
 }

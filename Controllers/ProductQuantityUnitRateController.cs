@@ -23,7 +23,7 @@ public class ProductQuantityUnitRateController : Controller
     public async Task<IActionResult> Index(long ProductId, IndexProductQuantityUnitRateVm vm)
     {
         vm.ProductId = ProductId; //passing product btween different view pages of different controller
-        vm.Units = await _context.Units.ToListAsync();
+        //vm.Units = await _context.Units.ToListAsync(); //js bata fetch garne
         var prdQURs = await _context.ProductQuantityUnitRates.Where(x => (x.ProductId == ProductId) && (vm.UnitId == null || vm.UnitId == x.UnitId)).Include(x => x.Product).Include(x => x.Unit).OrderByDescending(x => x.Ratio).ToListAsync();
 
         var prdBaseStockQuantity = await _context.ProductQuantityUnitRates.Where(x => x.IsBaseUnit == true).FirstOrDefaultAsync();

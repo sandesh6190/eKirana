@@ -1,11 +1,11 @@
-@model eKirana.ViewModels.PurchaseVms.PurchaseItemDetailVms.PurchaseDetailIndexVm
+@model eKirana.ViewModels.SaleVms.SaleItemDetailVms.SaleDetailIndexVm
 <div class="container-fluid mt-2">
     <div class="card shadow-lg">
         <div class="card-header">
             <div class="d-flex justify-content-between align-items-center">
-                <h4 class="card-title ">List of Purchase</h4>
+                <h4 class="card-title ">List of Sold Products</h4>
 
-                @* <a href="/Purchase/Add" class="btn btn-success "><span class="bi bi-file-plus"></span>Purchase</a> *@
+                @* <a href="/Sale/Add" class="btn btn-success "><span class="bi bi-file-plus"></span>Sale</a> *@
             </div>
         </div>
 
@@ -18,7 +18,7 @@
                     <select asp-for="ProductId" class="form-control me-sm-2" asp-items="@Model.ProductSelectList()">
                         <option value="">-- SEARCH BY PRODUCT --</option>
                     </select>
-                    <input type="hidden" asp-for="PurchaseId">
+                    <input type="hidden" asp-for="SaleId">
                     <button class="btn btn-success"><i class="bi bi-search"></i></button>
                 </form>
             </div>
@@ -45,7 +45,7 @@
                         <tr class="table-light">
                             @{
                                 var sn = 1;
-                                foreach (var purchaseDetail in Model.PurchaseDetailInfoVms)
+                                foreach (var SaleDetail in Model.SaleDetailInfoVms)
                                 {
                                 <tr class="table-light text-center">
                                     <th scope="row">
@@ -53,39 +53,39 @@
                                     </th>
 
                                     <td>
-                                            @purchaseDetail.ProductName
+                                            @SaleDetail.ProductName
                                     </td>
                                     <td>
-                                            @purchaseDetail.Quantity
+                                            @SaleDetail.Quantity
                                     </td>
                                     <td>
-                                            @purchaseDetail.UnitName
+                                            @SaleDetail.UnitName
                                     </td>
 
 
                                     <td>
-                                        <span>Rs.</span> @purchaseDetail.Rate
+                                        <span>Rs.</span> @SaleDetail.Rate
                                     </td>
                                     <td>
-                                            @purchaseDetail.SubTotal
+                                            @SaleDetail.SubTotal
                                     </td>
                                     <td>
-                                            @purchaseDetail.VATAmount
+                                            @SaleDetail.VATAmt
                                     </td>
                                     <td>
-                                            @purchaseDetail.Discount
+                                            @SaleDetail.DisAmt
                                     </td>
                                     <td>
-                                            @purchaseDetail.NetAmount
+                                            @SaleDetail.NetAmt
                                     </td>
                                     <td class="text-end">
-                                            @* <a asp-action="Index" asp-controller="PurchaseDetail" asp-route-id="@purchase.Id"
+                                            @* <a asp-action="Index" asp-controller="SaleDetail" asp-route-id="@Sale.Id"
                                 class="btn btn-primary btn-md"><i class="bi bi-pencil-square">Details</i>
                                 </a>
-                                <a asp-action="Edit" asp-route-id="@purchase.Id" class="btn btn-primary btn-md"><i
+                                <a asp-action="Edit" asp-route-id="@Sale.Id" class="btn btn-primary btn-md"><i
                                 class="bi bi-pencil-square"></i>
                                 </a>
-                                <form asp-action="Delete" asp-route-id="@purchase.Id" class="d-inline">
+                                <form asp-action="Delete" asp-route-id="@Sale.Id" class="d-inline">
                                 <button type="submit" class="btn btn-danger btn-md"
                                 onclick="return confirm('Do you really want to delete?')"><i
                                 class="bi bi-trash"></i></button>

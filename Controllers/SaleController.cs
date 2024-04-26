@@ -27,13 +27,14 @@ public class SaleController : Controller
 
     public async Task<IActionResult> Index(SaleIndexVm vm)
     {
-        var Sales = await _context.Sales.Where(x => string.IsNullOrEmpty(vm.SearchCustomer) || x.CustomerName.Contains(vm.SearchCustomer) || x.CustomerAddress.Contains(vm.SearchCustomer)).Include(x => x.Admin).ToListAsync();
+        var Sales = await _context.Sales.Where(x => string.IsNullOrEmpty(vm.SearchCustomer) || x.CustomerName.Contains(vm.SearchCustomer) || x.CustomerAddress.Contains(vm.SearchCustomer)).Include(x => x.Admin).Include(x => x.MemberShipHolder).ToListAsync();
 
         vm.SaleInfoVms = Sales.Select(x => new SaleInfoVm()
         {
             SaleId = x.Id,
             CustomerName = x.CustomerName,
             CustomerAddress = x.CustomerAddress,
+            MemberShipHolder = x.MemberShipHolder,
             SaleDate = x.SaleDate,
             SaleBy = x.Admin.UserName,
             TotalAmount = x.TotalAmount,
@@ -49,7 +50,7 @@ public class SaleController : Controller
     {
         var vm = new SaleFormAddVm();
         vm.Products = await _context.Products.ToListAsync();
-        vm.Units = await _context.Units.ToListAsync();
+        //vm.Units = await _context.Units.ToListAsync(); fetching through api according to product
         //sending all the members' data using separate vm instead of using model itself
         var members = await _context.MemberShipHolders.ToListAsync();
 
@@ -100,8 +101,12 @@ public class SaleController : Controller
                 }
                 member.LastTransaction = DateTime.Now;
 
+                sale.CustomerName = member.Name;
+                sale.CustomerAddress = member.Address;
+
                 _context.MemberShipHolders.Update(member);
             }
+
 
             _context.Sales.Add(sale);
             await _context.SaveChangesAsync();

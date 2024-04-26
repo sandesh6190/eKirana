@@ -35,7 +35,7 @@ public class PurchaseController : Controller
         var vm = new PurchaseFormAddVm();
         vm.Suppliers = await _context.Suppliers.Where(x => x.SupplierStatus == SupplierStatusConstants.Active).ToListAsync();
         vm.Products = await _context.Products.ToListAsync();
-        vm.Units = await _context.Units.ToListAsync();
+        //vm.Units = await _context.Units.ToListAsync(); fetching through api according to product
 
         return View(vm);
     }
@@ -151,7 +151,7 @@ public class PurchaseController : Controller
 
             }
 
-            var purchaseFromDB = await _context.Purchases.FirstOrDefaultAsync(x=>x.Id == purchase.Id);
+            var purchaseFromDB = await _context.Purchases.FirstOrDefaultAsync(x => x.Id == purchase.Id);
             purchaseFromDB.TotalPaidAmount = TotalAmount;
 
             //_context.Suppliers.Update(supplier); not necessary

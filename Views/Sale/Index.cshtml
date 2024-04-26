@@ -34,7 +34,7 @@
 
             <div class="table-responsive">
                 <table class="table table-hover table-sm border-1 table-striped">
-                    <thead class="table-success">
+                    <thead class="table-success text-center">
                         <tr>
                             <th scope="col" width="80px">SN</th>
                             <th scope="col">Customer</th>
@@ -74,6 +74,9 @@
                                             @saleInfo.SaleDate
                                     </td>
                                     <td class="text-end">
+                                        <a asp-action="Index" asp-controller="SaleDetail" asp-route-SaleId="@saleInfo.SaleId"
+                                            class="btn btn-primary btn-md"><i class="bi bi-eye">Details</i>
+                                        </a>
                                         <a asp-action="Edit" asp-route-id="@saleInfo.SaleId" class="btn btn-primary btn-md"><i
                                                 class="bi bi-pencil-square"></i>
                                         </a>
