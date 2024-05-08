@@ -39,9 +39,9 @@
                             <th scope="col" width="80px">SN</th>
                             <th scope="col">Product</th>
                             <th scope="col">Quantity</th>
-                            <th scope="col">Admin</th>
-                            <th scope="col">On Date</th>
                             <th scope="col">Remarks</th>
+                            <th scope="col">On Date</th>
+                            <th scope="col">Admin</th>
                             @* <th scope="col" class="text-end"></th> *@
                         </tr>
                     </thead>
@@ -67,16 +67,15 @@
                                             @stockQuantityInfo.QuantityMovement
                                     </td>
                                     <td>
-                                        @stockQuantityInfo.AdminName
+                                            @stockQuantityInfo.Remarks
                                     </td>
                                     <td>
                                             @stockQuantityInfo.On_Date
                                     </td>
-
-
                                     <td>
-                                            @stockQuantityInfo.Remarks
+                                        @stockQuantityInfo.AdminName
                                     </td>
+                        
                                     @* <td class="text-end">
                                         <a asp-action="Index" asp-controller="SaleDetail" asp-route-SaleId="@saleInfo.SaleId"
                                             class="btn btn-primary btn-md"><i class="bi bi-eye">Details</i>

@@ -1,0 +1,49 @@
+@model eKirana.ViewModels.StockQuantityVms.StockQuantityResetVm
+
+<form method="post">
+
+    <div class="container mt-4">
+        <div class="card shadow-lg">
+            <div class="card-header">
+                <h4 class="card-title text-center text-success text-uppercase">Resetting Stock Quantity</h4>
+            </div>
+            <div class="card-body">
+                <div style="border-top: 4px solid;" class="mb-2 border-success">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="hidden" asp-for="ProductId">
+                        <label for="Product Name" class="form-label">Product</label>
+                        <input type="text" class="form-control" asp-for="ProductName" placeholder="Product Name"
+                            readonly>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="ProductBrand" class="form-label">Brand</label>
+                        <input type="text" class="form-control" asp-for="ProductBrand" placeholder="Brand" readonly>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="Quantity" class="form-label">Stock Quantity </label>
+                        <input type="number" class="form-control" asp-for="StockQuantity" placeholder="Stock Quantity"
+                            required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="Unit" class="form-label">Unit</label>
+                        <select asp-for="UnitId" class="form-control">
+                            <option value="">-- SELECT A UNIT --</option>
+                        </select>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="card-footer">
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-success w-100">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
