@@ -156,6 +156,7 @@ public class SaleController : Controller
                 stockQuantityHistory.ProductQuantityUnitRateId = prdQUR.Id;
                 stockQuantityHistory.Remarks = StockQuantityRemarksConstants.Sold;
                 stockQuantityHistory.On_Date = DateTime.Now;
+                stockQuantityHistory.AdminId = currentAdmin.Id;
                 _context.StockQuantityHistories.Add(stockQuantityHistory);
                 //end for StockQuantityHistory}
                 _context.ProductQuantityUnitRates.Update(prdQUR);

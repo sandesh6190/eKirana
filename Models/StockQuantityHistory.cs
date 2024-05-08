@@ -9,4 +9,6 @@ public class StockQuantityHistory
     public long QuantityMovement { get; set; }
     public string Remarks { get; set; }
     public DateTime On_Date { get; set; }
+    public long AdminId{get; set;}
+    public virtual Admin Admin {get; set;}
 }

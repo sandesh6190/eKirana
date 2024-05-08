@@ -1,11 +1,11 @@
-@model eKirana.ViewModels.SaleVms.SaleIndexVm
+@model eKirana.ViewModels.StockQuantityVms.StockQuantityIndexVm
 <div class="container-fluid mt-2">
     <div class="card shadow-lg">
         <div class="card-header">
             <div class="d-flex justify-content-between align-items-center">
-                <h4 class="card-title ">List of Sales</h4>
+                <h4 class="card-title ">Stock Quantity History</h4>
 
-                <a href="/Sale/Add" class="btn btn-success "><span class="bi bi-file-plus"></span>Sale</a>
+                @* <a href="/Sale/Add" class="btn btn-success "><span class="bi bi-file-plus"></span>Sale</a> *@
             </div>
         </div>
 
@@ -15,17 +15,17 @@
             </div>
             <div class="row mb-2">
                 <form action="" class="d-flex align-items-center">
-                    <input class="form-control me-sm-2" type="search" asp-for="SearchCustomer" placeholder="Customer"
-                        autocomplete="off">
-                    <select class="form-control me-sm-2" asp-for="CustomerType"
-                        asp-items="@Model.CustomerTypeSelectList()">
-                        <option value="">-CUSTOMER TYPE-</option>
+                    <select asp-for="ProductId" class="form-control me-sm-2" asp-items="@Model.ProductSelectList()">
+                        <option value="">-- SELECT PRODUCT --</option>
                     </select>
-                    <input class="form-control me-sm-2" type="Date" asp-for="FromSaleDate"
-                        placeholder="From Sale Date" autocomplete="off">
-                    <input class="form-control me-sm-2" type="Date" asp-for="ToSaleDate" placeholder="To Sale Date"
+                    <input class="form-control me-sm-2" type="Date" asp-for="FromDate"
+                        placeholder="From Date" autocomplete="off">
+                    <input class="form-control me-sm-2" type="Date" asp-for="ToDate" placeholder="To Date"
                         autocomplete="off">
-                    <select asp-for="SaleById" class="form-control" asp-items="@Model.AdminSelectList()">
+                        <select asp-for="Remarks" class="form-control me-sm-2" asp-items="@Model.StockQuantityRemarksList()">
+                        <option value="">-- SELECT REMARKS --</option>
+                    </select>
+                    <select asp-for="AdminId" class="form-control me-sm-2" asp-items="@Model.AdminSelectList()">
                         <option value="">-- SELECT ADMIN --</option>
                     </select>
                     <button class="btn btn-success"><i class="bi bi-search"></i></button>
@@ -37,43 +37,47 @@
                     <thead class="table-success text-center">
                         <tr>
                             <th scope="col" width="80px">SN</th>
-                            <th scope="col">Customer</th>
-                            <th scope="col">Address</th>
-                            <th scope="col">Total Amount</th>
-                            <th scope="col">Sale By</th>
-                            <th scope="col">Sale Date</th>
-                            <th scope="col" class="text-end"></th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Admin</th>
+                            <th scope="col">On Date</th>
+                            <th scope="col">Remarks</th>
+                            @* <th scope="col" class="text-end"></th> *@
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="table-light">
                             @{
                                 var sn = 1;
-                                foreach (var saleInfo in Model.SaleInfoVms)
+                                foreach (var stockQuantityInfo in Model.StockQuantityInfoVms)
                                 {
                                 <tr class="table-light text-center">
                                     <th scope="row">
                                             @(sn++)
                                     </th>
 
-                                    <td>
-                                            @saleInfo.CustomerName
+                                    <td style="text-align: center;
+                                                                            display:flex; justify-content:start;
+                                                                            align-items: center; flex-direction: column">
+                                        <img style="height: 12vh;
+                                                                                                      width: 2vw;"
+                                            class="w-50" alt="description" src="/Uploads/Photos/@stockQuantityInfo.ProductPhoto" />@stockQuantityInfo.ProductName
                                     </td>
                                     <td>
-                                            @saleInfo.CustomerAddress
+                                            @stockQuantityInfo.QuantityMovement
                                     </td>
                                     <td>
-                                        <span>Rs.</span> @saleInfo.TotalAmount
+                                        @stockQuantityInfo.AdminName
                                     </td>
                                     <td>
-                                            @saleInfo.SaleBy
+                                            @stockQuantityInfo.On_Date
                                     </td>
 
 
                                     <td>
-                                            @saleInfo.SaleDate
+                                            @stockQuantityInfo.Remarks
                                     </td>
-                                    <td class="text-end">
+                                    @* <td class="text-end">
                                         <a asp-action="Index" asp-controller="SaleDetail" asp-route-SaleId="@saleInfo.SaleId"
                                             class="btn btn-primary btn-md"><i class="bi bi-eye">Details</i>
                                         </a>
@@ -86,7 +90,7 @@
                                                     class="bi bi-trash"></i></button>
                                         </form>
 
-                                    </td>
+                                    </td> *@
                                 </tr>
                                 }
                             }

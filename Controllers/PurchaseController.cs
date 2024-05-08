@@ -121,6 +121,8 @@ public class PurchaseController : Controller
                 stockQuantityHistory.ProductQuantityUnitRateId = prdQUR.Id;
                 stockQuantityHistory.Remarks = StockQuantityRemarksConstants.Purchased;
                 stockQuantityHistory.On_Date = DateTime.Now;
+                stockQuantityHistory.AdminId = currentAdmin.Id;
+
 
                 _context.StockQuantityHistories.Add(stockQuantityHistory);
                 _context.ProductQuantityUnitRates.Update(prdQUR);
