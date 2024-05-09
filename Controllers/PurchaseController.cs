@@ -108,13 +108,14 @@ public class PurchaseController : Controller
                     long baseStockQuantity = purchaseDetailVm.Quantity * prdRatio.Ratio;
                     prdQUR.Stock_Quantity = prdQUR.Stock_Quantity + baseStockQuantity;
 
-
                     stockQuantityHistory.QuantityMovement = baseStockQuantity;
+                    stockQuantityHistory.UnitId = purchaseDetailVm.UnitId;
                 }
                 else
                 {
                     prdQUR.Stock_Quantity = prdQUR.Stock_Quantity + purchaseDetailVm.Quantity;
                     stockQuantityHistory.QuantityMovement = purchaseDetailVm.Quantity;
+                    stockQuantityHistory.UnitId = purchaseDetailVm.UnitId;
 
                 }
 
@@ -154,6 +155,10 @@ public class PurchaseController : Controller
             }
 
             var purchaseFromDB = await _context.Purchases.FirstOrDefaultAsync(x => x.Id == purchase.Id);
+            if (purchaseFromDB == null)
+            {
+                throw new Exception("No Data Found.");
+            }
             purchaseFromDB.TotalPaidAmount = TotalAmount;
 
             //_context.Suppliers.Update(supplier); not necessary

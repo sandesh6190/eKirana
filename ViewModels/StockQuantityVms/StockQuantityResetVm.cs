@@ -1,4 +1,7 @@
-﻿namespace eKirana.ViewModels.StockQuantityVms;
+﻿using eKirana.Models.SetUp;
+using Microsoft.AspNetCore.Mvc.Rendering;
+
+namespace eKirana.ViewModels.StockQuantityVms;
 public class StockQuantityResetVm
 {
     public long ProductId { get; set; }
@@ -6,6 +9,15 @@ public class StockQuantityResetVm
     public string ProductBrand { get; set; }
     public long? StockQuantity { get; set; }
     public long UnitId { get; set; }
-    //list of unit chai api bata tanchu
+    public List<Unit>? Units { get; set; }
+    public SelectList UnitSelectList()
+    {
+        return new SelectList(
+            Units,
+            nameof(Unit.Id),
+            nameof(Unit.Name),
+            UnitId
+        );
+    }
 }
 

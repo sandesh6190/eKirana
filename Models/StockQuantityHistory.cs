@@ -1,4 +1,6 @@
-﻿namespace eKirana.Models;
+﻿using eKirana.Models.SetUp;
+
+namespace eKirana.Models;
 public class StockQuantityHistory
 {
     public long Id { get; set; }
@@ -6,9 +8,11 @@ public class StockQuantityHistory
     //public virtual Product Product { get; set; }
     public long ProductQuantityUnitRateId { get; set; }
     public virtual ProductQuantityUnitRate ProductQuantityUnitRate { get; set; }
-    public long QuantityMovement { get; set; }
+    public long? QuantityMovement { get; set; }
+    public long UnitId { get; set; }
+    public virtual Unit Unit { get; set; }
     public string Remarks { get; set; }
     public DateTime On_Date { get; set; }
-    public long AdminId{get; set;}
-    public virtual Admin Admin {get; set;}
+    public long AdminId { get; set; }
+    public virtual Admin Admin { get; set; }
 }

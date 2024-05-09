@@ -36,6 +36,12 @@ public class ApplicationDbContext : DbContext
         .HasForeignKey(sd => sd.ProductId)
         .OnDelete(DeleteBehavior.Restrict); // Change behavior here by .Cascade
 
+        modelBuilder.Entity<StockQuantityHistory>()
+        .HasOne(sqh => sqh.Unit)
+        .WithMany()
+        .HasForeignKey(sqh => sqh.UnitId)
+        .OnDelete(DeleteBehavior.Restrict);
+
     }
     public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categories { get; set; }

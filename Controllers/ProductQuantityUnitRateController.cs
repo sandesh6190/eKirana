@@ -26,7 +26,7 @@ public class ProductQuantityUnitRateController : Controller
         //vm.Units = await _context.Units.ToListAsync(); //js bata fetch garne
         var prdQURs = await _context.ProductQuantityUnitRates.Where(x => (x.ProductId == ProductId) && (vm.UnitId == null || vm.UnitId == x.UnitId)).Include(x => x.Product).Include(x => x.Unit).OrderByDescending(x => x.Ratio).ToListAsync();
 
-        var prdBaseStockQuantity = await _context.ProductQuantityUnitRates.Where(x => x.IsBaseUnit == true).FirstOrDefaultAsync();
+        var prdBaseStockQuantity = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == ProductId && x.IsBaseUnit == true).FirstOrDefaultAsync();
 
         vm.InfoProductQuantityUnitRateVms = prdQURs.Select(x => new InfoProductQuantityUnitRateVm()
         {
@@ -53,8 +53,6 @@ public class ProductQuantityUnitRateController : Controller
                 prdQUR.Quantity = prdBaseStockQuantity.Stock_Quantity / prdQUR.Ratio;
                 prdBaseStockQuantity.Stock_Quantity = prdBaseStockQuantity.Stock_Quantity % prdQUR.Ratio;
             }
-
-
 
             var purchaseRates = await _context.ProductPurchaseRates.Where(x => x.ProductId == ProductId && x.UnitId == prdQUR.UnitId).FirstOrDefaultAsync();
             if (purchaseRates != null)

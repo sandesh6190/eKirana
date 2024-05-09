@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="Unit" class="form-label">Unit</label>
-                        <select asp-for="UnitId" class="form-control">
+                        <select asp-for="UnitId" class="form-control" asp-items="Model.UnitSelectList()">
                             <option value="">-- SELECT A UNIT --</option>
                         </select>
                     </div>

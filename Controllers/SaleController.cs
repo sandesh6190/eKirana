@@ -142,15 +142,18 @@ public class SaleController : Controller
                 if (prdQUR.UnitId != saleDetail.UnitId)
                 {
                     long baseStockQuantity = saleDetail.Quantity * prdRatio.Ratio;
-                    prdQUR.Stock_Quantity = prdQUR.Stock_Quantity + baseStockQuantity;
+                    prdQUR.Stock_Quantity = prdQUR.Stock_Quantity - baseStockQuantity;
 
                     stockQuantityHistory.QuantityMovement = baseStockQuantity;
+                    stockQuantityHistory.UnitId = saleDetail.UnitId;
                 }
 
                 else
                 {
-                    prdQUR.Stock_Quantity = prdQUR.Stock_Quantity + saleDetail.Quantity;
+                    prdQUR.Stock_Quantity = prdQUR.Stock_Quantity - saleDetail.Quantity;
                     stockQuantityHistory.QuantityMovement = saleDetail.Quantity;
+                    stockQuantityHistory.UnitId = saleDetail.UnitId;
+
                 }
 
                 stockQuantityHistory.ProductQuantityUnitRateId = prdQUR.Id;
