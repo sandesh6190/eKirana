@@ -1,1755 +1,1755 @@
 {
   "Files": [
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\eKirana.bundle.scp.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\eKirana.bundle.scp.css",
       "PackagePath": "staticwebassets\\eKirana.bundle.scp.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\CHANGELOG.md",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\CHANGELOG.md",
       "PackagePath": "staticwebassets\\AdminPanel\\CHANGELOG.md"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\ISSUE_TEMPLATE.md",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\ISSUE_TEMPLATE.md",
       "PackagePath": "staticwebassets\\AdminPanel\\ISSUE_TEMPLATE.md"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\LICENSE.md",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\LICENSE.md",
       "PackagePath": "staticwebassets\\AdminPanel\\LICENSE.md"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\README.md",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\README.md",
       "PackagePath": "staticwebassets\\AdminPanel\\README.md"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\css\\material-dashboard.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\css\\material-dashboard.css",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\css\\material-dashboard.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\css\\material-dashboard.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\css\\material-dashboard.css.map",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\css\\material-dashboard.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\css\\material-dashboard.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\css\\material-dashboard.min.css",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\css\\material-dashboard.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\css\\nucleo-icons.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\css\\nucleo-icons.css",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\css\\nucleo-icons.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\css\\nucleo-svg.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\css\\nucleo-svg.css",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\css\\nucleo-svg.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo-icons.eot",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo-icons.eot",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\fonts\\nucleo-icons.eot"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo-icons.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo-icons.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\fonts\\nucleo-icons.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo-icons.ttf",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo-icons.ttf",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\fonts\\nucleo-icons.ttf"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo-icons.woff",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo-icons.woff",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\fonts\\nucleo-icons.woff"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo-icons.woff2",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo-icons.woff2",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\fonts\\nucleo-icons.woff2"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo.eot",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo.eot",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\fonts\\nucleo.eot"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo.ttf",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo.ttf",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\fonts\\nucleo.ttf"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo.woff",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo.woff",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\fonts\\nucleo.woff"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo.woff2",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\fonts\\nucleo.woff2",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\fonts\\nucleo.woff2"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\apple-icon.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\apple-icon.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\apple-icon.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\bg-pricing.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\bg-pricing.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\bg-pricing.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\bg-smart-home-1.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\bg-smart-home-1.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\bg-smart-home-1.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\bg-smart-home-2.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\bg-smart-home-2.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\bg-smart-home-2.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\bruce-mars.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\bruce-mars.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\bruce-mars.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\down-arrow-dark.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\down-arrow-dark.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\down-arrow-dark.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\down-arrow-white.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\down-arrow-white.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\down-arrow-white.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\down-arrow.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\down-arrow.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\down-arrow.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\drake.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\drake.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\drake.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\favicon.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\favicon.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\favicon.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\home-decor-1.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\home-decor-1.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\home-decor-1.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\home-decor-2.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\home-decor-2.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\home-decor-2.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\home-decor-3.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\home-decor-3.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\home-decor-3.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\icons\\flags\\AU.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\icons\\flags\\AU.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\icons\\flags\\AU.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\icons\\flags\\BR.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\icons\\flags\\BR.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\icons\\flags\\BR.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\icons\\flags\\DE.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\icons\\flags\\DE.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\icons\\flags\\DE.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\icons\\flags\\GB.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\icons\\flags\\GB.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\icons\\flags\\GB.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\icons\\flags\\US.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\icons\\flags\\US.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\icons\\flags\\US.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\chat.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\chat.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\chat.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\danger-chat-ill.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\danger-chat-ill.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\danger-chat-ill.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\dark-lock-ill.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\dark-lock-ill.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\dark-lock-ill.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\error-404.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\error-404.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\error-404.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\error-500.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\error-500.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\error-500.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\illustration-lock.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\illustration-lock.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\illustration-lock.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\illustration-reset.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\illustration-reset.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\illustration-reset.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\illustration-signin.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\illustration-signin.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\illustration-signin.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\illustration-signup.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\illustration-signup.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\illustration-signup.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\illustration-verification.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\illustration-verification.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\illustration-verification.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\lock.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\lock.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\lock.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\pattern-tree.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\pattern-tree.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\pattern-tree.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\rocket-white.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\illustrations\\rocket-white.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\illustrations\\rocket-white.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\ivana-square.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\ivana-square.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\ivana-square.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\ivana-squares.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\ivana-squares.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\ivana-squares.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\ivancik.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\ivancik.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\ivancik.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\kal-visuals-square.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\kal-visuals-square.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\kal-visuals-square.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logo-ct-dark.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logo-ct-dark.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\logo-ct-dark.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logo-ct.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logo-ct.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\logo-ct.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-coinbase.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-coinbase.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-coinbase.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-nasa.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-nasa.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-nasa.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-netflix.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-netflix.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-netflix.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-pinterest.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-pinterest.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-pinterest.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-spotify.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-spotify.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-spotify.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-vodafone.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-vodafone.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\logos\\gray-logos\\logo-vodafone.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\mastercard.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\mastercard.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\logos\\mastercard.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\visa.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\logos\\visa.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\logos\\visa.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\marie.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\marie.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\marie.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\meeting.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\meeting.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\meeting.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\office-dark.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\office-dark.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\office-dark.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\product-12.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\product-12.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\product-12.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-1-min.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-1-min.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-1-min.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-11.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-11.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-11.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-2-min.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-2-min.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-2-min.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-3-min.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-3-min.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-3-min.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-4-min.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-4-min.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-4-min.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-5-min.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-5-min.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-5-min.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-6-min.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-6-min.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-6-min.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-7-min.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-7-min.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-7-min.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-details-1.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-details-1.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-details-1.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-details-2.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-details-2.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-details-2.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-details-3.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-details-3.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-details-3.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-details-4.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-details-4.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-details-4.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-details-5.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\products\\product-details-5.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\products\\product-details-5.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\shapes\\pattern-lines.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\shapes\\pattern-lines.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\shapes\\pattern-lines.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\shapes\\waves-white.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\shapes\\waves-white.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\shapes\\waves-white.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\bootstrap.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\bootstrap.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\bootstrap.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\creative-tim.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\creative-tim.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\creative-tim.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\devto.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\devto.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\devto.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\github.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\github.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\github.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\google-webdev.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\google-webdev.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\google-webdev.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\icon-bulb.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\icon-bulb.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\icon-bulb.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\icon-sun-cloud.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\icon-sun-cloud.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\icon-sun-cloud.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-asana.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-asana.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\logo-asana.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-atlassian.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-atlassian.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\logo-atlassian.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-invision.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-invision.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\logo-invision.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-jira.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-jira.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\logo-jira.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-slack.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-slack.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\logo-slack.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-spotify.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-spotify.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\logo-spotify.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-xd.svg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\small-logos\\logo-xd.svg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\small-logos\\logo-xd.svg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\team-1.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\team-1.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\team-1.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\team-2.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\team-2.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\team-2.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\team-3.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\team-3.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\team-3.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\team-4.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\team-4.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\team-4.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\team-5.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\team-5.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\team-5.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\tesla-model-s.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\tesla-model-s.png",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\tesla-model-s.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\vr-bg.jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\img\\vr-bg.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\img\\vr-bg.jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\core\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\core\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\core\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\core\\bootstrap.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\core\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\core\\bootstrap.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\core\\popper.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\core\\popper.min.js",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\core\\popper.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\material-dashboard.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\material-dashboard.js",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\material-dashboard.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\material-dashboard.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\material-dashboard.js.map",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\material-dashboard.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\material-dashboard.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\material-dashboard.min.js",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\material-dashboard.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\Chart.extension.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\Chart.extension.js",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\plugins\\Chart.extension.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\bootstrap-notify.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\bootstrap-notify.js",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\plugins\\bootstrap-notify.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\chartjs.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\chartjs.min.js",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\plugins\\chartjs.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\countup.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\countup.min.js",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\plugins\\countup.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\perfect-scrollbar.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\perfect-scrollbar.min.js",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\plugins\\perfect-scrollbar.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\smooth-scrollbar.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\smooth-scrollbar.min.js",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\plugins\\smooth-scrollbar.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\world.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\js\\plugins\\world.js",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\js\\plugins\\world.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_alert.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_alert.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_alert.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_avatars.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_avatars.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_avatars.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_badge.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_badge.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_badge.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_breadcrumbs.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_breadcrumbs.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_breadcrumbs.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_buttons.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_buttons.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_buttons.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_cards.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_cards.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_cards.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_dark-version.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_dark-version.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_dark-version.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_dropdown.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_dropdown.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_dropdown.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_dropup.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_dropup.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_dropup.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_fixed-plugin.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_fixed-plugin.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_fixed-plugin.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_footer.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_footer.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_footer.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_forms.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_forms.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_forms.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_gradients.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_gradients.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_gradients.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_header.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_header.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_header.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_icons.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_icons.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_icons.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_info-areas.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_info-areas.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_info-areas.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_misc.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_misc.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_misc.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_nav.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_nav.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_nav.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_navbar-vertical.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_navbar-vertical.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_navbar-vertical.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_navbar.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_navbar.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_navbar.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_pagination.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_pagination.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_pagination.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_popovers.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_popovers.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_popovers.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_progress.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_progress.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_progress.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_ripple.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_ripple.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_ripple.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_rtl.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_rtl.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_rtl.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_social-buttons.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_social-buttons.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_social-buttons.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_tables.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_tables.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_tables.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_tilt.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_tilt.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_tilt.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_timeline.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_timeline.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_timeline.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_tooltips.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_tooltips.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_tooltips.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_typography.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_typography.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_typography.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_utilities-extend.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_utilities-extend.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_utilities-extend.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_utilities.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_utilities.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_utilities.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_variables.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\_variables.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\_variables.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_accordion.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_accordion.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_accordion.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_alert.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_alert.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_alert.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_badge.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_badge.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_badge.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_breadcrumb.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_breadcrumb.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_breadcrumb.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_button-group.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_button-group.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_button-group.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_buttons.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_buttons.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_buttons.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_card.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_card.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_card.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_carousel.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_carousel.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_carousel.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_close.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_close.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_close.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_containers.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_containers.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_containers.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_dropdown.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_dropdown.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_dropdown.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_forms.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_forms.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_forms.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_functions.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_functions.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_functions.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_grid.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_grid.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_grid.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_helpers.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_helpers.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_helpers.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_images.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_images.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_images.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_list-group.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_list-group.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_list-group.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_maps.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_maps.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_maps.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_mixins.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_mixins.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_mixins.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_modal.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_modal.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_modal.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_nav.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_nav.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_nav.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_navbar.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_navbar.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_navbar.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_offcanvas.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_offcanvas.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_offcanvas.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_pagination.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_pagination.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_pagination.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_placeholders.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_placeholders.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_placeholders.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_popover.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_popover.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_popover.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_progress.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_progress.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_progress.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_reboot.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_reboot.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_reboot.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_root.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_root.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_root.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_spinners.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_spinners.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_spinners.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_tables.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_tables.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_tables.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_toasts.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_toasts.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_toasts.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_tooltip.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_tooltip.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_tooltip.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_transitions.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_transitions.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_transitions.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_type.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_type.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_type.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_utilities.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_utilities.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_utilities.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_variables.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_variables.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\_variables.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-grid.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-grid.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-grid.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-reboot.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-reboot.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-reboot.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-utilities.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-utilities.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-utilities.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_floating-labels.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_floating-labels.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_floating-labels.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-check.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-check.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-check.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-control.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-control.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-control.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-range.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-range.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-range.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-select.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-select.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-select.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-text.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-text.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-text.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_input-group.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_input-group.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_input-group.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_labels.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_labels.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_labels.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_validation.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_validation.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_validation.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_clearfix.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_clearfix.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_clearfix.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_color-bg.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_color-bg.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_color-bg.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_colored-links.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_colored-links.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_colored-links.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_position.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_position.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_position.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_ratio.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_ratio.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_ratio.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_stacks.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_stacks.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_stacks.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_stretched-link.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_stretched-link.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_stretched-link.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_text-truncation.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_text-truncation.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_text-truncation.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_visually-hidden.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_visually-hidden.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_visually-hidden.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_vr.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_vr.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_vr.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_alert.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_alert.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_alert.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_backdrop.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_backdrop.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_backdrop.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_banner.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_banner.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_banner.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_border-radius.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_border-radius.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_border-radius.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_box-shadow.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_box-shadow.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_box-shadow.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_breakpoints.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_breakpoints.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_breakpoints.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_buttons.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_buttons.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_buttons.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_caret.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_caret.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_caret.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_clearfix.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_clearfix.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_clearfix.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_color-scheme.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_color-scheme.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_color-scheme.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_container.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_container.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_container.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_deprecate.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_deprecate.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_deprecate.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_forms.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_forms.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_forms.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_gradients.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_gradients.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_gradients.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_grid.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_grid.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_grid.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_image.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_image.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_image.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_list-group.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_list-group.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_list-group.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_lists.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_lists.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_lists.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_pagination.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_pagination.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_pagination.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_reset-text.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_reset-text.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_reset-text.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_resize.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_resize.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_resize.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_table-variants.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_table-variants.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_table-variants.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_text-truncate.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_text-truncate.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_text-truncate.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_transition.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_transition.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_transition.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_utilities.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_utilities.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_utilities.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_visually-hidden.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_visually-hidden.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_visually-hidden.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\utilities\\_api.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\utilities\\_api.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\utilities\\_api.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\vendor\\_rfs.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\vendor\\_rfs.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\bootstrap\\vendor\\_rfs.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\cards\\card-background.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\cards\\card-background.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\cards\\card-background.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\cards\\card-rotate.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\cards\\card-rotate.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\cards\\card-rotate.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\custom\\_styles.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\custom\\_styles.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\custom\\_styles.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\custom\\_variables.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\custom\\_variables.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\custom\\_variables.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_form-check.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_form-check.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_form-check.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_form-select.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_form-select.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_form-select.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_form-switch.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_form-switch.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_form-switch.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_forms.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_forms.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_forms.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_input-group.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_input-group.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_input-group.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_inputs.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_inputs.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_inputs.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_labels.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_labels.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\forms\\_labels.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_badge.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_badge.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_badge.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_buttons.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_buttons.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_buttons.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_colored-shadows.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_colored-shadows.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_colored-shadows.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_hover.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_hover.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_hover.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_social-buttons.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_social-buttons.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_social-buttons.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_vendor.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_vendor.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\_vendor.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\mixins.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\mixins.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\mixins\\mixins.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\_flatpickr.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\_flatpickr.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\_flatpickr.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\_nouislider.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\_nouislider.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\_nouislider.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\_perfect-scrollbar.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\_perfect-scrollbar.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\_perfect-scrollbar.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\_prism.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\_prism.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\_prism.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\plugins.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\plugins.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\plugins\\free\\plugins.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\theme.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\theme.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\theme.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_animations.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_animations.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_animations.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_avatars.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_avatars.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_avatars.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_badge.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_badge.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_badge.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_breadcrumb.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_breadcrumb.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_breadcrumb.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_cards-extend.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_cards-extend.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_cards-extend.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_cards.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_cards.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_cards.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_choices.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_choices.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_choices.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_dark-version.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_dark-version.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_dark-version.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_dropdowns.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_dropdowns.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_dropdowns.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_fixed-plugin.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_fixed-plugin.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_fixed-plugin.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_form-switch.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_form-switch.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_form-switch.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_full-calendar.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_full-calendar.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_full-calendar.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_header.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_header.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_header.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_info-areas.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_info-areas.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_info-areas.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_misc-extend.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_misc-extend.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_misc-extend.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_misc.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_misc.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_misc.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_navbar-vertical.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_navbar-vertical.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_navbar-vertical.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_navbar.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_navbar.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_navbar.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_pagination.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_pagination.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_pagination.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_ripple.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_ripple.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_ripple.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_rtl.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_rtl.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_rtl.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_social-buttons.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_social-buttons.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_social-buttons.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_table.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_table.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_table.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_timeline.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_timeline.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_timeline.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_utilities-extend.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_utilities-extend.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_utilities-extend.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_utilities.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_utilities.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_utilities.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_virtual-reality.scss",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_virtual-reality.scss",
       "PackagePath": "staticwebassets\\AdminPanel\\assets\\scss\\material-dashboard\\variables\\_virtual-reality.scss"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\composer.json",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\composer.json",
       "PackagePath": "staticwebassets\\AdminPanel\\composer.json"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\docs\\documentation.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\docs\\documentation.html",
       "PackagePath": "staticwebassets\\AdminPanel\\docs\\documentation.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\gulpfile.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\gulpfile.js",
       "PackagePath": "staticwebassets\\AdminPanel\\gulpfile.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\index.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\index.html",
       "PackagePath": "staticwebassets\\AdminPanel\\index.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\package.json",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\package.json",
       "PackagePath": "staticwebassets\\AdminPanel\\package.json"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\billing.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\billing.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\billing.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\dashboard.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\dashboard.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\dashboard.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\icons.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\icons.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\icons.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\map.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\map.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\map.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\notifications.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\notifications.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\notifications.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\profile.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\profile.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\profile.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\rtl.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\rtl.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\rtl.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\sign-in.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\sign-in.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\sign-in.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\sign-up.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\sign-up.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\sign-up.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\tables.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\tables.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\tables.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\template.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\template.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\template.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\typography.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\typography.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\typography.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\virtual-reality.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\pages\\virtual-reality.html",
       "PackagePath": "staticwebassets\\AdminPanel\\pages\\virtual-reality.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\template.html",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\AdminPanel\\template.html",
       "PackagePath": "staticwebassets\\AdminPanel\\template.html"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\Bootstrap\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootstrap\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\Bootstrap\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootswatch\\bootstrap.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Bootswatch\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\Bootswatch\\bootstrap.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Login\\Login.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Login\\Login.css",
       "PackagePath": "staticwebassets\\Login\\Login.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Login\\img\\storeLogo.png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Login\\img\\storeLogo.png",
       "PackagePath": "staticwebassets\\Login\\img\\storeLogo.png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\228eef40-1892-493e-bbdb-189faedbe870..png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\228eef40-1892-493e-bbdb-189faedbe870..png",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\228eef40-1892-493e-bbdb-189faedbe870..png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\2e34732e-7ee7-495f-ac3d-a7b7b62b2183..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\2e34732e-7ee7-495f-ac3d-a7b7b62b2183..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\2e34732e-7ee7-495f-ac3d-a7b7b62b2183..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\3825b3e2-4c60-46d9-8c5b-02533dc85264",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\3825b3e2-4c60-46d9-8c5b-02533dc85264",
       "PackagePath": "staticwebassets\\Uploads\\Photos"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\3c9f6584-7eef-440f-a3b7-03d6b52d9e6f..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\3c9f6584-7eef-440f-a3b7-03d6b52d9e6f..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\3c9f6584-7eef-440f-a3b7-03d6b52d9e6f..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\47a7dc1b-56e9-43ac-8080-663112a3414e..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\47a7dc1b-56e9-43ac-8080-663112a3414e..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\47a7dc1b-56e9-43ac-8080-663112a3414e..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\4a76dec8-3453-461e-bb66-5f2a7e749fd8..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\4a76dec8-3453-461e-bb66-5f2a7e749fd8..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\4a76dec8-3453-461e-bb66-5f2a7e749fd8..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\4c881db3-eeb7-46c7-b926-7ba3c0fd8cef..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\4c881db3-eeb7-46c7-b926-7ba3c0fd8cef..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\4c881db3-eeb7-46c7-b926-7ba3c0fd8cef..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\57289ab0-dd1c-4b4c-92a6-05a69f6a2239..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\57289ab0-dd1c-4b4c-92a6-05a69f6a2239..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\57289ab0-dd1c-4b4c-92a6-05a69f6a2239..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\5ab34a79-5db0-47d8-bef0-2cc55a541f82..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\5ab34a79-5db0-47d8-bef0-2cc55a541f82..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\5ab34a79-5db0-47d8-bef0-2cc55a541f82..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\60afff6f-5f38-4883-8d49-dc9b85d13bc2..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\60afff6f-5f38-4883-8d49-dc9b85d13bc2..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\60afff6f-5f38-4883-8d49-dc9b85d13bc2..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\6276e7cc-aeb0-4d90-b7cf-eef7c16f5099",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\6276e7cc-aeb0-4d90-b7cf-eef7c16f5099",
       "PackagePath": "staticwebassets\\Uploads\\Photos"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\6e5bf971-7e10-4559-b7d0-5a758786d3e7..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\6e5bf971-7e10-4559-b7d0-5a758786d3e7..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\6e5bf971-7e10-4559-b7d0-5a758786d3e7..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\7b89a80f-eb67-4031-8ade-62f547a8ca9f..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\7b89a80f-eb67-4031-8ade-62f547a8ca9f..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\7b89a80f-eb67-4031-8ade-62f547a8ca9f..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\7fcefc8f-0dbf-4257-beaf-ae7a7480a45a",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\7fcefc8f-0dbf-4257-beaf-ae7a7480a45a",
       "PackagePath": "staticwebassets\\Uploads\\Photos"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\804fc198-3ae0-40e7-a662-af3592669a22..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\804fc198-3ae0-40e7-a662-af3592669a22..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\804fc198-3ae0-40e7-a662-af3592669a22..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\8d8dda4d-0565-4384-9f58-3bf3b55f0300..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\8d8dda4d-0565-4384-9f58-3bf3b55f0300..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\8d8dda4d-0565-4384-9f58-3bf3b55f0300..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\91ed3376-9d6f-4526-859a-834df00d9de3..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\91ed3376-9d6f-4526-859a-834df00d9de3..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\91ed3376-9d6f-4526-859a-834df00d9de3..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\a07894b2-2643-40bc-bde4-86e15b3d7bcc..jpg",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\a07894b2-2643-40bc-bde4-86e15b3d7bcc..jpg",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\a07894b2-2643-40bc-bde4-86e15b3d7bcc..jpg"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\d2b9dc7a-7860-458a-a0c1-54be80672a44",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\d2b9dc7a-7860-458a-a0c1-54be80672a44",
       "PackagePath": "staticwebassets\\Uploads\\Photos"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\e4c7563d-83f0-4870-a028-270474fe4e2c",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\e4c7563d-83f0-4870-a028-270474fe4e2c",
       "PackagePath": "staticwebassets\\Uploads\\Photos"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\f3acabed-facd-49b6-a10a-b1c210697a81..png",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\Uploads\\Photos\\f3acabed-facd-49b6-a10a-b1c210697a81..png",
       "PackagePath": "staticwebassets\\Uploads\\Photos\\f3acabed-facd-49b6-a10a-b1c210697a81..png"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

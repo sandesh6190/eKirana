@@ -74,7 +74,7 @@ public class AuthManager : IAuthManager
         newAdmin.Email = Email;
         newAdmin.HashPassword = BCrypt.Net.BCrypt.HashPassword(PassWord);
         newAdmin.AdminStatus = AdminStatusConstants.Active;
-        newAdmin.AdminType = AdminTypeConstants.NormalAdmin;
+        newAdmin.AdminType = Email == "super.admin@gmail.com" ? AdminTypeConstants.SuperAdmin : AdminTypeConstants.NormalAdmin;
         newAdmin.Registered_On = DateTime.Now;
 
         _context.Admins.Add(newAdmin);

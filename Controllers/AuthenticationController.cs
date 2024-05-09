@@ -2,6 +2,7 @@
 using eKirana.Data;
 using eKirana.Manager.Interfaces;
 using eKirana.ViewModels.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eKirana.Controllers;
@@ -43,13 +44,13 @@ public class AuthenticationController : Controller
             return View(vm);
         }
     }
-
+    [Authorize(Roles = "SuperAdmin")]
     public IActionResult Register()
     {
         var vm = new RegisterVm();
         return View(vm);
     }
-
+    [Authorize(Roles = "SuperAdmin")]
     [HttpPost]
     public async Task<IActionResult> Register(RegisterVm vm)
     {

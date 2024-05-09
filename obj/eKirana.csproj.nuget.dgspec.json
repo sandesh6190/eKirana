@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\eKirana.csproj": {}
+    "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\eKirana.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\eKirana.csproj": {
+    "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\eKirana.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\eKirana.csproj",
+        "projectUniqueName": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\eKirana.csproj",
         "projectName": "eKirana",
-        "projectPath": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\eKirana.csproj",
+        "projectPath": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\eKirana.csproj",
         "packagesPath": "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\obj\\",
+        "outputPath": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

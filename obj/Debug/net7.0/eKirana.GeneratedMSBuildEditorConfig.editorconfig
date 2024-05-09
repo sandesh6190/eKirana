@@ -9,169 +9,169 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = eKirana
 build_property.RootNamespace = eKirana
-build_property.ProjectDir = c:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\
+build_property.ProjectDir = C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = c:\Users\Sandesh Limbu\Desktop\eKirana\eKirana
+build_property.MSBuildProjectDirectory = C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Authentication/LogIn.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Authentication/LogIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cTG9nSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Authentication/Register.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Authentication/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Brand/Add.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Brand/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Brand/Edit.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Brand/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Brand/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Brand/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Category/Add.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Category/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Category/Edit.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Category/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/DashBoard/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/DashBoard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaEJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Home/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Home/Privacy.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/MemberShip/Add.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/MemberShip/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyU2hpcFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/MemberShip/Edit.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/MemberShip/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyU2hpcFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/MemberShip/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/MemberShip/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyU2hpcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/ProductQuantityUnitRate/AddProductUnit.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/ProductQuantityUnitRate/AddProductUnit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFF1YW50aXR5VW5pdFJhdGVcQWRkUHJvZHVjdFVuaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/ProductQuantityUnitRate/Edit.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/ProductQuantityUnitRate/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFF1YW50aXR5VW5pdFJhdGVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/ProductQuantityUnitRate/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/ProductQuantityUnitRate/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFF1YW50aXR5VW5pdFJhdGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Product/Add.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Product/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Product/Edit.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Product/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Product/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/PurchaseDetail/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/PurchaseDetail/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VEZXRhaWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Purchase/Add.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Purchase/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Purchase/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Purchase/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/SaleDetail/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/SaleDetail/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZURldGFpbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Sale/Add.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Sale/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Sale/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Sale/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Shared/Error.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Shared/_EmptyLayout.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Shared/_EmptyLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbXB0eUxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/StockQuantity/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/StockQuantity/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tRdWFudGl0eVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/StockQuantity/Reset.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/StockQuantity/Reset.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tRdWFudGl0eVxSZXNldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Supplier/Add.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Supplier/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Supplier/Edit.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Supplier/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Supplier/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Supplier/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Unit/Add.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Unit/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Unit/Edit.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Unit/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Unit/Index.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Unit/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/_ViewImports.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/_ViewStart.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Shared/_Layout.cshtml]
+[C:/Users/Sandesh Limbu/Desktop/eKirana/eKirana/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-i2xxnrxbwo
