@@ -27,12 +27,8 @@
     <link rel="icon" type="image/png" href="/AdminPanel/assets/img/favicon.png">
 
     <title>
-
         eKirana
     </title>
-
-
-
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -48,15 +44,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <!-- CSS Files -->
-
-
-
     <link id="pagestyle" href="/AdminPanel/assets/css/material-dashboard.css?v=3.1.0" rel="stylesheet" />
-
-
-
-
-
     <!-- Nepcha Analytics (nepcha.com) -->
     <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
     <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
@@ -69,24 +57,47 @@
     <!-- Bootstrap Font Icon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-
-
     @* downloaded bootstrap connection *@
     <link rel="stylesheet" href="/Bootstrap/css">
 
     @* downloaded bootswatch connection *@
     <link rel="stylesheet" href="/Bootswatch/css">
 
+    @* tom-select *@
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Example custom styles for Tom-Select */
+        .tom-select {
+            border: 4px solid #3b0bd9;
+            border-radius: 5px;
+            background-color: #ed3939;
+            color: #333;
+        }
+
+        .tom-select__input {
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .tom-select__option {
+            padding: 8px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .tom-select__option--selected {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
 
 </head>
 
-
 <body class="g-sidenav-show  bg-gray-100">
-
-
-
-
-
+    @* tom-select *@
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
     <aside
         class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark"
         id="sidenav-main">
@@ -684,6 +695,9 @@
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
     @await Component.InvokeAsync("Notyf");
+
+
+
 </body>
 
 </html>

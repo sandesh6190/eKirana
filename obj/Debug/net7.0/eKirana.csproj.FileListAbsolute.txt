@@ -810,3 +810,5 @@ C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\refint\eKirana.d
 C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\eKirana.pdb
 C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\eKirana.genruntimeconfig.cache
 C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\ref\eKirana.dll
+C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\bin\Debug\net7.0\package-lock.json
+C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\bin\Debug\net7.0\package.json
