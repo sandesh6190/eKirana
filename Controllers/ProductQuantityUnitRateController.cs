@@ -22,59 +22,70 @@ public class ProductQuantityUnitRateController : Controller
     [HttpGet]
     public async Task<IActionResult> Index(long ProductId, IndexProductQuantityUnitRateVm vm)
     {
-        vm.ProductId = ProductId; //passing product btween different view pages of different controller
-        //vm.Units = await _context.Units.ToListAsync(); //js bata fetch garne
-        var prdQURs = await _context.ProductQuantityUnitRates.Where(x => (x.ProductId == ProductId) && (vm.UnitId == null || vm.UnitId == x.UnitId)).Include(x => x.Product).Include(x => x.Unit).OrderByDescending(x => x.Ratio).ToListAsync();
-
-        var prdBaseStockQuantity = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == ProductId && x.IsBaseUnit == true).FirstOrDefaultAsync();
-
-        vm.InfoProductQuantityUnitRateVms = prdQURs.Select(x => new InfoProductQuantityUnitRateVm()
+        try
         {
-            PrdQURId = x.Id,
-            Product = x.Product,
-            UnitId = x.Unit.Id,
-            UnitName = x.Unit.Name,
-            IsBaseUnit = x.IsBaseUnit,
-            Ratio = x.Ratio,
-        }).ToList();
+            vm.ProductId = ProductId; //passing product btween different view pages of different controller
+                                      //vm.Units = await _context.Units.ToListAsync(); //js bata fetch garne
+            var prdQURs = await _context.ProductQuantityUnitRates.Where(x => (x.ProductId == ProductId) && (vm.UnitId == null || vm.UnitId == x.UnitId)).Include(x => x.Product).Include(x => x.Unit).OrderByDescending(x => x.Ratio).ToListAsync();
 
+            var prdBaseStockQuantity = await _context.ProductQuantityUnitRates.Where(x => x.ProductId == ProductId && x.IsBaseUnit == true).FirstOrDefaultAsync();
 
-
-        //filling remaining properties of InfoProductQuantityUnitRateVm from different models
-
-        foreach (var prdQUR in vm.InfoProductQuantityUnitRateVms)
-        {
-            if (prdBaseStockQuantity == null)
+            vm.InfoProductQuantityUnitRateVms = prdQURs.Select(x => new InfoProductQuantityUnitRateVm()
             {
-                prdQUR.Quantity = 0;
-            }
-            else if (prdBaseStockQuantity.Stock_Quantity >= 0)
+                PrdQURId = x.Id,
+                Product = x.Product,
+                UnitId = x.Unit.Id,
+                UnitName = x.Unit.Name,
+                IsBaseUnit = x.IsBaseUnit,
+                Ratio = x.Ratio,
+            }).ToList();
+
+
+
+            //filling remaining properties of InfoProductQuantityUnitRateVm from different models
+
+            foreach (var prdQUR in vm.InfoProductQuantityUnitRateVms)
             {
-                prdQUR.Quantity = prdBaseStockQuantity.Stock_Quantity / prdQUR.Ratio;
-                prdBaseStockQuantity.Stock_Quantity = prdBaseStockQuantity.Stock_Quantity % prdQUR.Ratio;
-            }
-
-            var purchaseRates = await _context.ProductPurchaseRates.Where(x => x.ProductId == ProductId && x.UnitId == prdQUR.UnitId).FirstOrDefaultAsync();
-            if (purchaseRates != null)
-            {
-                prdQUR.PurchaseRate = purchaseRates.Amount;
-            }
-
-        }
-
-        var saleRates = await _context.ProductSaleRates.Where(x => x.ProductId == ProductId).ToListAsync();
-
-        foreach (var prdQUR in vm.InfoProductQuantityUnitRateVms)
-        {
-            foreach (var saleRate in saleRates)
-            {
-                if (prdQUR.UnitId == saleRate.UnitId)
+                if (prdBaseStockQuantity == null)
                 {
-                    prdQUR.SaleRate = saleRate.Amount;
+                    prdQUR.Quantity = 0;
+                }
+                else if (prdBaseStockQuantity.Stock_Quantity >= 0)
+                {
+                    prdQUR.Quantity = prdBaseStockQuantity.Stock_Quantity / prdQUR.Ratio;
+                    prdBaseStockQuantity.Stock_Quantity = prdBaseStockQuantity.Stock_Quantity % prdQUR.Ratio;
+                }
+
+                var purchaseRates = await _context.ProductPurchaseRates.Where(x => x.ProductId == ProductId && x.UnitId == prdQUR.UnitId).FirstOrDefaultAsync();
+                if (purchaseRates != null)
+                {
+                    prdQUR.PurchaseRate = purchaseRates.Amount;
+                }
+
+            }
+
+            var saleRates = await _context.ProductSaleRates.Where(x => x.ProductId == ProductId).ToListAsync();
+
+            foreach (var prdQUR in vm.InfoProductQuantityUnitRateVms)
+            {
+                foreach (var saleRate in saleRates)
+                {
+                    if (prdQUR.UnitId == saleRate.UnitId)
+                    {
+                        prdQUR.SaleRate = saleRate.Amount;
+                    }
                 }
             }
+            return View(vm);
         }
-        return View(vm);
+
+        catch (Exception ex)
+        {
+            _notification.Error(ex.Message);
+            return RedirectToAction("Index", "Product");
+        }
+
+
     }
     public async Task<IActionResult> AddProductUnit(long ProductId)
     {
