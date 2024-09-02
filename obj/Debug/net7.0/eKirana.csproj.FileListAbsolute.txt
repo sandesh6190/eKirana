@@ -804,7 +804,6 @@ C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\staticwebassets.
 C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\scopedcss\bundle\eKirana.styles.css
 C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\scopedcss\projectbundle\eKirana.bundle.scp.css
-C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\eKirana.csproj.CopyComplete
 C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\eKirana.dll
 C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\refint\eKirana.dll
 C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\eKirana.pdb
@@ -812,3 +811,5 @@ C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\eKirana.genrunti
 C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\ref\eKirana.dll
 C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\bin\Debug\net7.0\package-lock.json
 C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\bin\Debug\net7.0\package.json
+C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\eKirana.sourcelink.json
+C:\Users\Sandesh Limbu\Desktop\eKirana\eKirana\obj\Debug\net7.0\eKirana.csproj.Up2Date
