@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "htPyr3TfyaI=",
+  "dgSpecHash": "/qT8Slt77kXEclqiiHUsiPehbz/Ltxo2Bi/ZYbTKd+aaE4l7XUsr1EzhucX807Ajdh7qTc/Y0Pz4XhomSzQGQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sandesh Limbu\\Desktop\\eKirana\\eKirana\\eKirana.csproj",
+  "projectFilePath": "E:\\Projects\\Projects\\eKirana\\eKirana\\eKirana.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
@@ -75,11 +75,7 @@
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+    "C:\\Users\\Sandesh Limbu\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
